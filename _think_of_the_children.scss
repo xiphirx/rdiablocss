@@ -1,0 +1,14 @@
+.arrow.down:hover::before {
+	content: "Please vote based on quality, not opinion. Posts may contribute to the discussion even if you disagree with the viewpoint.";
+	font-size: 10px;
+	max-width: 200px;
+	position: absolute;
+	top: 64px;
+	z-index: 9999;
+	display: block;
+	border-radius: 3px;
+	background-color: #000;
+	color: #A99877;
+	padding: 10px;
+	font-weight: normal;
+}

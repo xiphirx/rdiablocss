@@ -1,0 +1,19 @@
+@import 'text';
+
+.side .md h5:before {
+	content: $announcement-pretext;
+}
+
+.side .md h5 {
+	position: absolute;
+	top: 55px;
+	left: 617px;
+	z-index: 200;
+	border-radius: 3px;
+	border: 1px solid #13202c;
+	background: #181818;
+	padding: 8px;
+	font-size: 12px;
+	box-shadow: 0px 0px 10px #13202c;
+	opacity:.9;
+}

@@ -1,0 +1,173 @@
+@import 'colors';
+@import 'images';
+@import 'text';
+
+.side {
+	background: url($blue-overlay-bg);
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 20px;
+	border:1px solid $medium-blue;
+	color: $header-link;
+	text-shadow: 0px 1px #000000;
+}
+
+.side #search {
+	position: absolute;
+	z-index: 1;
+	top: 147px;
+}
+
+.side #search input[type="text"] {
+	background: url($white-18);
+	color: #ffffff;
+	height: 15px;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+.side #search input[type="text"]:focus {
+	outline: none;
+}
+
+.side .sidebox.submit {
+	border: 1px solid $blue-button-dark-border;
+	border-radius: 2px;
+}
+
+.side .submit .morelink {
+	background: $blue-button-fill;
+	border: 1px solid $blue-button-light-border;
+}
+
+.side .submit .morelink a {
+	color: #ffffff;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #000000;
+	font-size: 14px;
+}
+
+.side .subscribe-button, 
+.RESDashboardToggle {
+	display: block;
+	border: 1px solid $red-button-dark-border;
+	border-radius: 2px;
+	margin: 7px 0 12px 0;
+}
+
+.side .subscribe-button .active,
+.RESDashboardToggle {
+	display: block;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: normal;
+	height: 29px;
+	line-height: 29px;	
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border-radius: 0px;
+}
+
+.RESDashboardToggle {
+	margin: 7px 0 12px 0 !important;
+	padding: 0 !important;
+	width: 99% !important;
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	font-weight: normal !important;
+	font-size: 14px !important;
+	border-radius: 2px !important;
+}
+
+.side .subscribe-button .remove, 
+.RESDashboardToggle.remove {
+	border: 1px solid $red-button-light-border !important;
+	background: $red-button-fill !important;
+}
+
+.side .subscribe-button .add, 
+.RESDashboardToggle {
+	border: 1px solid $green-button-light-border !important;
+	background: $green-button-fill !important;}
+
+.sidebox .spacer, 
+.login-form-side, 
+.titlebox form.toggle, 
+.leavemoderator {
+	background: transparent;
+	border: 0;
+}
+
+.side .submit .morelink .nub,
+.side .bottom, 
+.side .sidebox.create,
+.side h1.redditname {
+	display: none;
+}
+
+.side .subscribers {
+	display: inline-block;
+	margin-top: 115px;
+	font-size: 14px;
+}
+
+.side .subscribers .number:after {
+	content: $subscriber-text;
+}
+
+.side .subscribers .word,
+.side .users-online .word {
+	display: none;
+}
+
+.side .users-online {
+	display: inline;
+	margin: 0;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.side .users-online:before {
+	background: transparent;
+	width: 0;
+	margin: 0;
+}
+
+.side .users-online .number:after {
+	content: $online-now-text;
+}
+
+.side .leavemoderator {
+	margin-top: -117px;
+}
+
+.side .usertext-body .md {
+	padding-top: 18px;
+	font-size: 14px;
+}
+
+.side hr {
+	border: 0;
+	height: 1px;
+	background: $medium-blue;
+}
+
+.side ul {
+	list-style: none;
+}
+
+.sidecontentbox .title h1 {
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+.sidecontentbox .content {
+	border: 0;
+	margin-left: 2em;
+}
+
+.side .icon-menu a {
+	background: transparent;
+}

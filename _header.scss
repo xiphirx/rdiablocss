@@ -1,0 +1,143 @@
+@import 'colors';
+@import 'images';
+
+
+#header {
+	height: 170px;
+	background: url($header-bg) left bottom no-repeat;
+	z-index: 0;
+}
+
+#header-bottom-left {
+	background: url($blue-overlay-bg);
+	height: 151px;
+	border-bottom: 1px solid $dark-gray;
+}
+
+#header #header-img-a {
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+#header #header-img {
+	position: relative;
+	z-index: 1;
+}
+
+#header .hover.pagename.redditname {
+	background: url($logo);
+	display: inline-block;
+	width: 519px;
+	height: 125px;
+	margin-left: -110px;
+	position: relative;
+	z-index: 0;
+}
+
+#header .hover.pagename.redditname:hover {
+	background-position: 0px -125px;
+}
+
+#header .hover.pagename.redditname a {
+	display: block;
+	text-indent: -9999px;
+	width: 250px;
+	height: 100px;
+	margin-left: 134px;
+	margin-top: 10px;
+}
+
+#header ul.tabmenu {
+	display: block;
+	border-top: 1px solid $dark-gray;
+	padding-left: 37px;
+	padding-right: 22px;
+	margin: 0 0;
+	height: 25px;
+	line-height: 25px;
+}
+
+#header ul.tabmenu li a {
+	text-transform: capitalize;
+	background: none;
+	font-size: 14px;
+	color: $header-link;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #000000;
+}
+
+#header ul.tabmenu li.selected a {
+	color: $header-link-selected;
+	border: none;
+}
+
+#header ul.tabmenu li a:hover {
+	color: $header-link-hover;
+}
+
+#header-bottom-right {
+	background: none;
+	position: absolute;
+	right: 28px;
+	bottom: 20px;
+	top: 75px !important;
+	text-shadow: 0px 1px 0px #000000;
+	line-height: 20px;
+}
+
+#header-bottom-right #userbarToggle,
+#header-bottom-right #RESAccountSwitcherIcon,
+#header-bottom-right #openRESPrefs,
+#header-bottom-right .separator {
+	display: none;
+}
+
+#header-bottom-right .user {
+	line-height: 17px;
+	text-align: right;
+	display: block;
+}
+
+#header-bottom-right .user > a {
+	font-size: 14px;
+	color: $header-link;
+	display: block;
+}
+
+#header-bottom-right .user .userkarma {
+	border: 0;
+	display: inline-block;
+}
+
+#header-bottom-right .user .userkarma a {
+	font-size: 12px;
+	font-weight: normal;
+	color: $header-link;
+}
+
+#header-bottom-right #mail, 
+#header-bottom-right #modmail, 
+#header-bottom-right ul.flat-list {
+	margin-right: 15px;
+}
+
+#header-bottom-right #mail {
+	background: url($mail-icon) no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#header-bottom-right #mail.havemail {
+	background-position: -1px 3px;
+}
+
+#header-bottom-right #mail.nohavemail {
+	background-position: 0px -13px;
+}
+
+#header-bottom-right a {
+	color: $header-link-selected;
+	font-size: 12px;
+	font-weight: normal;
+}

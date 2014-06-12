@@ -1,0 +1,181 @@
+@import 'colors';
+@import 'text';
+@import 'images';
+
+body {
+    background: url($main-bg) center top no-repeat $dark-blue;
+}
+
+body > .content {
+	margin-right: 364px;
+	padding-left: 10px;
+	position: relative;
+	margin-top: 51px; 
+	background: $body-bg-blue;
+    border: 1px solid #000;
+	box-shadow: 0px 0px 10px #000;
+}
+
+#siteTable .thing .entry {
+	padding: 7px;
+}
+
+#siteTable .thing .entry .domain a:before {
+	content: $url-separator;
+}
+
+#siteTable .thing .entry .domain {
+	color: $dark-gray;
+}
+
+#siteTable .thing .entry .domain a {
+	color: $submission-buttons;
+}
+
+#siteTable .thing .entry .tagline, 
+#siteTable .thing .entry .buttons a {
+	color: $submission-buttons;
+	font-weight: normal;
+}
+
+#siteTable .thing .entry .buttons a {
+	font-style: italic;
+}
+
+#siteTable .thing {
+	border-bottom: 2px solid $submission-border;
+	margin-bottom: 0px;
+	position: relative;
+	height: 100%;
+}
+
+.thing a.title {
+	color: $submission-link !important;
+}
+
+.thing a.title:visited {
+	color: $submission-link-visited !important;
+}
+
+.thing a.title:hover {
+	text-decoration: underline;
+}
+
+.thing p.title {
+	border-bottom: 1px dashed $submission-dashed-border;
+	padding-bottom: 5px;
+}
+
+.thing a.thumbnail {
+	margin-top: 1px;
+	height: 71px;
+	position: relative;
+	background-color: $dark-gray;
+}
+
+.thing a.thumbnail:after {
+	content: url($thumb-frame);
+	z-index: 2;
+	position: absolute;
+	left: 0px;
+}
+
+.thing a.thumbnail.self, 
+.thing a.thumbnail.default {
+	background: url($baked) -0px -0px;
+}
+
+.thing a.thumbnail.nsfw {
+	background: url($baked) -71px -0px;
+}
+
+.thing a.thumbnail * {
+	margin: 9px 0px;
+	background-color: #000;
+}
+
+.thing a.thumbnail img[width="48"][height="48"] {
+	padding: 11px;
+	margin: 0;
+}
+
+.thing .midcol {
+	margin-top: 11px;
+}
+
+.arrow, 
+.arrow.downmod, 
+.arrow.upmod, 
+.arrow.down, 
+.arrow.up {
+	background: url($baked) -142px -0px;	
+	width: 16px;
+	height:13px;
+}
+
+.arrow.downmod {
+	background-position: -158px -0px;
+}
+
+.arrow.down {
+	background-position: -190px -0px;
+}
+
+.arrow.up {
+	background-position: -174px -0px;
+}
+
+.link .rank {
+	margin-left: 0px;
+	color: #333;
+	margin-top: 25px;
+}
+
+.linkinfo {
+	margin-top: 47px;
+	background: #111;
+	border: 1px solid #222;
+}
+
+.linkinfo .score .number:before {
+	content: $link-stats-before-number;
+}
+
+.linkinfo .score .number:after {
+	content: $link-stats-after-number;
+}
+
+.linkinfo .upvotes .number:before, 
+.linkinfo .downvotes .number:before {
+	content: $link-stats-vote-modifier;
+}
+
+.linkinfo .upvotes .number:after {
+	content: $link-stats-up-modifier-desc;
+}
+
+.linkinfo .downvotes .number:after {
+	content: $link-stats-down-modifier-desc;
+}
+
+.linkinfo .word {
+	display: none;
+}
+
+input, 
+.linkinfo .shortlink input {
+	background: #222;
+	border: 1px solid #333;
+	color: #ddd;
+}
+
+input:hover, 
+.linkinfo .shortlink input:hover {
+	border: 1px solid #1c5589;
+}
+
+textarea:focus {
+    outline: medium none;
+    border: 1px solid #1c5589;
+    box-shadow: 0px 0px 10px #1c5589;
+}
