@@ -268,7 +268,7 @@ body > .content {
   margin-right: 364px;
   padding-left: 10px;
   position: relative;
-  margin-top: 51px;
+  margin-top: 42px;
   background: #172127;
   border: 1px solid #000;
   box-shadow: 0px 0px 10px #000; }
@@ -409,16 +409,15 @@ textarea:focus {
 
 .side .md h5 {
   position: absolute;
-  top: 55px;
-  left: 617px;
+  top: 53px;
+  left: 491px;
   z-index: 200;
   border-radius: 3px;
-  border: 1px solid #13202c;
-  background: #181818;
+  border: 1px solid #163D4D;
+  background: #071D26;
   padding: 8px;
   font-size: 12px;
-  box-shadow: 0px 0px 10px #13202c;
-  opacity: .9; }
+  box-shadow: 0px 0px 90px #55889E; }
 
 input[name="uh"] ~ a:after, .user:before {
   position: absolute;
@@ -1273,34 +1272,24 @@ a[href="#s"]:active::after,
   height: 32px;
   background: url(%%hell-baked%%) -32px -107px no-repeat; }
 
-.side .md h4:before {
-  content: url(%%cain-32%%);
-  position: absolute;
-  margin-top: -0px;
-  margin-left: -25px; }
-
 .titlebox form {
   position: static; }
 
-.side h4:nth-of-type(1) {
-  /* change NONE to BLOCK to turn on sticky */
-  display: BLOCK;
+.side .md h4:nth-of-type(1) {
   position: absolute;
-  white-space: nowrap;
-  z-index: 100;
-  top: 175px;
-  color: #000;
-  border: 0px solid black;
-  left: 150px;
-  width: 70%;
-  opacity: 1;
-  font-size: 13px;
-  font-weight: bold;
-  text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000;
-  line-height: 13px;
-  height: 20px;
-  border-radius: 2px;
-  padding: 14px 10px 4px 10px; }
+  z-index: 200;
+  background: #0c1619;
+  top: 181px;
+  left: 6px;
+  right: 0px;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  padding: 3px;
+  padding-left: 40px;
+  margin-right: 364px;
+  border: 1px solid #000; }
 
 .side .md h4 a {
   color: #999;
