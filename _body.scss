@@ -164,33 +164,51 @@ body > .content {
 }
 
 .linkinfo {
-	margin-top: 47px;
-	background: #111;
-	border: 1px solid #222;
+	background: $body-bg-blue;
+	border: 1px solid $dark-blue;
+}
+
+.linkinfo .score .number {
+	color: $gold;
+	font-size: 18px;
 }
 
 .linkinfo .score .number:before {
+	color: $white;
 	content: $link-stats-before-number;
 }
 
 .linkinfo .score .number:after {
+	color: $white;
 	content: $link-stats-after-number;
 }
 
-.linkinfo .upvotes .number:before, 
-.linkinfo .downvotes .number:before {
+.linkinfo .totalvotes .number:before {
 	content: $link-stats-vote-modifier;
 }
 
-.linkinfo .upvotes .number:after {
-	content: $link-stats-up-modifier-desc;
-}
-
-.linkinfo .downvotes .number:after {
-	content: $link-stats-down-modifier-desc;
+.linkinfo .totalvotes .number:after {
+	content: $link-stats-vote-modifier-desc;
 }
 
 .linkinfo .word {
+	display: none;
+}
+
+.linkinfo .date {
+	border-bottom: 2px solid $dark-blue;
+	padding: 5px 0;
+}
+
+.linkinfo .score {
+
+}
+
+.linkinfo .date:before {
+	content: $submitted;
+}
+
+.linkinfo .date span {
 	display: none;
 }
 

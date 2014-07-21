@@ -639,27 +639,38 @@ body > .content {
   margin-top: 25px; }
 
 .linkinfo {
-  margin-top: 47px;
-  background: #111;
-  border: 1px solid #222; }
+  background: #172127;
+  border: 1px solid #0c1619; }
+
+.linkinfo .score .number {
+  color: #ffdb6d;
+  font-size: 18px; }
 
 .linkinfo .score .number:before {
+  color: white;
   content: "Sells for "; }
 
 .linkinfo .score .number:after {
+  color: white;
   content: " gold"; }
 
-.linkinfo .upvotes .number:before,
-.linkinfo .downvotes .number:before {
+.linkinfo .totalvotes .number:before {
   content: "+"; }
 
-.linkinfo .upvotes .number:after {
-  content: " to up-votes"; }
-
-.linkinfo .downvotes .number:after {
-  content: " to down-votes"; }
+.linkinfo .totalvotes .number:after {
+  content: " to Votes"; }
 
 .linkinfo .word {
+  display: none; }
+
+.linkinfo .date {
+  border-bottom: 2px solid #0c1619;
+  padding: 5px 0; }
+
+.linkinfo .date:before {
+  content: "Submitted "; }
+
+.linkinfo .date span {
   display: none; }
 
 input,
