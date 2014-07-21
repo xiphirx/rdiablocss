@@ -514,6 +514,26 @@ textarea:focus {
   top: 0px;
   z-index: -1; }
 
+.entry.likes:after {
+  display: inline-block;
+  width: 643px;
+  height: 68px;
+  content: url("%%entry-liked%%");
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  z-index: -2; }
+
+.entry.dislikes:after {
+  display: inline-block;
+  width: 643px;
+  height: 68px;
+  content: url("%%entry-disliked%%");
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  z-index: -2; }
+
 .link.last-clicked {
   border-top: none;
   border-left: none;
