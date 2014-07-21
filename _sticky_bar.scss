@@ -20,6 +20,14 @@
 }
 
 .side .md h4 a {
-    color: #999;
-    text-shadow: 0 0 10px #3366ff, 0 0 10px #3366ff;
+    margin: 0 10px;
+    color: $header-link;
+    text-shadow: 0 0 10px $header-link-selected, 0 0 10px $header-link-selected;
+    @include vendor-prefix(transition, all 0.3s);
+}
+
+.side .md h4 a:hover {
+    margin: 0 13px;
+    color: $header-link-hover;
+    @include vendor-prefix(transition, all 0.3s);
 }

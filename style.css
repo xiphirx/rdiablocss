@@ -1432,5 +1432,18 @@ a[href="#s"]:active::after,
   border: 1px solid #000; }
 
 .side .md h4 a {
-  color: #999;
-  text-shadow: 0 0 10px #3366ff, 0 0 10px #3366ff; }
+  color: #d9f3ff;
+  text-shadow: 0 0 10px #2ba5dc, 0 0 10px #2ba5dc;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.side .md h4 a:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
