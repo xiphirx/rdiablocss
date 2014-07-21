@@ -3,9 +3,11 @@
 
 
 #header {
-	height: 170px;
+	height: 171px;
 	background: url($header-bg) left bottom no-repeat;
 	z-index: 0;
+	overflow: hidden !important;
+	border-bottom: none;
 }
 
 #header-bottom-left {
@@ -150,7 +152,7 @@
 	left: 0px;
 	top: 0px;
 	position: absolute;
-	width: 100%;
+	width: 10000px;
 	height: 171px;
 	@include vendor-prefix(animation, sidescroll 60s linear infinite);
 }
