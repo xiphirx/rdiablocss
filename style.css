@@ -727,6 +727,38 @@ textarea:focus {
   border-right: none;
   background: transparent; }
 
+.link .usertext-body {
+  background: #25353e;
+  border-radius: 3px;
+  border: 1px solid #304450; }
+
+.link .usertext .md {
+  background: transparent !important;
+  border: none;
+  border-radius: 0px;
+  color: #badcf1; }
+
+body .thing .tagline .author.submitter,
+.tagline .submitter {
+  background: #006891 !important;
+  color: #fff !important;
+  border-radius: 2px !important;
+  padding: 3px !important; }
+
+body .thing .tagline .author.friend,
+.tagline .friend {
+  background: #912200 !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  padding: 3px !important; }
+
+body .thing .tagline .author.moderator,
+.tagline .moderator {
+  background: #282 !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  padding: 3px !important; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
@@ -1111,7 +1143,7 @@ input[name="uh"][value$="moo"] ~ a:after {
   padding: 0px;
   margin: 0;
   line-height: 20px;
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: right;
   color: #eee;
   background: url(%%class-baked-column%%) top left no-repeat black;
@@ -1126,11 +1158,21 @@ input[name="uh"][value$="moo"] ~ a:after {
   margin-right: 3px;
   text-indent: 60px;
   border: 1px solid #000;
-  border-radius: 2px; }
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .flair:hover {
   opacity: 1.0;
-  width: auto; }
+  width: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .flair-monk {
   background-position: 0px 0px !important; }

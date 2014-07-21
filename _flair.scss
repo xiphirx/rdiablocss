@@ -142,7 +142,7 @@
 	padding: 0px;
 	margin: 0;
 	line-height: 20px;
-	vertical-align: bottom;
+	vertical-align: middle;
 	text-align: right; 
 	color: #eee;
 	background: url(%%class-baked-column%%) top left no-repeat #000;
@@ -158,9 +158,15 @@
 	text-indent: 60px;
 	border: 1px solid #000;
 	border-radius: 2px;
+	@include vendor-prefix(transition, all 0.3s);
 }
 
-.flair:hover {opacity: 1.0; width: auto;}
+.flair:hover { 
+	opacity: 1.0; 
+	width: auto;
+	@include vendor-prefix(transition, all 0.3s);
+}
+
 .flair-monk {background-position: 0px 0px !important;}
 .flair-wizard {background-position: 0px -20px !important;}
 .flair-barb {background-position: 0px -40px !important;}

@@ -273,3 +273,40 @@ textarea:focus {
 	border-right: none;
 	background: transparent;
 }
+
+.link .usertext-body {
+	background: $body-bg-blue-light;
+	border-radius: 3px;
+	border: 1px solid $body-bg-blue-light-border;
+}
+
+.link .usertext .md {
+	background: transparent !important;
+	border: none;
+	border-radius: 0px;
+	color: $text;
+}
+
+body .thing .tagline .author.submitter,
+.tagline .submitter {
+	background: #006891 !important;
+	color: #fff !important;
+	border-radius: 2px !important;
+	padding: 3px !important;
+}
+
+body .thing .tagline .author.friend,
+.tagline .friend {
+	background: #912200 !important;
+	border-radius: 2px !important;
+	color: #fff !important;
+	padding: 3px !important;
+}
+
+body .thing .tagline .author.moderator,
+.tagline .moderator {
+	background: #282 !important;
+	border-radius: 2px !important;
+	color: #fff !important;
+	padding: 3px !important;
+}
