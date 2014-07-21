@@ -959,10 +959,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 
 .comments-page .flat-list.buttons a.flairselectbtn {
   font-size: 0px;
-  background: #000;
+  background: #274723;
   display: inline-block;
-  padding: 3px;
-  border: 1px solid #c00; }
+  padding: 5px;
+  border-radius: 3px;
+  color: #d9f3ff !important;
+  border: 1px solid #347e2c; }
 
 .comments-page .flat-list.buttons a.flairselectbtn::before {
   content: "Add flair to this post";
