@@ -73,6 +73,7 @@
 
 #header ul.tabmenu li a:hover {
 	color: $header-link-hover;
+	@include vendor-prefix(transition, all 0.3s);
 }
 
 #header-bottom-right {
@@ -142,7 +143,7 @@
 	font-weight: normal;
 }
 
-.pagename:after {
+#header-bottom-left:after {
 	background: transparent url($header-parallax-smoke) repeat;
 	content: "";
 	z-index: -200;
@@ -150,29 +151,11 @@
 	top: 0px;
 	position: absolute;
 	width: 10000px;
-	height: 152px;
-	-webkit-animation: sidescroll 60s linear infinite;
-	-moz-animation: sidescroll 60s linear infinite;
-	-ms-animation: sidescroll 60s linear infinite;
-	animation: sidescroll 60s linear infinite;
+	height: 171px;
+	@include vendor-prefix(animation, sidescroll 60s linear infinite);
 }
 
-@-webkit-keyframes sidescroll {
+@include keyframes(sidescroll) {
 	from {-webkit-transform: translateX(0px);}
 	to {-webkit-transform: translateX(-1600px);}
-}
-
-@-moz-keyframes sidescroll {
-	from {-moz-transform: translateX(0px);}
-	to {-moz-transform: translateX(-1600px);}
-}
-
-@-ms-keyframes sidescroll {
-	from {-ms-transform: translateX(0px);}
-	to {-ms-transform: translateX(-1600px);}
-}
-
-@keyframes sidescroll {
-	from {transform: translateX(-0px);}
-	to {transform: translateX(-1600px);}
 }

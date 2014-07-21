@@ -59,7 +59,12 @@
   border: none; }
 
 #header ul.tabmenu li a:hover {
-  color: white; }
+  color: white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 #header-bottom-right {
   background: none;
@@ -117,7 +122,7 @@
   font-size: 12px;
   font-weight: normal; }
 
-.pagename:after {
+#header-bottom-left:after {
   background: transparent url("%%header-parallax-smoke%%") repeat;
   content: "";
   z-index: -200;
@@ -125,10 +130,11 @@
   top: 0px;
   position: absolute;
   width: 10000px;
-  height: 152px;
+  height: 171px;
   -webkit-animation: sidescroll 60s linear infinite;
   -moz-animation: sidescroll 60s linear infinite;
   -ms-animation: sidescroll 60s linear infinite;
+  -o-animation: sidescroll 60s linear infinite;
   animation: sidescroll 60s linear infinite; }
 
 @-webkit-keyframes sidescroll {
@@ -139,22 +145,28 @@
     -webkit-transform: translateX(-1600px); } }
 @-moz-keyframes sidescroll {
   from {
-    -moz-transform: translateX(0px); }
+    -webkit-transform: translateX(0px); }
 
   to {
-    -moz-transform: translateX(-1600px); } }
+    -webkit-transform: translateX(-1600px); } }
 @-ms-keyframes sidescroll {
   from {
-    -ms-transform: translateX(0px); }
+    -webkit-transform: translateX(0px); }
 
   to {
-    -ms-transform: translateX(-1600px); } }
+    -webkit-transform: translateX(-1600px); } }
+@-o-keyframes sidescroll {
+  from {
+    -webkit-transform: translateX(0px); }
+
+  to {
+    -webkit-transform: translateX(-1600px); } }
 @keyframes sidescroll {
   from {
-    transform: translateX(0px); }
+    -webkit-transform: translateX(0px); }
 
   to {
-    transform: translateX(-1600px); } }
+    -webkit-transform: translateX(-1600px); } }
 .side {
   background: url("%%blue-overlay-bg%%");
   margin-right: 10px;
@@ -185,7 +197,20 @@
 
 .side .submit .morelink {
   background: #233847;
-  border: 1px solid #2c5c7e; }
+  border: 1px solid #2c5c7e;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.side .submit .morelink:hover {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #2c5c7e; }
 
 .side .submit .morelink a {
   color: #ffffff;
@@ -226,12 +251,40 @@
 .side .subscribe-button .remove,
 .RESDashboardToggle.remove {
   border: 1px solid #7e2c2c !important;
-  background: #472323 !important; }
+  background: #472323 !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.side .subscribe-button .remove:hover,
+.RESDashboardToggle.remove:hover {
+  background: #7e2c2c !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .side .subscribe-button .add,
 .RESDashboardToggle {
   border: 1px solid #347e2c !important;
-  background: #274723 !important; }
+  background: #274723 !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.side .subscribe-button .add:hover,
+.RESDashboardToggle:hover {
+  background: #347e2c !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .sidebox .spacer,
 .login-form-side,
@@ -351,31 +404,35 @@ body > .content {
   padding-bottom: 5px; }
 
 .thing a.thumbnail {
-  margin-top: 1px;
-  height: 71px;
+  margin-top: 4px;
+  padding: 8px;
+  width: 53px;
+  height: 53px;
   position: relative;
+  -webkit-background-clip: content-box !important;
+  background-clip: content-box !important;
   background-color: #181818; }
 
 .thing a.thumbnail:after {
   content: url("%%thumb-frame%%");
   z-index: 2;
   position: absolute;
-  left: 0px; }
+  left: 0px;
+  top: 0px; }
 
 .thing a.thumbnail.self,
 .thing a.thumbnail.default {
   background: url("%%ros-baked%%") 0px 0px; }
 
 .thing a.thumbnail.nsfw {
-  background: url("%%ros-baked%%") -71px 0px; }
+  background: url("%%ros-baked%%") -69px -4px; }
 
 .thing a.thumbnail * {
-  margin: 9px 0px;
   background-color: #000; }
 
-.thing a.thumbnail img[width="48"][height="48"] {
-  padding: 11px;
-  margin: 0; }
+.thing a.thumbnail img {
+  width: 53px;
+  height: 53px; }
 
 .thing .midcol {
   margin-top: 11px; }
@@ -441,6 +498,25 @@ textarea:focus {
   outline: medium none;
   border: 1px solid #1c5589;
   box-shadow: 0px 0px 10px #1c5589; }
+
+.entry.RES-keyNav-activeElement {
+  background: transparent !important; }
+
+.entry.RES-keyNav-activeElement:before {
+  display: inline-block;
+  width: 643px;
+  height: 68px;
+  content: url("%%entry-selected%%");
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  z-index: -1; }
+
+.link.last-clicked {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent; }
 
 .side .md h5:before {
   content: "Announcement - "; }

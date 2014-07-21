@@ -38,6 +38,12 @@
 .side .submit .morelink {
 	background: $blue-button-fill;
 	border: 1px solid $blue-button-light-border;
+	@include vendor-prefix(transition, all 0.5s);
+}
+
+.side .submit .morelink:hover {
+	@include vendor-prefix(transition, all 0.5s);
+	background: $blue-button-light-border;
 }
 
 .side .submit .morelink a {
@@ -84,12 +90,27 @@
 .RESDashboardToggle.remove {
 	border: 1px solid $red-button-light-border !important;
 	background: $red-button-fill !important;
+	@include vendor-prefix(transition, all 0.5s);
+}
+
+.side .subscribe-button .remove:hover, 
+.RESDashboardToggle.remove:hover {
+	background: $red-button-light-border !important;
+	@include vendor-prefix(transition, all 0.5s);
 }
 
 .side .subscribe-button .add, 
 .RESDashboardToggle {
 	border: 1px solid $green-button-light-border !important;
-	background: $green-button-fill !important;}
+	background: $green-button-fill !important;
+	@include vendor-prefix(transition, all 0.5s);
+}
+
+.side .subscribe-button .add:hover, 
+.RESDashboardToggle:hover {
+	background: $green-button-light-border !important;
+	@include vendor-prefix(transition, all 0.5s);
+}
 
 .sidebox .spacer, 
 .login-form-side, 

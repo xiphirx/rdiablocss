@@ -67,9 +67,13 @@ body > .content {
 }
 
 .thing a.thumbnail {
-	margin-top: 1px;
-	height: 71px;
+	margin-top: 4px;
+	padding: 8px;
+	width: 53px;
+	height: 53px;
 	position: relative;
+	-webkit-background-clip: content-box !important;
+    background-clip: content-box !important;
 	background-color: $dark-gray;
 }
 
@@ -78,6 +82,7 @@ body > .content {
 	z-index: 2;
 	position: absolute;
 	left: 0px;
+	top: 0px;
 }
 
 .thing a.thumbnail.self, 
@@ -86,17 +91,16 @@ body > .content {
 }
 
 .thing a.thumbnail.nsfw {
-	background: url($baked) -71px -0px;
+	background: url($baked) -69px -4px;
 }
 
 .thing a.thumbnail * {
-	margin: 9px 0px;
 	background-color: #000;
 }
 
-.thing a.thumbnail img[width="48"][height="48"] {
-	padding: 11px;
-	margin: 0;
+.thing a.thumbnail img {
+	width: 53px;
+	height: 53px;
 }
 
 .thing .midcol {
@@ -178,4 +182,26 @@ textarea:focus {
     outline: medium none;
     border: 1px solid #1c5589;
     box-shadow: 0px 0px 10px #1c5589;
+}
+
+.entry.RES-keyNav-activeElement {
+	background: transparent !important;
+}
+
+.entry.RES-keyNav-activeElement:before {
+	display: inline-block;
+	width: 643px;
+	height: 68px;
+	content: url($entry-selected);
+	position: absolute;
+	left: -10px;
+	top: 0px;
+	z-index: -1;
+}
+
+.link.last-clicked {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: transparent;
 }
