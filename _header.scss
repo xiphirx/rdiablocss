@@ -127,16 +127,33 @@
 #header-bottom-right #mail {
 	background: url($mail-icon) no-repeat;
 	width: 20px;
-	height: 20px;
+	height: 16px;
+	border-radius: 10px;
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 #header-bottom-right #mail.havemail {
-	background-position: -1px 3px;
+	background-position: 0px 0px;
+	@include vendor-prefix(animation, haveMailPulse 3s ease-in-out infinite);
 }
 
 #header-bottom-right #mail.nohavemail {
-	background-position: 0px -13px;
+	background-position: 0px -20px;
+}
+
+@include keyframes(haveMailPulse) {
+	from {
+		@include vendor-prefix(box-shadow, 0 0 9px $mail-pulse); 
+	}
+
+	50% { 
+		@include vendor-prefix(box-shadow, 0 0 18px $mail-pulse);
+	}
+
+	to { 
+		@include vendor-prefix(box-shadow, 0 0 9px $mail-pulse);
+	}
 }
 
 #header-bottom-right a {
@@ -158,6 +175,11 @@
 }
 
 @include keyframes(sidescroll) {
-	from {-webkit-transform: translateX(0px);}
-	to {-webkit-transform: translateX(-1600px);}
+	from {
+		@include vendor-prefix(transform, translateX(0px));
+	}
+
+	to {
+		@include vendor-prefix(transform, translateX(-1600px));
+	}
 }

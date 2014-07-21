@@ -23,7 +23,6 @@
 .side .md h4 a {
     margin: 0 10px;
     color: $header-link;
-    /*text-shadow: 0 0 10px $header-link-selected, 0 0 10px $header-link-selected;*/
     @include vendor-prefix(transition, all 0.3s);
 }
 
