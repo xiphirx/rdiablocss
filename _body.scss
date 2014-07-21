@@ -49,6 +49,34 @@ body > .content {
 	height: 100%;
 }
 
+.thing.stickied:after {
+	display: inline-block;
+	width: 643px;
+	height: 68px;
+	content: url($entry-stickied);
+	position: absolute;
+	left: -10px;
+	bottom: 0px;
+	z-index: -2;
+}
+
+.thing.stickied:before {
+	display: inline-block;
+	width: 643px;
+	height: 68px;
+	content: url($entry-selected);
+	position: absolute;
+	left: -10px;
+	top: 0px;
+	z-index: -1;
+}
+
+.thing.stickied a.title,
+.thing.stickied a.title:visited {
+	color: $sticky-title !important;
+	text-shadow: 0px 0px 5px $black, 0px 0px 10px $black;
+}
+
 .thing a.title {
 	color: $submission-link !important;
 }

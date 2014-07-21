@@ -17,12 +17,13 @@
     padding-left: 40px;
     margin-right: 364px;
     border: 1px solid #000;
+    color: $header-link-selected;
 }
 
 .side .md h4 a {
     margin: 0 10px;
     color: $header-link;
-    text-shadow: 0 0 10px $header-link-selected, 0 0 10px $header-link-selected;
+    /*text-shadow: 0 0 10px $header-link-selected, 0 0 10px $header-link-selected;*/
     @include vendor-prefix(transition, all 0.3s);
 }
 
