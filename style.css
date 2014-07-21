@@ -759,6 +759,31 @@ body .thing .tagline .author.moderator,
   color: #fff !important;
   padding: 3px !important; }
 
+.panestack-title {
+  color: #2ba5dc;
+  border-bottom: none;
+  float: left;
+  margin-right: 10px;
+  margin-top: 0px; }
+
+.panestack-title .RESSubscriptionButton {
+  background: #274723;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  color: #d9f3ff !important;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #347e2c; }
+
+.commentarea .menuarea {
+  margin-top: 10px !important;
+  margin-right: 0px !important; }
+
+#REScommentNavToggle {
+  margin-left: -5px !important; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 

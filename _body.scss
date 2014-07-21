@@ -310,3 +310,32 @@ body .thing .tagline .author.moderator,
 	color: #fff !important;
 	padding: 3px !important;
 }
+
+.panestack-title {
+	color: $header-link-selected;
+	border-bottom: none;
+	float: left;
+	margin-right: 10px;
+	margin-top: 0px;
+}
+
+.panestack-title .RESSubscriptionButton {
+	background: $green-button-fill;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 3px;
+	color: $header-link !important;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: normal;
+	border: 1px solid $green-button-light-border;
+}
+
+.commentarea .menuarea {
+	margin-top: 10px !important;
+	margin-right: 0px !important;
+}
+
+#REScommentNavToggle {
+	margin-left: -5px !important;
+}
