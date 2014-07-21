@@ -150,7 +150,7 @@
 	left: 0px;
 	top: 0px;
 	position: absolute;
-	width: 10000px;
+	width: 100%;
 	height: 171px;
 	@include vendor-prefix(animation, sidescroll 60s linear infinite);
 }
