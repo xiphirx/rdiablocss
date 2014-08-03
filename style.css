@@ -504,9 +504,37 @@
 .side #search #searchexpando {
   background-color: #39464c;
   border: 1px solid gray;
-  margin-top: 10px;
-  padding: 10px 30px;
-  padding-bottom: 30px; }
+  margin-top: 10px; }
+
+.side #search #searchexpando a {
+  color: gray; }
+
+.side #search #searchexpando .searchexpando-submit {
+  border: 1px solid #132735;
+  padding: 0;
+  margin-top: 10px; }
+
+.side #search #searchexpando .searchexpando-submit input {
+  display: block;
+  width: 100%;
+  height: 31px;
+  background-color: #233847;
+  border: 1px solid #2c5c7e;
+  margin: 0;
+  font-size: 14px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.side #search #searchexpando .searchexpando-submit input:hover {
+  background: #2c5c7e !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 body {
   background: url("%%main-bg2%%") center top no-repeat #0c1619; }
@@ -820,6 +848,12 @@ body .thing .tagline .author.moderator,
 
 .expando-button.video.expanded {
   background-position: -36px 0px !important; }
+
+.footer {
+  border: 1px solid #2c5c7e !important; }
+
+.footer .col {
+  border-left: 1px solid #2c5c7e; }
 
 .side .md h5:before {
   content: "Announcement - "; }

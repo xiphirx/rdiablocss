@@ -381,3 +381,11 @@ body .thing .tagline .author.moderator,
 .expando-button.video.expanded {
 	background-position: -36px 0px !important;
 }
+
+.footer {
+	border: 1px solid $blue-button-light-border !important;
+}
+
+.footer .col {
+	border-left: 1px solid $blue-button-light-border;
+}

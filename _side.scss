@@ -192,6 +192,30 @@
 	background-color: $frosted-bg-blue;
 	border: 1px solid $frosted-border-blue;
 	margin-top: 10px;
-	padding: 10px 30px;
-	padding-bottom: 30px;
+}
+
+.side #search #searchexpando a {
+	color: $frosted-border-blue;
+}
+
+.side #search #searchexpando .searchexpando-submit {
+	border: 1px solid $blue-button-dark-border;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.side #search #searchexpando .searchexpando-submit input {
+	display: block;
+	width: 100%;
+	height: 31px;
+	background-color: $blue-button-fill;
+	border: 1px solid $blue-button-light-border;
+	margin: 0;
+	font-size: 14px;
+	@include vendor-prefix(transition, all 0.5s);
+}
+
+.side #search #searchexpando .searchexpando-submit input:hover {
+	background: $blue-button-light-border !important;
+	@include vendor-prefix(transition, all 0.5s);
 }
