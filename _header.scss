@@ -3,7 +3,7 @@
 
 
 #header {
-	height: 171px;
+	height: 181px;
 	background: url($header-bg) left bottom no-repeat;
 	z-index: 0;
 	overflow: hidden !important;
@@ -12,7 +12,7 @@
 
 #header-bottom-left {
 	background: url($blue-overlay-bg);
-	height: 151px;
+	height: 161px;
 	border-bottom: 1px solid $dark-gray;
 }
 
@@ -170,7 +170,7 @@
 	top: 0px;
 	position: absolute;
 	width: 10000px;
-	height: 171px;
+	height: 181px;
 	@include vendor-prefix(animation, sidescroll 60s linear infinite);
 }
 

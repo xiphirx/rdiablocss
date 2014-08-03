@@ -1,5 +1,5 @@
 #header {
-  height: 171px;
+  height: 181px;
   background: url("%%header-blur-bg11%%") left bottom no-repeat;
   z-index: 0;
   overflow: hidden !important;
@@ -7,7 +7,7 @@
 
 #header-bottom-left {
   background: url("%%blue-overlay-bg%%");
-  height: 151px;
+  height: 161px;
   border-bottom: 1px solid #181818; }
 
 #header #header-img-a {
@@ -243,7 +243,7 @@
   top: 0px;
   position: absolute;
   width: 10000px;
-  height: 171px;
+  height: 181px;
   -webkit-animation: sidescroll 60s linear infinite;
   -moz-animation: sidescroll 60s linear infinite;
   -ms-animation: sidescroll 60s linear infinite;
@@ -1786,7 +1786,7 @@ a[href="#s"]:active::after,
   position: absolute;
   z-index: 200;
   background: #0c1619;
-  top: 181px;
+  top: 191px;
   left: 6px;
   right: 0px;
   font-size: 14px;
