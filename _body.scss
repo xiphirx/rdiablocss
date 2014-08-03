@@ -425,6 +425,7 @@ html:not([lang="xx"]) .comment {
 	outline: none;
 	color: $text !important;
 	padding-top: 0px !important;
+	margin: 10px;
 }
 
 html:not([lang="xx"]) .thing.comment * {
@@ -473,4 +474,8 @@ span.score {
 .comment .RES-keyNav-activeElement {
 	outline: none !important;
 	background: url($entry-selected) top left no-repeat !important;
+}
+
+html:not([lang="xx"]) .comment .child {
+	border-left: none !important;
 }
