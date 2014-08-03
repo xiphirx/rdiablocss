@@ -184,12 +184,17 @@
 	}
 }
 
-#sr-header-area {
+#sr-header-area, .drop-choices {
 	background: $dark-blue;
 	border: 1px solid $black;
 	padding: 5px;
 	opacity: 0.5;
 	@include vendor-prefix(transition, all 0.3s);
+}
+
+.drop-choices {
+	opacity: 1.0;
+	z-index: 100;
 }
 
 #sr-header-area:hover {
@@ -202,6 +207,15 @@
 }
 
 #sr-header-area a:hover {
+	color: $header-link-hover;
+	text-decoration: none;
+}
+
+#sr-header-area .dropdown.srdrop .selected {
+	color: $header-link;
+}
+
+#sr-header-area .dropdown.srdrop .selected:hover {
 	color: $header-link-hover;
 	text-decoration: none;
 }

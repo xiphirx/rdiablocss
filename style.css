@@ -320,7 +320,7 @@
     -ms-transform: translateX(-1600px);
     -o-transform: translateX(-1600px);
     transform: translateX(-1600px); } }
-#sr-header-area {
+#sr-header-area, .drop-choices {
   background: #0c1619;
   border: 1px solid black;
   padding: 5px;
@@ -330,6 +330,10 @@
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+
+.drop-choices {
+  opacity: 1.0;
+  z-index: 100; }
 
 #sr-header-area:hover {
   opacity: 1.0;
@@ -343,6 +347,13 @@
   color: #d9f3ff; }
 
 #sr-header-area a:hover {
+  color: white;
+  text-decoration: none; }
+
+#sr-header-area .dropdown.srdrop .selected {
+  color: #d9f3ff; }
+
+#sr-header-area .dropdown.srdrop .selected:hover {
   color: white;
   text-decoration: none; }
 
