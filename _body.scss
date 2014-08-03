@@ -92,6 +92,7 @@ body > .content {
 .thing p.title {
 	border-bottom: 1px dashed $submission-dashed-border;
 	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .thing a.thumbnail {
@@ -338,4 +339,45 @@ body .thing .tagline .author.moderator,
 
 #REScommentNavToggle {
 	margin-left: -5px !important;
+}
+
+.entry .nsfw-stamp acronym {
+	background-color: $red-button-fill;
+	border: 1px solid $red-button-light-border !important;
+	padding: 3px;
+	border-radius: 2px;
+	color: $white;
+}
+
+.expando-button {
+	background: url($expando) transparent !important;
+	width: 36px !important;
+	height: 36px !important;
+	max-width: 36px !important;
+	max-height: 36px !important;
+	margin-top: -3px !important;
+}
+
+.expando-button.selftext.collapsed {
+	background-position: 0px -72px !important;
+}
+
+.expando-button.selftext.expanded {
+	background-position: -36px -72px !important;
+}
+
+.expando-button.image.collapsedExpando, .expando-button.image.collapsed {
+	background-position: 0px -36px  !important;
+}
+
+.expando-button.image.expandedExpando, .expando-button.image.expanded {
+	background-position: -36px -36px !important;
+}
+
+.expando-button.video.collapsed {
+	background-position: 0px 0px !important;
+}
+
+.expando-button.video.expanded {
+	background-position: -36px 0px !important;
 }
