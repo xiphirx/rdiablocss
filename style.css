@@ -588,6 +588,9 @@ body > .content {
 a {
   color: #2ba5dc; }
 
+a:visited {
+  color: #336699; }
+
 a:hover {
   color: white; }
 

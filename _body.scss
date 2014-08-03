@@ -20,6 +20,10 @@ a {
 	color: $header-link-selected;
 }
 
+a:visited {
+	color: $header-link-visited;
+}
+
 a:hover {
 	color: $header-link-hover;
 }
