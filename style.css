@@ -594,6 +594,12 @@ a:visited {
 a:hover {
   color: white; }
 
+html:not([lang="xx"]) .RES-keyNav-activeElement,
+html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement .md,
+html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+  outline: none !important;
+  background-color: transparent !important; }
+
 #siteTable .thing .entry {
   padding: 7px; }
 
@@ -913,10 +919,17 @@ html:not([lang="xx"]) .comment {
   border: 1px solid #2c5c7e !important;
   position: relative;
   outline: none;
-  color: #badcf1 !important; }
+  color: #badcf1 !important;
+  padding-top: 0px !important; }
 
-html:not([lang="dd"]) .thing.comment * {
+html:not([lang="xx"]) .thing.comment * {
   z-index: 1; }
+
+html:not([lang="xx"]) .thing.comment .entry {
+  padding-top: 10px; }
+
+html:not([lang="xx"]) .thing.comment .entry .md {
+  padding-top: 5px; }
 
 html:not([lang="xx"]) .thing.comment p.parent {
   position: absolute;
@@ -962,6 +975,10 @@ span.score {
 
 .comment .entry .buttons li a {
   color: gray !important; }
+
+.comment .RES-keyNav-activeElement {
+  outline: none !important;
+  background: url("%%entry-selected%%") top left no-repeat !important; }
 
 .side .md h5:before {
   content: "Announcement - "; }

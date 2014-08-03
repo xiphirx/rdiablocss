@@ -28,6 +28,13 @@ a:hover {
 	color: $header-link-hover;
 }
 
+html:not([lang="xx"]) .RES-keyNav-activeElement, 
+html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement .md, 
+html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+	outline: none !important;
+	background-color:transparent !important;
+}
+
 #siteTable .thing .entry {
 	padding: 7px;
 }
@@ -417,10 +424,19 @@ html:not([lang="xx"]) .comment {
 	position: relative;
 	outline: none;
 	color: $text !important;
+	padding-top: 0px !important;
 }
 
-html:not([lang="dd"]) .thing.comment * {
+html:not([lang="xx"]) .thing.comment * {
 	z-index: 1;
+}
+
+html:not([lang="xx"]) .thing.comment .entry {
+	padding-top: 10px;
+}
+
+html:not([lang="xx"]) .thing.comment .entry .md {
+	padding-top: 5px;
 }
 
 html:not([lang="xx"]) .thing.comment p.parent {
@@ -452,4 +468,9 @@ span.score {
 
 .comment .entry .buttons li a {
 	color: $frosted-border-blue !important;
+}
+
+.comment .RES-keyNav-activeElement {
+	outline: none !important;
+	background: url($entry-selected) top left no-repeat !important;
 }
