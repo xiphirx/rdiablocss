@@ -369,7 +369,7 @@
 .side #search {
   position: absolute;
   z-index: 1;
-  top: 147px; }
+  top: 157px; }
 
 .side #search input[type="text"] {
   background: url("%%white-18%%");
@@ -584,6 +584,9 @@ body > .content {
   background: #172127;
   border: 1px solid #000;
   box-shadow: 0px 0px 10px #000; }
+
+a {
+  color: #2ba5dc; }
 
 a:hover {
   color: white; }
