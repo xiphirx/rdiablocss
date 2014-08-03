@@ -129,7 +129,6 @@
 
 .side .subscribers {
 	display: inline-block;
-	margin-top: 115px;
 	font-size: 14px;
 }
 
@@ -157,10 +156,6 @@
 
 .side .users-online .number:after {
 	content: $online-now-text;
-}
-
-.side .leavemoderator {
-	margin-top: -117px;
 }
 
 .side .usertext-body .md {
@@ -191,4 +186,12 @@
 
 .side .icon-menu a {
 	background: transparent;
+}
+
+.side #search #searchexpando {
+	background-color: $frosted-bg-blue;
+	border: 1px solid $frosted-border-blue;
+	margin-top: 10px;
+	padding: 10px 30px;
+	padding-bottom: 30px;
 }

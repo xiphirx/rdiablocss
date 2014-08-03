@@ -454,7 +454,6 @@
 
 .side .subscribers {
   display: inline-block;
-  margin-top: 115px;
   font-size: 14px; }
 
 .side .subscribers .number:after {
@@ -477,9 +476,6 @@
 
 .side .users-online .number:after {
   content: " online now"; }
-
-.side .leavemoderator {
-  margin-top: -117px; }
 
 .side .usertext-body .md {
   padding-top: 18px;
@@ -504,6 +500,13 @@
 
 .side .icon-menu a {
   background: transparent; }
+
+.side #search #searchexpando {
+  background-color: #39464c;
+  border: 1px solid gray;
+  margin-top: 10px;
+  padding: 10px 30px;
+  padding-bottom: 30px; }
 
 body {
   background: url("%%main-bg2%%") center top no-repeat #0c1619; }
