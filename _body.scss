@@ -16,6 +16,10 @@ body > .content {
 	box-shadow: 0px 0px 10px #000;
 }
 
+a:hover {
+	color: $header-link-hover;
+}
+
 #siteTable .thing .entry {
 	padding: 7px;
 }

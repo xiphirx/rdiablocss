@@ -183,3 +183,25 @@
 		@include vendor-prefix(transform, translateX(-1600px));
 	}
 }
+
+#sr-header-area {
+	background: $dark-blue;
+	border: 1px solid $black;
+	padding: 5px;
+	opacity: 0.5;
+	@include vendor-prefix(transition, all 0.3s);
+}
+
+#sr-header-area:hover {
+	opacity: 1.0;
+	@include vendor-prefix(transition, all 0.3s);
+}
+
+#sr-header-area a {
+	color: $header-link;
+}
+
+#sr-header-area a:hover {
+	color: $header-link-hover;
+	text-decoration: none;
+}

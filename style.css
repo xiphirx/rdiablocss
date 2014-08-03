@@ -320,6 +320,32 @@
     -ms-transform: translateX(-1600px);
     -o-transform: translateX(-1600px);
     transform: translateX(-1600px); } }
+#sr-header-area {
+  background: #0c1619;
+  border: 1px solid black;
+  padding: 5px;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#sr-header-area:hover {
+  opacity: 1.0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#sr-header-area a {
+  color: #d9f3ff; }
+
+#sr-header-area a:hover {
+  color: white;
+  text-decoration: none; }
+
 .side {
   background: url("%%blue-overlay-bg%%");
   margin-right: 10px;
@@ -547,6 +573,9 @@ body > .content {
   background: #172127;
   border: 1px solid #000;
   box-shadow: 0px 0px 10px #000; }
+
+a:hover {
+  color: white; }
 
 #siteTable .thing .entry {
   padding: 7px; }
@@ -1756,7 +1785,7 @@ a[href="#s"]:active::after,
   padding: 3px;
   padding-left: 40px;
   margin-right: 364px;
-  border: 1px solid #000;
+  border: 1px solid black;
   color: #2ba5dc; }
 
 .side .md h4 a {
