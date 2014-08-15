@@ -46,11 +46,16 @@
 	background: $blue-button-light-border;
 }
 
-.side .submit .morelink a {
-	color: #ffffff;
+.side .submit .morelink a,
+button {
+	color: #ffffff !important;
 	font-weight: normal;
 	text-shadow: 0px 1px 0px #000000;
 	font-size: 14px;
+}
+
+button {
+	padding: 10px;
 }
 
 .side .subscribe-button, 
@@ -100,14 +105,16 @@
 }
 
 .side .subscribe-button .add, 
-.RESDashboardToggle {
+.RESDashboardToggle,
+button {
 	border: 1px solid $green-button-light-border !important;
 	background: $green-button-fill !important;
 	@include vendor-prefix(transition, all 0.5s);
 }
 
 .side .subscribe-button .add:hover, 
-.RESDashboardToggle:hover {
+.RESDashboardToggle:hover,
+button:hover {
 	background: $green-button-light-border !important;
 	@include vendor-prefix(transition, all 0.5s);
 }

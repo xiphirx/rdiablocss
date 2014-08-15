@@ -1,0 +1,10 @@
+@import 'colors';
+
+.infobar {
+	background: $red-button-fill;
+	border: 1px solid $red-button-light-border;
+}
+
+.roundfield, .content.submit .info-notice {
+	background-color: $dark-blue;
+}

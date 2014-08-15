@@ -402,11 +402,15 @@
   transition: all 0.5s;
   background: #2c5c7e; }
 
-.side .submit .morelink a {
-  color: #ffffff;
+.side .submit .morelink a,
+button {
+  color: #ffffff !important;
   font-weight: normal;
   text-shadow: 0px 1px 0px #000000;
   font-size: 14px; }
+
+button {
+  padding: 10px; }
 
 .side .subscribe-button,
 .RESDashboardToggle {
@@ -458,7 +462,8 @@
   transition: all 0.5s; }
 
 .side .subscribe-button .add,
-.RESDashboardToggle {
+.RESDashboardToggle,
+button {
   border: 1px solid #347e2c !important;
   background: #274723 !important;
   -webkit-transition: all 0.5s;
@@ -468,7 +473,8 @@
   transition: all 0.5s; }
 
 .side .subscribe-button .add:hover,
-.RESDashboardToggle:hover {
+.RESDashboardToggle:hover,
+button:hover {
   background: #347e2c !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -999,7 +1005,7 @@ h2, label {
 
 .side .md h5 {
   position: absolute;
-  top: 53px;
+  top: 66px;
   left: 491px;
   z-index: 200;
   border-radius: 3px;
@@ -1911,3 +1917,10 @@ a[href="#s"]:active::after,
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+
+.infobar {
+  background: #472323;
+  border: 1px solid #7e2c2c; }
+
+.roundfield, .content.submit .info-notice {
+  background-color: #0c1619; }
