@@ -3,6 +3,7 @@
 @import 'images';
 
 body {
+	color: $header-link;
     background: url($main-bg) center top no-repeat $dark-blue;
 }
 
@@ -478,4 +479,16 @@ span.score {
 
 html:not([lang="xx"]) .comment .child {
 	border-left: none !important;
+}
+
+.flairselector  {
+	box-shadow: none !important;
+}
+
+.flairselector li:hover {
+	background: $medium-blue;
+}
+
+h2, label {
+	color: $header-link-selected;
 }

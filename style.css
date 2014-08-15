@@ -574,6 +574,7 @@
   transition: all 0.5s; }
 
 body {
+  color: #d9f3ff;
   background: url("%%main-bg2%%") center top no-repeat #0c1619; }
 
 body > .content {
@@ -983,6 +984,15 @@ span.score {
 
 html:not([lang="xx"]) .comment .child {
   border-left: none !important; }
+
+.flairselector {
+  box-shadow: none !important; }
+
+.flairselector li:hover {
+  background: #0e2a3d; }
+
+h2, label {
+  color: #2ba5dc; }
 
 .side .md h5:before {
   content: "Announcement - "; }
