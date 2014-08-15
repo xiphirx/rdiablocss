@@ -1002,7 +1002,7 @@ html:not([lang="xx"]) .comment .child {
 input[name="uh"] ~ a:after, .user:before {
   position: absolute;
   top: -10px;
-  right: 470px;
+  right: 230px;
   width: 630px;
   height: 83px;
   font-style: italic;
@@ -1020,11 +1020,7 @@ input[name="uh"] ~ a:after {
 
 .user:before {
   z-index: 10;
-  content: " ";
-  top: 15px;
-  right: 405px;
-  height: 83px;
-  width: 505px; }
+  content: " "; }
 
 input[name="uh"][value^="a"] ~ a:after {
   content: "Hello my friend! Stay awhile, and listen!"; }
