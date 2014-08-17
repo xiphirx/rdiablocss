@@ -5,6 +5,8 @@
 	border: 1px solid $red-button-light-border;
 }
 
-.roundfield, .content.submit .info-notice {
+.roundfield, 
+.content.submit .info-notice,
+.linefield {
 	background-color: $dark-blue;
 }

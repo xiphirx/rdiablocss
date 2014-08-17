@@ -638,6 +638,12 @@ button:hover {
   text-align: center;
   width: 135px; }
 
+::selection {
+  background: #3e7399; }
+
+::-moz-selection {
+  background: #3e7399; }
+
 body {
   color: #d9f3ff;
   background: url("%%main-bg2%%") center top no-repeat #0c1619; }
@@ -1988,5 +1994,15 @@ a[href="#s"]:active::after,
   background: #472323;
   border: 1px solid #7e2c2c; }
 
-.roundfield, .content.submit .info-notice {
+.roundfield,
+.content.submit .info-notice,
+.linefield {
   background-color: #0c1619; }
+
+.wiki-page .wiki-page-content .md.wiki h1,
+.wiki-page .wiki-page-content .md.wiki h2,
+.wiki-page .wiki-page-content .md.wiki h3,
+.wiki-page .wiki-page-content .md.wiki h4,
+.wiki-page .wiki-page-content .md.wiki h5,
+.wiki-page .wiki-page-content .md.wiki h6 {
+  color: #d9f3ff; }

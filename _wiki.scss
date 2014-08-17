@@ -1,0 +1,10 @@
+@import 'colors';
+
+.wiki-page .wiki-page-content .md.wiki h1, 
+.wiki-page .wiki-page-content .md.wiki h2, 
+.wiki-page .wiki-page-content .md.wiki h3, 
+.wiki-page .wiki-page-content .md.wiki h4, 
+.wiki-page .wiki-page-content .md.wiki h5, 
+.wiki-page .wiki-page-content .md.wiki h6 {
+	color: $header-link;
+}

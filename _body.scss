@@ -2,6 +2,14 @@
 @import 'text';
 @import 'images';
 
+::selection {
+	background: $selection-color;
+}
+
+::-moz-selection {
+	background: $selection-color;
+}
+
 body {
 	color: $header-link;
     background: url($main-bg) center top no-repeat $dark-blue;
