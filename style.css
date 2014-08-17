@@ -385,7 +385,12 @@
   border: 1px solid #132735;
   border-radius: 2px; }
 
-.side .submit .morelink {
+.side .sidebox.submit-text {
+  margin-top: 24px; }
+
+.side .submit .morelink,
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
+.side a[href="http://tinyurl.com/c98vq5k"] {
   background: #233847;
   border: 1px solid #2c5c7e;
   -webkit-transition: all 0.5s;
@@ -394,7 +399,9 @@
   -o-transition: all 0.5s;
   transition: all 0.5s; }
 
-.side .submit .morelink:hover {
+.side .submit .morelink:hover,
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"]:hover,
+.side a[href="http://tinyurl.com/c98vq5k"]:hover {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -432,7 +439,12 @@ button {
   margin: 0;
   border-radius: 0px; }
 
-.RESDashboardToggle {
+.RESshortcut {
+  height: 29px;
+  line-height: 29px; }
+
+.RESDashboardToggle,
+.RESshortcut {
   margin: 7px 0 12px 0 !important;
   padding: 0 !important;
   width: 99% !important;
@@ -463,6 +475,8 @@ button {
 
 .side .subscribe-button .add,
 .RESDashboardToggle,
+.RESshortcut,
+.sidecontentbox a.helplink,
 button {
   border: 1px solid #347e2c !important;
   background: #274723 !important;
@@ -578,6 +592,52 @@ button:hover {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+
+.sidecontentbox a.helplink {
+  font-size: 10px;
+  margin-top: 0px;
+  padding: 3px;
+  color: white; }
+
+.submit-text .morelink,
+.submit-link .morelink {
+  margin-top: -20px;
+  position: relative;
+  z-index: 3; }
+
+.submit-text::before,
+.submit-link::before {
+  position: relative;
+  z-index: 2;
+  border-radius: 2px;
+  border: 1px solid #7e2c2c;
+  background: #472323;
+  padding: 3px;
+  opacity: 0;
+  top: 2px;
+  left: 0px;
+  content: "Please check the rules first";
+  -webkit-transition: opacity .2s linear,left .2s ease;
+  -moz-transition: opacity .2s linear,left .2s ease;
+  -ms-transition: opacity .2s linear,left .2s ease;
+  -o-transition: opacity .2s linear,left .2s ease;
+  transition: opacity .2s linear,left .2s ease; }
+
+.submit-text:hover::before,
+.submit-link:hover::before {
+  opacity: 1;
+  left: -160px; }
+
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
+.side a[href="http://tinyurl.com/c98vq5k"] {
+  padding: 5px;
+  border-radius: 2px;
+  margin-right: 10px;
+  color: white;
+  margin-bottom: 10px;
+  display: inline-block !important;
+  text-align: center;
+  width: 41%; }
 
 body {
   color: #d9f3ff;
@@ -999,6 +1059,13 @@ html:not([lang="xx"]) .comment .child {
 
 h2, label {
   color: #2ba5dc; }
+
+.flairselector h2 {
+  background: none; }
+
+.flairselector li,
+.flairselector li:hover {
+  border: none; }
 
 .side .md h5:before {
   content: "Announcement - "; }

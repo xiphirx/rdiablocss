@@ -492,3 +492,12 @@ html:not([lang="xx"]) .comment .child {
 h2, label {
 	color: $header-link-selected;
 }
+
+.flairselector h2 {
+	background: none;
+}
+
+.flairselector li,
+.flairselector li:hover {
+	border: none;
+}

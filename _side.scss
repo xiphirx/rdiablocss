@@ -35,13 +35,21 @@
 	border-radius: 2px;
 }
 
-.side .submit .morelink {
+.side .sidebox.submit-text {
+	margin-top: 24px;
+}
+
+.side .submit .morelink,
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
+.side a[href="http://tinyurl.com/c98vq5k"] {
 	background: $blue-button-fill;
 	border: 1px solid $blue-button-light-border;
 	@include vendor-prefix(transition, all 0.5s);
 }
 
-.side .submit .morelink:hover {
+.side .submit .morelink:hover,
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"]:hover,
+.side a[href="http://tinyurl.com/c98vq5k"]:hover {
 	@include vendor-prefix(transition, all 0.5s);
 	background: $blue-button-light-border;
 }
@@ -80,7 +88,13 @@ button {
 	border-radius: 0px;
 }
 
-.RESDashboardToggle {
+.RESshortcut {
+	height: 29px;
+	line-height: 29px;
+}
+
+.RESDashboardToggle,
+.RESshortcut {
 	margin: 7px 0 12px 0 !important;
 	padding: 0 !important;
 	width: 99% !important;
@@ -106,6 +120,8 @@ button {
 
 .side .subscribe-button .add, 
 .RESDashboardToggle,
+.RESshortcut,
+.sidecontentbox a.helplink,
 button {
 	border: 1px solid $green-button-light-border !important;
 	background: $green-button-fill !important;
@@ -225,4 +241,51 @@ button:hover {
 .side #search #searchexpando .searchexpando-submit input:hover {
 	background: $blue-button-light-border !important;
 	@include vendor-prefix(transition, all 0.5s);
+}
+
+.sidecontentbox a.helplink {
+	font-size: 10px;
+	margin-top: 0px;
+	padding: 3px;
+	color: $header-link-hover;
+}
+
+.submit-text .morelink, 
+.submit-link .morelink {
+	margin-top: -20px;
+	position: relative;
+	z-index: 3;
+}
+
+.submit-text::before, 
+.submit-link::before {
+	position: relative;
+	z-index: 2;
+	border-radius: 2px;
+	border: 1px solid $red-button-light-border;
+	background: $red-button-fill;
+	padding: 3px;
+	opacity: 0;
+	top: 2px;
+	left: 0px;
+	content: "Please check the rules first";
+	@include vendor-prefix(transition, 'opacity .2s linear,left .2s ease');
+}
+
+.submit-text:hover::before, 
+.submit-link:hover::before {
+	opacity: 1;
+	left: -160px;
+}
+
+.side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
+.side a[href="http://tinyurl.com/c98vq5k"] {
+	padding: 5px;
+	border-radius: 2px;
+	margin-right: 10px;
+	color: $header-link-hover;
+	margin-bottom: 10px;
+	display: inline-block !important;
+	text-align: center;
+	width: 41%;
 }
