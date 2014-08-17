@@ -632,12 +632,11 @@ button:hover {
 .side a[href="http://tinyurl.com/c98vq5k"] {
   padding: 5px;
   border-radius: 2px;
-  margin-right: 10px;
   color: white;
   margin-bottom: 10px;
   display: inline-block !important;
   text-align: center;
-  width: 41%; }
+  width: 135px; }
 
 body {
   color: #d9f3ff;
