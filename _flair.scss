@@ -314,7 +314,10 @@ a.author[href$="reddit.com/user/Natryndon"]:before,
 a.author[href$="reddit.com/user/Zarhym"]:before, 
 a.author[href$="reddit.com/user/Tyvalir"]:before, 
 a.author[href$="reddit.com/user/Araxom"]:before, 
-a.author[href$="reddit.com/user/TravisDay"]:before {
+a.author[href$="reddit.com/user/Glaxigrav"]:before, 
+a.author[href$="reddit.com/user/TravisDay"]:before,
+a.author[href$="reddit.com/user/Nidrorian"]:before, 
+a.author[href$="reddit.com/user/Ulvareth"]:before {
 	content: url(%%blizz%%);
 	margin-left: 3px;
 	margin-right: 3px;
@@ -338,8 +341,11 @@ a.author[href$="reddit.com/user/Nethaera"]:after,
 a.author[href$="reddit.com/user/Nevalistis"]:after, 
 a.author[href$="reddit.com/user/Aldrexus"]:after, 
 a.author[href$="reddit.com/user/BlizzDaxxarri"]:after, 
+a.author[href$="reddit.com/user/Natryndon"]:after, 
 a.author[href$="reddit.com/user/Zarhym"]:after, 
-a.author[href$="reddit.com/user/Tyvalir"]:after {
+a.author[href$="reddit.com/user/Tyvalir"]:after, 
+a.author[href$="reddit.com/user/Nidrorian"]:after, 
+a.author[href$="reddit.com/user/Ulvareth"]:afte {
 	content: "Community Manager";
 	color: #00B4FF !important;
 	padding: 4px;
@@ -349,7 +355,9 @@ a.author[href$="reddit.com/user/Tyvalir"]:after {
 }
 
 /* Customer support */
-a.author[href$="reddit.com/user/Araxom"]:after {
+a.author[href$="reddit.com/user/Araxom"]:after, 
+a.author[href$="reddit.com/user/Glaxigrav"]:after, 
+a.author[href$="reddit.com/user/Natryndon"]:after {
  	content: "Customer Support";
 	color: #00B4FF !important;
 	padding: 4px;
@@ -398,6 +406,11 @@ a.author[href$="reddit.com/user/BlizzDaxxarri"],
 a.author[href$="reddit.com/user/Zarhym"], 
 a.author[href$="reddit.com/user/Tyvalir"], 
 a.author[href$="reddit.com/user/Araxom"], 
-a.author[href$="reddit.com/user/Nevalistis"] {
+a.author[href$="reddit.com/user/Glaxigrav"], 
+a.author[href$="reddit.com/user/Natryndon"], 
+a.author[href$="reddit.com/user/Nevalistis"], 
+a.author[href$="reddit.com/user/TravisDay"], 
+a.author[href$="reddit.com/user/Nidrorian"], 
+a.author[href$="reddit.com/user/Ulvareth"] {
 	color: #00B4FF !important;
 }

@@ -1,8 +1,12 @@
 @import 'colors';
 
-.infobar {
+.infobar, .usertext.border .usertext-body {
 	background: $red-button-fill;
 	border: 1px solid $red-button-light-border;
+}
+
+.usertext.border .usertext-body {
+	border: none;
 }
 
 .roundfield, 
