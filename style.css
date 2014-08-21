@@ -342,6 +342,9 @@
   color: #ffffff;
   text-decoration: none; }
 
+#header a.choice, #viewImagesButton {
+  display: inline-block; }
+
 .side {
   background: url("%%blue-overlay-bg%%");
   margin-right: 10px;
