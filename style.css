@@ -1057,6 +1057,9 @@ h2, label {
 .flairselector li:hover {
   border: none; }
 
+.usertext.body {
+  background-color: #680000; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
