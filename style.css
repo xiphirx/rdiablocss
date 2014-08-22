@@ -626,6 +626,9 @@ button:hover {
   text-align: center;
   width: 135px; }
 
+a[href="/s"] {
+  display: none; }
+
 ::selection {
   background: #3e7399; }
 
@@ -740,21 +743,25 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
   z-index: 2;
   position: absolute;
   left: 0px;
-  top: 0px; }
+  top: 0px;
+  background-color: transparent; }
 
-.thing a.thumbnail.self,
-.thing a.thumbnail.default {
+.thing:not(.linkflair) .thumbnail {
   background: url("%%ros-baked%%") 0px 0px; }
 
 .thing a.thumbnail.nsfw {
   background: url("%%ros-baked%%") -69px -4px; }
 
+.thing a.thumbnail {
+  background-color: transparent; }
+
 .thing a.thumbnail * {
-  background-color: #000; }
+  background-color: transparent; }
 
 .thing a.thumbnail img {
   width: 53px;
-  height: 53px; }
+  height: 53px;
+  background-color: transparent; }
 
 .thing .midcol {
   margin-top: 11px; }
@@ -1063,13 +1070,20 @@ h2, label {
 .flairselector li:hover {
   border: none; }
 
+.new-comment .usertext-body {
+  background-color: #0e2c42;
+  border: none; }
+
+.entry .buttons li.reported-stamp {
+  background-color: transparent; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
 .side .md h5 {
   position: absolute;
-  top: 66px;
-  left: 491px;
+  top: 60px;
+  left: 550px;
   z-index: 200;
   border-radius: 3px;
   border: 1px solid #163D4D;
@@ -1325,121 +1339,121 @@ input[name="uh"][value$="moo"] ~ a:after {
   border-color: #700; }
 
 .linkflair-barb a.thumbnail {
-  background: url(%%class-portraits%%) 0px 0px !important; }
+  background: url(%%class-portraits1%%) 0px 0px; }
 
 .linkflair-wizz .linkflairlabel {
   border-color: #077; }
 
 .linkflair-wizz a.thumbnail {
-  background: url(%%class-portraits%%) 0px -284px !important; }
+  background: url(%%class-portraits1%%) 0px -240px; }
 
 .linkflair-dh .linkflairlabel {
   border-color: #7F41A3; }
 
 .linkflair-dh a.thumbnail {
-  background: url(%%class-portraits%%) 0px -142px !important; }
+  background: url(%%class-portraits1%%) 0px -120px; }
 
 .linkflair-wd .linkflairlabel {
   border-color: #070; }
 
 .linkflair-wd a.thumbnail {
-  background: url(%%class-portraits%%) 0px -213px !important; }
+  background: url(%%class-portraits1%%) 0px -180px; }
 
 .linkflair-monk .linkflairlabel {
   border-color: #770; }
 
 .linkflair-monk a.thumbnail {
-  background: url(%%class-portraits%%) 0px -71px !important; }
+  background: url(%%class-portraits1%%) 0px -60px; }
 
 .linkflair-crus .linkflairlabel {
   border-color: #FFFF00; }
 
 .linkflair-crus a.thumbnail {
-  background: url(%%class-portraits%%) 0px -355px !important; }
+  background: url(%%class-portraits1%%) 0px -300px; }
 
 .linkflair-americas .linkflairlabel {
   border-color: #e1342d; }
 
 .linkflair-americas a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px 0px !important; }
+  background: url(%%linkflairthumbs1%%) 0px 0px; }
 
 .linkflair-europe .linkflairlabel {
   border-color: #5fcd26; }
 
 .linkflair-europe a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -70px !important; }
+  background: url(%%linkflairthumbs%%) 0px -70px; }
 
 .linkflair-asia .linkflairlabel {
   border-color: #b527d0; }
 
 .linkflair-asia a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -140px !important; }
-
-.linkflair-secrettome .linkflairlabel {
-  border-color: #e5e5e5; }
-
-.linkflair-secrettome a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -350px !important; }
+  background: url(%%linkflairthumbs%%) 0px -140px; }
 
 .linkflair-idea .linkflairlabel {
   border-color: #E0A148; }
 
 .linkflair-idea a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -210px !important; }
+  background: url(%%linkflairthumbs%%) 0px -210px; }
 
 .linkflair-craftpost .linkflairlabel {
   border-color: #C95216; }
 
 .linkflair-craftpost a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -280px !important; }
+  background: url(%%linkflairthumbs%%) 0px -280px; }
+
+.linkflair-secrettome .linkflairlabel {
+  border-color: #e5e5e5; }
+
+.linkflair-secrettome a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -350px; }
 
 .linkflair-diablotwo .linkflairlabel {
   border-color: #CC0000; }
 
 .linkflair-diablotwo a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -420px !important; }
+  background: url(%%linkflairthumbs%%) 0px -420px; }
 
 .linkflair-hardcore .linkflairlabel {
   border-color: #350700; }
 
 .linkflair-hardcore a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -490px !important; }
+  background: url(%%linkflairthumbs%%) 0px -490px; }
 
 .linkflair-diabloone .linkflairlabel {
   border-color: #CC0000; }
 
 .linkflair-diabloone a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -560px !important; }
+  background: url(%%linkflairthumbs%%) 0px -560px; }
 
 .linkflair-glorious .linkflairlabel {
   border-color: #fff8a8; }
 
 .linkflair-glorious a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -630px !important; }
+  background: url(%%linkflairthumbs%%) 0px -630px; }
 
 .linkflair-challenge .linkflairlabel {
   border-color: #1f355d; }
 
 .linkflair-challenge a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -700px !important; }
+  background: url(%%linkflairthumbs%%) 0px -700px; }
 
 .linkflair-console .linkflairlabel {
   border-color: #000000; }
 
 .linkflair-console a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -770px !important; }
+  background: url(%%linkflairthumbs%%) 0px -770px; }
 
 .linkflair-rosbeta .linkflairlabel {
   border-color: #251b48; }
 
 .linkflair-rosbeta a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -840px !important; }
+  background: url(%%linkflairthumbs%%) 0px -840px; }
 
 .linkflair-fluff .linkflairlabel {
   border-color: #ff8ffb; }
 
 .linkflair-fluff a.thumbnail {
-  background: url(%%linkflairthumbs%%) 0px -910px !important; }
+  background: url(%%linkflairthumbs%%) 0px -910px; }
 
 .flair {
   padding: 0px;

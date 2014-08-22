@@ -288,3 +288,7 @@ button:hover {
 	text-align: center;
 	width: 135px;
 }
+
+a[href="/s"] {
+	display: none;
+}

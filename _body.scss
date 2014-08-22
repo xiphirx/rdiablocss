@@ -140,10 +140,10 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
 	position: absolute;
 	left: 0px;
 	top: 0px;
+	background-color: transparent;
 }
 
-.thing a.thumbnail.self, 
-.thing a.thumbnail.default {
+.thing:not(.linkflair) .thumbnail  {
 	background: url($baked) -0px -0px;
 }
 
@@ -151,13 +151,18 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
 	background: url($baked) -69px -4px;
 }
 
+.thing a.thumbnail {
+	background-color: transparent;
+}
+
 .thing a.thumbnail * {
-	background-color: #000;
+	background-color: transparent;
 }
 
 .thing a.thumbnail img {
 	width: 53px;
 	height: 53px;
+	background-color: transparent;
 }
 
 .thing .midcol {
@@ -514,4 +519,14 @@ h2, label {
 .flairselector li,
 .flairselector li:hover {
 	border: none;
+}
+
+
+.new-comment .usertext-body {
+	background-color:#0e2c42 ;
+	border: none;
+}
+
+.entry .buttons li.reported-stamp {
+	background-color: transparent;
 }

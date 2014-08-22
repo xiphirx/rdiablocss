@@ -80,64 +80,70 @@
 }
 
 .linkflair-barb .linkflairlabel {border-color: #700;}
-.linkflair-barb a.thumbnail {background: url(%%class-portraits%%) 0px 0px !important;}
+.linkflair-barb a.thumbnail {background: url(%%class-portraits1%%) 0px 0px;}
 
 .linkflair-wizz .linkflairlabel {border-color: #077;}
-.linkflair-wizz a.thumbnail {background: url(%%class-portraits%%) 0px -284px !important;}
+.linkflair-wizz a.thumbnail {background: url(%%class-portraits1%%) 0px -240px;}
 
 .linkflair-dh .linkflairlabel {border-color: #7F41A3;}
-.linkflair-dh a.thumbnail {background: url(%%class-portraits%%) 0px -142px !important;}
+.linkflair-dh a.thumbnail {background: url(%%class-portraits1%%) 0px -120px;}
 
 .linkflair-wd .linkflairlabel {border-color: #070;}
-.linkflair-wd a.thumbnail {background: url(%%class-portraits%%) 0px -213px !important;}
+.linkflair-wd a.thumbnail {background: url(%%class-portraits1%%) 0px -180px;}
 
 .linkflair-monk .linkflairlabel {border-color: #770;}
-.linkflair-monk a.thumbnail {background: url(%%class-portraits%%) 0px -71px !important;}
+.linkflair-monk a.thumbnail {background: url(%%class-portraits1%%) 0px -60px;}
 
 .linkflair-crus .linkflairlabel {border-color: #FFFF00;}
-.linkflair-crus a.thumbnail {background: url(%%class-portraits%%) 0px -355px !important;}
+.linkflair-crus a.thumbnail {background: url(%%class-portraits1%%) 0px -300px;}
+
+
+
+
 
 .linkflair-americas .linkflairlabel {border-color: #e1342d;}
-.linkflair-americas a.thumbnail {background: url(%%linkflairthumbs%%) 0px 0px !important;}
+.linkflair-americas a.thumbnail {background: url(%%linkflairthumbs1%%) 0px 0px;}
 
 .linkflair-europe .linkflairlabel {border-color: #5fcd26;}
-.linkflair-europe a.thumbnail {background: url(%%linkflairthumbs%%) 0px -70px !important;}
+.linkflair-europe a.thumbnail {background: url(%%linkflairthumbs%%) 0px -70px;}
 
 .linkflair-asia .linkflairlabel {border-color: #b527d0;}
-.linkflair-asia a.thumbnail {background: url(%%linkflairthumbs%%) 0px -140px !important;}
-
-.linkflair-secrettome .linkflairlabel {border-color: #e5e5e5;}
-.linkflair-secrettome a.thumbnail {background: url(%%linkflairthumbs%%) 0px -350px !important;}
+.linkflair-asia a.thumbnail {background: url(%%linkflairthumbs%%) 0px -140px;}
 
 .linkflair-idea .linkflairlabel {border-color: #E0A148;}
-.linkflair-idea a.thumbnail {background: url(%%linkflairthumbs%%) 0px -210px !important;}
+.linkflair-idea a.thumbnail {background: url(%%linkflairthumbs%%) 0px -210px;}
 
 .linkflair-craftpost .linkflairlabel {border-color: #C95216;}
-.linkflair-craftpost a.thumbnail {background: url(%%linkflairthumbs%%) 0px -280px !important;}
+.linkflair-craftpost a.thumbnail {background: url(%%linkflairthumbs%%) 0px -280px;}
+
+.linkflair-secrettome .linkflairlabel {border-color: #e5e5e5;}
+.linkflair-secrettome a.thumbnail {background: url(%%linkflairthumbs%%) 0px -350px;}
 
 .linkflair-diablotwo .linkflairlabel {border-color: #CC0000;}
-.linkflair-diablotwo a.thumbnail {background: url(%%linkflairthumbs%%) 0px -420px !important;}
+.linkflair-diablotwo a.thumbnail {background: url(%%linkflairthumbs%%) 0px -420px;}
 
 .linkflair-hardcore .linkflairlabel {border-color: #350700;}
-.linkflair-hardcore a.thumbnail {background: url(%%linkflairthumbs%%) 0px -490px !important;}
+.linkflair-hardcore a.thumbnail {background: url(%%linkflairthumbs%%) 0px -490px;}
 
 .linkflair-diabloone .linkflairlabel {border-color: #CC0000;}
-.linkflair-diabloone a.thumbnail {background: url(%%linkflairthumbs%%) 0px -560px !important;}
+.linkflair-diabloone a.thumbnail {background: url(%%linkflairthumbs%%) 0px -560px;}
 
 .linkflair-glorious .linkflairlabel {border-color: #fff8a8;}
-.linkflair-glorious a.thumbnail {background: url(%%linkflairthumbs%%) 0px -630px !important;}
+.linkflair-glorious a.thumbnail {background: url(%%linkflairthumbs%%) 0px -630px;}
 
 .linkflair-challenge .linkflairlabel {border-color: #1f355d;}
-.linkflair-challenge a.thumbnail {background: url(%%linkflairthumbs%%) 0px -700px !important;}
+.linkflair-challenge a.thumbnail {background: url(%%linkflairthumbs%%) 0px -700px;}
 
 .linkflair-console .linkflairlabel {border-color: #000000;}
-.linkflair-console a.thumbnail {background: url(%%linkflairthumbs%%) 0px -770px !important;}
+.linkflair-console a.thumbnail {background: url(%%linkflairthumbs%%) 0px -770px;}
 
 .linkflair-rosbeta .linkflairlabel {border-color: #251b48;}
-.linkflair-rosbeta a.thumbnail {background: url(%%linkflairthumbs%%) 0px -840px !important;}
+.linkflair-rosbeta a.thumbnail {background: url(%%linkflairthumbs%%) 0px -840px;}
 
 .linkflair-fluff .linkflairlabel {border-color: #ff8ffb;}
-.linkflair-fluff a.thumbnail {background: url(%%linkflairthumbs%%) 0px -910px !important;}
+.linkflair-fluff a.thumbnail {background: url(%%linkflairthumbs%%) 0px -910px;}
+
+
 
 
 .flair {
