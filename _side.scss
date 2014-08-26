@@ -14,7 +14,7 @@
 
 .side #search {
 	position: absolute;
-	z-index: 1;
+	z-index: 4;
 	top: 157px;
 }
 
@@ -41,7 +41,7 @@
 
 .side .submit .morelink,
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
-.side a[href="http://tinyurl.com/c98vq5k"] {
+.side a[href="http://tinyurl.com/rdiablomumble"] {
 	background: $blue-button-fill;
 	border: 1px solid $blue-button-light-border;
 	@include vendor-prefix(transition, all 0.5s);
@@ -49,7 +49,7 @@
 
 .side .submit .morelink:hover,
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"]:hover,
-.side a[href="http://tinyurl.com/c98vq5k"]:hover {
+.side a[href="http://tinyurl.com/rdiablomumble"]:hover {
 	@include vendor-prefix(transition, all 0.5s);
 	background: $blue-button-light-border;
 }
@@ -279,7 +279,7 @@ button:hover {
 }
 
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
-.side a[href="http://tinyurl.com/c98vq5k"] {
+.side a[href="http://tinyurl.com/rdiablomumble"] {
 	padding: 5px;
 	border-radius: 2px;
 	color: $header-link-hover;

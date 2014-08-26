@@ -356,7 +356,7 @@
 
 .side #search {
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   top: 157px; }
 
 .side #search input[type="text"] {
@@ -378,7 +378,7 @@
 
 .side .submit .morelink,
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
-.side a[href="http://tinyurl.com/c98vq5k"] {
+.side a[href="http://tinyurl.com/rdiablomumble"] {
   background: #233847;
   border: 1px solid #2c5c7e;
   -webkit-transition: all 0.5s;
@@ -389,7 +389,7 @@
 
 .side .submit .morelink:hover,
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"]:hover,
-.side a[href="http://tinyurl.com/c98vq5k"]:hover {
+.side a[href="http://tinyurl.com/rdiablomumble"]:hover {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -617,7 +617,7 @@ button:hover {
   left: -160px; }
 
 .side a[href="http://chat.mibbit.com/?url=irc://irc.esper.net/diablo"],
-.side a[href="http://tinyurl.com/c98vq5k"] {
+.side a[href="http://tinyurl.com/rdiablomumble"] {
   padding: 5px;
   border-radius: 2px;
   color: #ffffff;
@@ -1076,6 +1076,15 @@ h2, label {
 
 .entry .buttons li.reported-stamp {
   background-color: transparent; }
+
+.link.promotedlink.promoted {
+  background-color: #000; }
+
+#search input[type=text] {
+  color: #fff !important; }
+
+.searchpane {
+  background-color: #000; }
 
 .side .md h5:before {
   content: "Announcement - "; }
@@ -2027,5 +2036,8 @@ a[href="#s"]:active::after,
 .wiki-page .wiki-page-content .md.wiki h5,
 .wiki-page .wiki-page-content .md.wiki h6 {
   color: #d9f3ff; }
+
+.wiki-page .wiki-page-content {
+  margin: 15px 15px 15px 15px !important; }
 
 /*# sourceMappingURL=style.css.map */
