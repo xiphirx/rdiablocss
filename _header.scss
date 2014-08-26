@@ -219,3 +219,7 @@
 	color: $header-link-hover;
 	text-decoration: none;
 }
+
+#header a.choice, #viewImagesButton {
+	display: inline-block;
+}
