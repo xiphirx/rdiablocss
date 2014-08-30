@@ -62,6 +62,11 @@ button {
 	font-size: 14px;
 }
 
+.side .submit .morelink a {
+	margin-top: -20px;
+	float: left;
+}
+
 button {
 	padding: 10px;
 }
@@ -252,7 +257,6 @@ button:hover {
 
 .submit-text .morelink, 
 .submit-link .morelink {
-	margin-top: -20px;
 	position: relative;
 	z-index: 3;
 }
@@ -266,7 +270,8 @@ button:hover {
 	background: $red-button-fill;
 	padding: 3px;
 	opacity: 0;
-	top: 2px;
+	float: left;
+	top: 6px;
 	left: 0px;
 	content: "Please check the rules first";
 	@include vendor-prefix(transition, 'opacity .2s linear,left .2s ease');
