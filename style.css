@@ -1105,7 +1105,9 @@ h2, label {
   color: #fff !important; }
 
 .searchpane {
-  background-color: #000; }
+  background: transparent;
+  border: none;
+  padding-left: 0px; }
 
 .link.promotedlink.promoted {
   background-color: transparent; }
@@ -2026,7 +2028,7 @@ a[href="#s"]:active::after,
   z-index: 200;
   background: #0c1619;
   top: 191px;
-  left: 6px;
+  left: 5px;
   right: 0px;
   font-size: 14px;
   height: 25px;

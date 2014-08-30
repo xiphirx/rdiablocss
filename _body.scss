@@ -546,7 +546,9 @@ h2, label {
 }
 
 .searchpane {
-	background-color: #000;
+	background: transparent;
+	border: none;
+	padding-left: 0px;
 }
 
 .link.promotedlink.promoted {
