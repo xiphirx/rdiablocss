@@ -1479,6 +1479,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 .linkflair-fluff a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -910px; }
 
+.linkflair-art .linkflairlabel {
+  border-color: #37586f; }
+
+.linkflair-art a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -980px; }
+
 .linkflair-season .linkflairlabel {
   border-color: #9af054; }
 
