@@ -554,3 +554,9 @@ h2, label {
 .link.promotedlink.promoted {
 	background-color: transparent;
 }
+
+.gilded-icon:before {
+	width: 16px;
+	height: 16px;
+	background: url(%%ros-baked%%) -141px -31px !important;
+}
