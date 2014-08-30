@@ -1,6 +1,6 @@
 #header {
   height: 181px;
-  background: url("%%header-blur-bg11%%") left bottom no-repeat;
+  background: url("%%header-blur-bg11%%") left bottom repeat-x;
   z-index: 0;
   overflow: hidden !important;
   border-bottom: none; }

@@ -4,7 +4,7 @@
 
 #header {
 	height: 181px;
-	background: url($header-bg) left bottom no-repeat;
+	background: url($header-bg) left bottom repeat-x;
 	z-index: 0;
 	overflow: hidden !important;
 	border-bottom: none;
