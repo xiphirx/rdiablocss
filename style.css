@@ -1119,6 +1119,14 @@ h2, label {
 .link.promotedlink.promoted {
   background-color: transparent; }
 
+.gilded-icon:before {
+  width: 16px;
+  height: 16px;
+  background: url(%%ros-baked%%) -141px -31px !important;
+  border-radius: 8px;
+  border: 1px solid #dc5500;
+  box-shadow: 0px 0px 24px #dc5500; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
@@ -1365,7 +1373,7 @@ input[name="uh"][value$="moo"] ~ a:after {
   -moz-opacity: 1; }
 
 .linkflair-spoiler a.thumbnail {
-  background: url(%%hell-baked%%) -459px -87px !important; }
+  background: url(%%ros-baked%%) -70px 0px !important; }
 
 .linkflair-spoiler a.thumbnail img,
 .linkflair-spoiler a.thumbnail {
