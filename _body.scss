@@ -70,7 +70,16 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
 	font-style: italic;
 }
 
-#siteTable .thing {
+.content .organic-listing {
+	border: none;
+}
+
+body > .content > .spacer {
+	margin-bottom: 0px;
+}
+
+#siteTable .thing, 
+.content .organic-listing {
 	border-bottom: 2px solid $submission-border;
 	margin-bottom: 0px;
 	position: relative;
@@ -88,7 +97,8 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
 	z-index: -2;
 }
 
-.thing.stickied:before {
+.thing.stickied:before, 
+.content .organic-listing:before {
 	display: inline-block;
 	width: 643px;
 	height: 68px;
@@ -279,7 +289,8 @@ textarea:focus {
 	z-index: -1;
 }
 
-#siteTable .entry.likes:after {
+#siteTable .entry.likes:after, 
+.content .organic-listing:after {
 	display: inline-block;
 	width: 643px;
 	height: 68px;
@@ -521,7 +532,6 @@ h2, label {
 	border: none;
 }
 
-
 .new-comment .usertext-body {
 	background-color:#0e2c42 ;
 	border: none;
@@ -531,14 +541,14 @@ h2, label {
 	background-color: transparent;
 }
 
-.link.promotedlink.promoted {
-	background-color:#000;
-}
-
 #search input[type=text]{
 	color: #fff !important;
 }
 
 .searchpane {
 	background-color: #000;
+}
+
+.link.promotedlink.promoted {
+	background-color: transparent;
 }
