@@ -1,13 +1,12 @@
 #header {
   height: 181px;
   background: url("%%header-blur-bg11%%") left bottom repeat-x;
-  z-index: 0;
-  overflow: hidden !important;
+  z-index: 4;
   border-bottom: none; }
 
 #header-bottom-left {
   background: url("%%blue-overlay-bg%%");
-  height: 161px;
+  height: 151px;
   border-bottom: 1px solid #181818; }
 
 #header #header-img-a {
@@ -2035,7 +2034,7 @@ a[href="#s"]:active::after,
 
 .side .md h4:nth-of-type(1) {
   position: absolute;
-  z-index: 200;
+  z-index: 3;
   background: #0c1619;
   top: 191px;
   left: 5px;

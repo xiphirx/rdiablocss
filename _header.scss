@@ -5,14 +5,13 @@
 #header {
 	height: 181px;
 	background: url($header-bg) left bottom repeat-x;
-	z-index: 0;
-	overflow: hidden !important;
+	z-index: 4;
 	border-bottom: none;
 }
 
 #header-bottom-left {
 	background: url($blue-overlay-bg);
-	height: 161px;
+	height: 151px;
 	border-bottom: 1px solid $dark-gray;
 }
 
