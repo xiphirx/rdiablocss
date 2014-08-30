@@ -1695,11 +1695,6 @@ input[name="uh"][value$="moo"] ~ a:after {
 .flair-bender {
   background: url(%%bender%%) no-repeat !important; }
 
-.flair-cain {
-  background: url(%%cain%%) !important;
-  width: 32px !important;
-  opacity: 1.0 !important; }
-
 .flair-idscroll + .userattrs {
   background-image: url(%%Scroll-of-Identify%%);
   background-repeat: no-repeat;
