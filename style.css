@@ -357,7 +357,7 @@
   color: white;
   text-decoration: none; }
 
-#header a.choice, #viewImagesButton {
+#header .tabmenu a.choice, #viewImagesButton {
   display: inline-block; }
 
 .side {
