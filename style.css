@@ -1399,7 +1399,7 @@ input[name="uh"][value$="moo"] ~ a:after {
   border-color: #e1342d; }
 
 .linkflair-americas a.thumbnail {
-  background: url(%%linkflairthumbs1%%) 0px 0px; }
+  background: url(%%linkflairthumbs%%) 0px 0px; }
 
 .linkflair-europe .linkflairlabel {
   border-color: #5fcd26; }
