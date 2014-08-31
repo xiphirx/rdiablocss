@@ -47,7 +47,7 @@
 }
 
 .linkflair .linkflairlabel {
-	max-width: 9999px !important;
+	vertical-align: middle;
 }
 
 .linkflair-spoiler .linkflairlabel ~ a.title, 
@@ -63,7 +63,7 @@
 }
 
 .linkflair-spoiler a.thumbnail {
-	background: url(%%hell-baked%%) -459px -87px !important;
+	background: url(%%ros-baked%%) -70px 0px !important;
 }
 
 .linkflair-spoiler a.thumbnail img,
@@ -96,8 +96,6 @@
 
 .linkflair-crus .linkflairlabel {border-color: #FFFF00;}
 .linkflair-crus a.thumbnail {background: url(%%class-portraits1%%) 0px -300px;}
-
-
 
 
 
@@ -143,8 +141,13 @@
 .linkflair-fluff .linkflairlabel {border-color: #ff8ffb;}
 .linkflair-fluff a.thumbnail {background: url(%%linkflairthumbs%%) 0px -910px;}
 
+<<<<<<< HEAD
 .linkflair-art .linkflairlabel {border-color: #37586f;}
 .linkflair-art a.thumbnail {background: url(%%linkflairthumbs%%) 0px -980px;}
+=======
+.linkflair-art .linkflairlabel {border-color: #37586f; }
+.linkflair-art a.thumbnail {background: url(%%linkflairthumbs%%) 0px -980px; }
+>>>>>>> 4b62931a8da7404947504ea7950bc3c3e52666ff
 
 .linkflair-season .linkflairlabel {border-color: #9af054;}
 .linkflair-season a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1050px;}
@@ -241,17 +244,14 @@
 
 
 .flair-bender {background: url(%%bender%%) no-repeat !important;}
-.flair-cain {
-	background: url(%%cain%%) !important;
-	width: 32px !important;
-	opacity: 1.0 !important;
-}
+
 .flair-idscroll + .userattrs {
 	background-image: url(%%Scroll-of-Identify%%);
 	background-repeat: no-repeat;
 	display: inline-block;
 	padding-left: 18px;
 	height: 18px;
+	vertical-align: middle;
 }
 .flair-challenge + .userattrs:after {
 	content: " ";
@@ -260,6 +260,7 @@
 	display: inline-block;
 	padding-left: 24px;
 	height: 22px;
+	vertical-align: middle;
 }
 .flair-one + .userattrs:after {background-position: 0px -2px;}
 .flair-two + .userattrs:after {background-position: -26px -2px;}
@@ -277,6 +278,7 @@
 	display: inline-block;
 	padding-left: 20px;
 	height: 20px;
+	vertical-align: middle;
 }
 
 .flair-tanner + .userattrs:before {background-position: 0px 0px;}
