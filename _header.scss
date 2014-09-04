@@ -171,6 +171,7 @@
 	width: 100%;
 	height: 181px;
 	@include vendor-prefix(animation, sidescroll 30s linear infinite);
+    @include vendor-prefix(transform, translatez(0));
 }
 
 @include keyframes(sidescroll) {
