@@ -77,9 +77,18 @@
 
 #header-bottom-right #userbarToggle,
 #header-bottom-right #RESAccountSwitcherIcon,
-#header-bottom-right #openRESPrefs,
 #header-bottom-right .separator {
   display: none; }
+
+#header-bottom-right #openRESPrefs {
+  height: 15px;
+  margin-right: 10px; }
+
+body #RESMainGearOverlay.RESGearOverlay {
+  top: 115px !important; }
+
+body #RESPrefsDropdown.RESDropdownList {
+  top: 142px !important; }
 
 #header-bottom-right .user {
   line-height: 17px;
