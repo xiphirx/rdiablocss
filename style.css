@@ -1140,6 +1140,12 @@ h2, label {
   border: 1px solid #dc5500;
   box-shadow: 0px 0px 24px #dc5500; }
 
+#progressIndicator.neverEndingReddit,
+body .NERPageMarker {
+  background-color: #112533;
+  border: 1px solid #233847;
+  border-radius: 2px; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
