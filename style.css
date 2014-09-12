@@ -698,7 +698,7 @@ html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed
   outline: none !important;
   background-color: transparent !important; }
 
-#siteTable .thing .entry {
+.thing .entry {
   padding: 7px; }
 
 #siteTable .thing .entry .domain a:before {
