@@ -570,3 +570,16 @@ body .NERPageMarker {
 	border: 1px solid $blue-button-fill;
 	border-radius: 2px;
 }
+
+.res #RESShortcutsEditContainer,
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash,
+.res #RESShortcutsLeft {
+	background:transparent !important;
+}
+
+#sr-more-link {
+	display: none;
+}
