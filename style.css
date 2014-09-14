@@ -15,7 +15,7 @@
 
 #header #header-img {
   position: relative;
-  z-index: 1; }
+  z-index: 13; }
 
 #header .hover.pagename.redditname {
   background: url("%%logo-states%%");
@@ -1145,6 +1145,20 @@ body .NERPageMarker {
   background-color: #112533;
   border: 1px solid #233847;
   border-radius: 2px; }
+
+.res #RESShortcutsEditContainer,
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash,
+.res #RESShortcutsLeft {
+  background: transparent !important; }
+
+#sr-more-link {
+  display: none; }
+
+ul.report-reasons {
+  background-color: #0c1619; }
 
 .side .md h5:before {
   content: "Announcement - "; }
