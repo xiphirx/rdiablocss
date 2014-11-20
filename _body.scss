@@ -587,3 +587,11 @@ body .NERPageMarker {
 ul.report-reasons {
 	background-color: $dark-blue;
 }
+
+body.embed > .content {
+	margin-right: 0px;
+}
+
+body label {
+	color: $white;
+}
