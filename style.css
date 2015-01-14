@@ -1169,6 +1169,10 @@ body.embed > .content {
 body label {
   color: white; }
 
+.action-form {
+  background-color: #0c1619;
+  border: black; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
