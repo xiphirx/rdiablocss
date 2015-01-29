@@ -1173,6 +1173,16 @@ body label {
   background-color: #0c1619;
   border: black; }
 
+.md,
+.md blockquote,
+.md del {
+  color: #badcf1; }
+
+.md code,
+.md pre {
+  border: none;
+  background-color: transparent; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
@@ -2083,7 +2093,7 @@ a[href="#s"]:active::after,
   position: absolute;
   z-index: 3;
   background: #0c1619;
-  top: 191px;
+  top: 181px;
   left: 5px;
   right: 0px;
   font-size: 14px;
