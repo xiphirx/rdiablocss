@@ -141,7 +141,7 @@ body #RESPrefsDropdown.RESDropdownList {
 	height: 16px;
 	border-radius: 10px;
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 #header-bottom-right #mail.havemail {
@@ -234,4 +234,10 @@ body #RESPrefsDropdown.RESDropdownList {
 
 #header .tabmenu a.choice, #viewImagesButton {
 	display: inline-block;
+}
+
+.message-count {
+	background-color: $blue-button-fill;
+	border: 1px solid $blue-button-light-border;
+	margin-right: 5px;
 }
