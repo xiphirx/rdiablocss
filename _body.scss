@@ -604,3 +604,8 @@ body label {
 .md {
 	color: $text;
 }
+
+.md code, .md pre {
+	border: none;
+	background-color: transparent;
+}
