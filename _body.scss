@@ -601,11 +601,14 @@ body label {
 	border: $black
 }
 
-.md {
+.md, 
+.md blockquote, 
+.md del {
 	color: $text;
 }
 
-.md code, .md pre {
+.md code, 
+.md pre {
 	border: none;
 	background-color: transparent;
 }
