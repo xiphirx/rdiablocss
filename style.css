@@ -1183,6 +1183,10 @@ body label {
   border: none;
   background-color: transparent; }
 
+.RESDialogContents {
+  color: black !important;
+  background-color: transparent !important; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
