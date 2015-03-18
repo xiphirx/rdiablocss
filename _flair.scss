@@ -147,6 +147,9 @@
 .linkflair-season .linkflairlabel {border-color: #9af054;}
 .linkflair-season a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1050px;}
 
+.linkflair-ptr .linkflairlabel {border-color: #54a8f0;}
+.linkflair-ptr a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1120px;}
+
 
 .flair {
 	padding: 0px;
@@ -237,11 +240,12 @@
 .flair-crusader-europe {background-position: 0px -940px !important;}
 .flair-crusader-asia {background-position: 0px -960px !important;}
 
-
-.flair-bender {background: url(%%bender%%) no-repeat !important;}
+.flair-bender {
+	background: url(%%class-baked-column%%) 0px -980px no-repeat !important; }
 
 .flair-idscroll + .userattrs {
-	background-image: url(%%Scroll-of-Identify%%);
+	background-image: url(%%ros-baked%%);
+	background-position: 0px -137px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	padding-left: 18px;
@@ -266,9 +270,10 @@
 .flair-3L2 + .userattrs:after {background-position: -55px -32px;}
 .flair-4L2 + .userattrs:after {background-position: -86px -32px;}
 
-.flair-dye + .userattrs:before {
+.flair-rainbowsmotherfucker + .userattrs:before {
 	content: " ";
-	background-image: url(%%dyes%%);
+	background-image: url(%%ros-baked%%);
+	background-position: 0px -160px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	padding-left: 20px;
@@ -276,55 +281,54 @@
 	vertical-align: middle;
 }
 
-.flair-tanner + .userattrs:before {background-position: 0px 0px;}
-.flair-pale + .userattrs:before {background-position: -20px 0px;}
-.flair-winter + .userattrs:before {background-position: -40px 0px;}
-.flair-aquatic + .userattrs:before {background-position: -60px 0px;}
-.flair-cardinal + .userattrs:before {background-position: -80px 0px;}
-.flair-ranger + .userattrs:before {background-position: -100px 0px;}
-.flair-rogue + .userattrs:before {background-position: -120px 0px;}
-.flair-desert + .userattrs:before {background-position: -140px 0px;}
-.flair-autumn + .userattrs:before {background-position: -160px 0px;}
-.flair-lovely + .userattrs:before {background-position: -180px 0px;}
-.flair-summer + .userattrs:before {background-position: -200px 0px;}
-.flair-spring + .userattrs:before {background-position: -220px 0px;}
-.flair-elegant + .userattrs:before {background-position: -240px 0px;}
-.flair-forester + .userattrs:before {background-position: -260px 0px;}
-.flair-mariner + .userattrs:before {background-position: -280px 0px;}
-.flair-golden + .userattrs:before {background-position: -300px 0px;}
-.flair-royal + .userattrs:before {background-position: -320px 0px;}
-.flair-infernal + .userattrs:before {background-position: -340px 0px;}
-.flair-purity + .userattrs:before {background-position: -360px 0px;}
-.flair-abyssal + .userattrs:before {background-position: -380px 0px;}
-.flair-vanishing + .userattrs:before {background-position: -400px 0px;}
-.flair-remover + .userattrs:before {background-position: -420px 0px;}
-.flair-rainbowsmotherfucker + .userattrs:before {background-position: -440px 0px;}
-
 /**** Blizzard flair for employees ****/
-a.author[href$="reddit.com/user/bashiok_foreal"]:before, 
-a.author[href$="reddit.com/user/JayPWilson"]:before, 
-a.author[href$="reddit.com/user/wyattcheng"]:before, 
+/*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"]:before, 
-a.author[href$="reddit.com/user/lylirra"]:before, 
 a.author[href$="reddit.com/user/Grimiku"]:before, 
-a.author[href$="reddit.com/user/Brennvin"]:before, 
+a.author[href$="reddit.com/user/JayPWilson"]:before,
+a.author[href$="reddit.com/user/Nevalistis"]:before, 
+a.author[href$="reddit.com/user/TravisDay"]:before,
+a.author[href$="reddit.com/user/Tyvalir"]:before, 
+a.author[href$="reddit.com/user/Ulvareth"]:before,
+a.author[href$="reddit.com/user/wyattcheng"]:before, 
+
+/*Hearthstone*/
+a.author[href$="reddit.com/user/bdbrode"]:before,
+a.author[href$="reddit.com/user/BlizzDaxxarri"]:before, 
+a.author[href$="reddit.com/user/CM_Zeriyah"]:before, 
+
+/*Heroes of the Storm*/
+a.author[href$="reddit.com/user/Aldrexus"]:before, 
+a.author[href$="reddit.com/user/BlizzJohnzee"]:before,
+a.author[href$="reddit.com/user/Spyrian"]:before,
+a.author[href$="reddit.com/user/trikslyr"]:before, 
 a.author[href$="reddit.com/user/vaeflare"]:before, 
+
+/*Overwatch*/
+a.author[href$="reddit.com/user/lylirra"]:before,
+
+/*Starcraft*/
+a.author[href$="reddit.com/user/psione"]:before, 
 a.author[href$="reddit.com/user/Traysent"]:before, 
+a.author[href$="reddit.com/user/Xordiah"]:before, 
+a.author[href$="reddit.com/user/Zoevia"]:before, 
+
+/*Warcraft*/
+a.author[href$="reddit.com/user/bashiok_foreal"]:before, 
 a.author[href$="reddit.com/user/Crithto"]:before, 
 a.author[href$="reddit.com/user/Kaivax"]:before, 
-a.author[href$="reddit.com/user/Rygarius"]:before, 
 a.author[href$="reddit.com/user/Nethaera"]:before, 
-a.author[href$="reddit.com/user/Nevalistis"]:before, 
-a.author[href$="reddit.com/user/Aldrexus"]:before, 
-a.author[href$="reddit.com/user/BlizzDaxxarri"]:before, 
-a.author[href$="reddit.com/user/Natryndon"]:before, 
+a.author[href$="reddit.com/user/Rygarius"]:before,
 a.author[href$="reddit.com/user/Zarhym"]:before, 
-a.author[href$="reddit.com/user/Tyvalir"]:before, 
+
+/*Other*/
 a.author[href$="reddit.com/user/Araxom"]:before, 
 a.author[href$="reddit.com/user/Glaxigrav"]:before, 
-a.author[href$="reddit.com/user/TravisDay"]:before,
-a.author[href$="reddit.com/user/Nidrorian"]:before, 
-a.author[href$="reddit.com/user/Ulvareth"]:before {
+a.author[href$="reddit.com/user/Natryndon"]:before, 
+a.author[href$="reddit.com/user/Nidrorian"]:before
+
+ 
+ {
 	content: url(%%blizz%%);
 	margin-left: 3px;
 	margin-right: 3px;
@@ -338,7 +342,6 @@ a.author[href$="reddit.com/user/Ulvareth"]:before {
 a.author[href$="reddit.com/user/bashiok_foreal"]:after, 
 a.author[href$="reddit.com/user/lylirra"]:after, 
 a.author[href$="reddit.com/user/Grimiku"]:after, 
-a.author[href$="reddit.com/user/Brennvin"]:after, 
 a.author[href$="reddit.com/user/vaeflare"]:after, 
 a.author[href$="reddit.com/user/Traysent"]:after, 
 a.author[href$="reddit.com/user/Crithto"]:after, 
@@ -352,7 +355,7 @@ a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Zarhym"]:after, 
 a.author[href$="reddit.com/user/Tyvalir"]:after, 
 a.author[href$="reddit.com/user/Nidrorian"]:after, 
-a.author[href$="reddit.com/user/Ulvareth"]:afte {
+a.author[href$="reddit.com/user/Ulvareth"]:after {
 	content: "Community Manager";
 	color: #00B4FF !important;
 	padding: 4px;
@@ -395,29 +398,49 @@ a.author[href$="reddit.com/user/TravisDay"]:after {
 	background: #111;
 }
 
-a.author[href$="reddit.com/user/bashiok_foreal"], 
-a.author[href$="reddit.com/user/JayPWilson"], 
-a.author[href$="reddit.com/user/wyattcheng"], 
+/*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"], 
-a.author[href$="reddit.com/user/lylirra"], 
 a.author[href$="reddit.com/user/Grimiku"], 
-a.author[href$="reddit.com/user/Brennvin"], 
+a.author[href$="reddit.com/user/JayPWilson"],
+a.author[href$="reddit.com/user/Nevalistis"], 
+a.author[href$="reddit.com/user/TravisDay"],
+a.author[href$="reddit.com/user/Tyvalir"], 
+a.author[href$="reddit.com/user/Ulvareth"],
+a.author[href$="reddit.com/user/wyattcheng"], 
+
+/*Hearthstone*/
+a.author[href$="reddit.com/user/bdbrode"],
+a.author[href$="reddit.com/user/BlizzDaxxarri"], 
+a.author[href$="reddit.com/user/CM_Zeriyah"], 
+
+/*Heroes of the Storm*/
+a.author[href$="reddit.com/user/Aldrexus"], 
+a.author[href$="reddit.com/user/BlizzJohnzee"],
+a.author[href$="reddit.com/user/Spyrian"],
+a.author[href$="reddit.com/user/trikslyr"], 
 a.author[href$="reddit.com/user/vaeflare"], 
+
+/*Overwatch*/
+a.author[href$="reddit.com/user/lylirra"],
+
+/*Starcraft*/
+a.author[href$="reddit.com/user/psione"], 
 a.author[href$="reddit.com/user/Traysent"], 
+a.author[href$="reddit.com/user/Xordiah"], 
+a.author[href$="reddit.com/user/Zoevia"], 
+
+/*Warcraft*/
+a.author[href$="reddit.com/user/bashiok_foreal"], 
 a.author[href$="reddit.com/user/Crithto"], 
 a.author[href$="reddit.com/user/Kaivax"], 
-a.author[href$="reddit.com/user/Rygarius"], 
 a.author[href$="reddit.com/user/Nethaera"], 
-a.author[href$="reddit.com/user/Aldrexus"], 
-a.author[href$="reddit.com/user/BlizzDaxxarri"], 
+a.author[href$="reddit.com/user/Rygarius"],
 a.author[href$="reddit.com/user/Zarhym"], 
-a.author[href$="reddit.com/user/Tyvalir"], 
+
+/*Other*/
 a.author[href$="reddit.com/user/Araxom"], 
 a.author[href$="reddit.com/user/Glaxigrav"], 
 a.author[href$="reddit.com/user/Natryndon"], 
-a.author[href$="reddit.com/user/Nevalistis"], 
-a.author[href$="reddit.com/user/TravisDay"], 
-a.author[href$="reddit.com/user/Nidrorian"], 
-a.author[href$="reddit.com/user/Ulvareth"] {
+a.author[href$="reddit.com/user/Nidrorian"] {
 	color: #00B4FF !important;
 }
