@@ -286,6 +286,7 @@
 a.author[href$="reddit.com/user/andrewchambers"]:before, 
 a.author[href$="reddit.com/user/Grimiku"]:before, 
 a.author[href$="reddit.com/user/JayPWilson"]:before,
+a.author[href$="reddit.com/user/_JohnYang"]:before,
 a.author[href$="reddit.com/user/Nevalistis"]:before, 
 a.author[href$="reddit.com/user/TravisDay"]:before,
 a.author[href$="reddit.com/user/Tyvalir"]:before, 
@@ -388,7 +389,8 @@ a.author[href$="reddit.com/user/JayPWilson"]:after {
 
 /* Game Designers */
 a.author[href$="reddit.com/user/wyattcheng"]:after, 
-a.author[href$="reddit.com/user/andrewchambers"]:after, 
+a.author[href$="reddit.com/user/andrewchambers"]:after,
+a.author[href$="reddit.com/user/_JohnYang"]:after, 
 a.author[href$="reddit.com/user/TravisDay"]:after {
 	content: "Game Designer";
 	color: #00B4FF !important;
@@ -402,6 +404,7 @@ a.author[href$="reddit.com/user/TravisDay"]:after {
 a.author[href$="reddit.com/user/andrewchambers"], 
 a.author[href$="reddit.com/user/Grimiku"], 
 a.author[href$="reddit.com/user/JayPWilson"],
+a.author[href$="reddit.com/user/_JohnYang"],
 a.author[href$="reddit.com/user/Nevalistis"], 
 a.author[href$="reddit.com/user/TravisDay"],
 a.author[href$="reddit.com/user/Tyvalir"], 
