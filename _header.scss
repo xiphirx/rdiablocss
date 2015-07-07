@@ -137,7 +137,7 @@ body #RESPrefsDropdown.RESDropdownList {
 
 #header-bottom-right #mail {
 	background: url($mail-icon) no-repeat;
-	width: 20px;
+	width: 16px;
 	height: 16px;
 	border-radius: 10px;
 	display: inline-block;
@@ -150,7 +150,7 @@ body #RESPrefsDropdown.RESDropdownList {
 }
 
 #header-bottom-right #mail.nohavemail {
-	background-position: 0px -20px;
+	background-position: 0px -16px;
 }
 
 @include keyframes(haveMailPulse) {
