@@ -150,6 +150,9 @@
 .linkflair-ptr .linkflairlabel {border-color: #54a8f0;}
 .linkflair-ptr a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1120px;}
 
+.linkflair-theorycraft .linkflairlabel {border-color: #f25301;}
+.linkflair-theorycraft a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1190px;}
+
 
 .flair {
 	padding: 0px;
@@ -284,7 +287,7 @@
 /**** Blizzard flair for employees ****/
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"]:before, 
-a.author[href$="reddit.com/user/Grimiku"]:before, 
+a.author[href$="reddit.com/user/CM_Grimiku"]:before, 
 a.author[href$="reddit.com/user/JayPWilson"]:before,
 a.author[href$="reddit.com/user/_JohnYang"]:before,
 a.author[href$="reddit.com/user/Nevalistis"]:before, 
@@ -342,7 +345,7 @@ a.author[href$="reddit.com/user/Nidrorian"]:before
 /* Community Managers */
 a.author[href$="reddit.com/user/bashiok_foreal"]:after, 
 a.author[href$="reddit.com/user/lylirra"]:after, 
-a.author[href$="reddit.com/user/Grimiku"]:after, 
+a.author[href$="reddit.com/user/CM_Grimiku"]:after, 
 a.author[href$="reddit.com/user/vaeflare"]:after, 
 a.author[href$="reddit.com/user/Traysent"]:after, 
 a.author[href$="reddit.com/user/Crithto"]:after, 
@@ -402,7 +405,7 @@ a.author[href$="reddit.com/user/TravisDay"]:after {
 
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"], 
-a.author[href$="reddit.com/user/Grimiku"], 
+a.author[href$="reddit.com/user/CM_Grimiku"], 
 a.author[href$="reddit.com/user/JayPWilson"],
 a.author[href$="reddit.com/user/_JohnYang"],
 a.author[href$="reddit.com/user/Nevalistis"], 
