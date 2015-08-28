@@ -295,6 +295,10 @@ a.author[href$="reddit.com/user/TravisDay"]:before,
 a.author[href$="reddit.com/user/Tyvalir"]:before, 
 a.author[href$="reddit.com/user/Ulvareth"]:before,
 a.author[href$="reddit.com/user/wyattcheng"]:before, 
+a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:before,
+a.author[href$="reddit.com/user/blizz_rogerhughston"]:before, 
+a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:before,
+a.author[href$="reddit.com/user/BlizzRichieMarella"]:before, 
 
 /*Hearthstone*/
 a.author[href$="reddit.com/user/bdbrode"]:before,
@@ -394,8 +398,39 @@ a.author[href$="reddit.com/user/JayPWilson"]:after {
 a.author[href$="reddit.com/user/wyattcheng"]:after, 
 a.author[href$="reddit.com/user/andrewchambers"]:after,
 a.author[href$="reddit.com/user/_JohnYang"]:after, 
+a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after, 
 a.author[href$="reddit.com/user/TravisDay"]:after {
 	content: "Game Designer";
+	color: #00B4FF !important;
+	padding: 4px;
+	margin-left: 5px;
+	border: 1px solid #222;
+	background: #111;
+}
+
+/* Software Engineers */
+a.author[href$="reddit.com/user/blizz_rogerhughston"]:after {
+ 	content: "Software Engineer";
+	color: #00B4FF !important;
+	padding: 4px;
+	margin-left: 5px;
+	border: 1px solid #222;
+	background: #111;
+}
+
+/* Artists */
+a.author[href$="reddit.com/user/BlizzRichieMarella"]:after {
+ 	content: "Artist";
+	color: #00B4FF !important;
+	padding: 4px;
+	margin-left: 5px;
+	border: 1px solid #222;
+	background: #111;
+}
+
+/* Writers */
+a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:after {
+ 	content: "Writer";
 	color: #00B4FF !important;
 	padding: 4px;
 	margin-left: 5px;
@@ -413,6 +448,10 @@ a.author[href$="reddit.com/user/TravisDay"],
 a.author[href$="reddit.com/user/Tyvalir"], 
 a.author[href$="reddit.com/user/Ulvareth"],
 a.author[href$="reddit.com/user/wyattcheng"], 
+a.author[href$="reddit.com/user/Blizz_MatthewBerger"],
+a.author[href$="reddit.com/user/blizz_rogerhughston"], 
+a.author[href$="reddit.com/user/Blizz_BrianKindregan"],
+a.author[href$="reddit.com/user/BlizzRichieMarella"], 
 
 /*Hearthstone*/
 a.author[href$="reddit.com/user/bdbrode"],
