@@ -621,3 +621,25 @@ body label {
 .md pre {
 	background-color: transparent !important;
 }
+
+.nextprev, .next-suggestions {
+	color: #77839d; 
+	font-size: 14px;
+}
+
+.nextprev a, .next-suggestions a {
+	font-weight: bold;
+	padding: 0;
+	background: transparent;
+	border: none; 
+}
+
+.nextprev .separator, .next-suggestions .separator {
+	margin: 0 10px 0 10px;
+	border-left: 2px solid #0f1a24; 
+}
+
+.nextprev a:hover, .next-suggestions a:hover {
+	background: transparent;
+    border: none;
+}
