@@ -1892,6 +1892,7 @@ a.author[href$="reddit.com/user/blizz_rogerhughston"]:before,
 a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:before,
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:before,
 a.author[href$="reddit.com/user/Blizz_KevinMartens"]:before,
+a.author[href$="reddit.com/user/Blizz_Kauza"]:before,
 a.author[href$="reddit.com/user/bdbrode"]:before,
 a.author[href$="reddit.com/user/BlizzDaxxarri"]:before,
 a.author[href$="reddit.com/user/CM_Zeriyah"]:before,
@@ -1939,7 +1940,8 @@ a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Zarhym"]:after,
 a.author[href$="reddit.com/user/Tyvalir"]:after,
 a.author[href$="reddit.com/user/Nidrorian"]:after,
-a.author[href$="reddit.com/user/Ulvareth"]:after {
+a.author[href$="reddit.com/user/Ulvareth"]:after,
+a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
   content: "Community Manager";
   color: #00B4FF !important;
   padding: 4px;
@@ -2023,6 +2025,7 @@ a.author[href$="reddit.com/user/blizz_rogerhughston"],
 a.author[href$="reddit.com/user/Blizz_BrianKindregan"],
 a.author[href$="reddit.com/user/BlizzRichieMarella"],
 a.author[href$="reddit.com/user/Blizz_KevinMartens"],
+a.author[href$="reddit.com/user/Blizz_Kauza"],
 a.author[href$="reddit.com/user/bdbrode"],
 a.author[href$="reddit.com/user/BlizzDaxxarri"],
 a.author[href$="reddit.com/user/CM_Zeriyah"],
