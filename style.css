@@ -1638,6 +1638,24 @@ input[name="uh"][value$="moo"] ~ a:after {
 .linkflair-theorycraft a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -1190px; }
 
+.linkflair-guide .linkflairlabel {
+  border-color: #096c42; }
+
+.linkflair-guide a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -1260px; }
+
+.linkflair-blizzard .linkflairlabel {
+  border-color: #00a7e1; }
+
+.linkflair-blizzard a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -1330px; }
+
+.linkflair-question .linkflairlabel {
+  border-color: #572a0f; }
+
+.linkflair-question a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -1400px; }
+
 .flair {
   padding: 0px;
   margin: 0;
