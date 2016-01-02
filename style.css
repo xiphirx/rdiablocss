@@ -363,6 +363,44 @@ body #RESPrefsDropdown.RESDropdownList {
   border: 1px solid #2c5c7e;
   margin-right: 5px; }
 
+/* FOR BARBARIAN SPINNING
+#header-img-a img{
+    background:url('%%reddit-barb%%');
+    display: inline-block;
+    transform:rotateY(180deg);
+    background-size:100% auto;
+}
+
+#header-img-a img:hover{
+    content:" ";
+    background:url('%%whirl%%');
+    -webkit-animation: whirl 0.6s infinite linear;
+    animation: whirl 0.6s infinite linear;
+}
+
+
+@-webkit-keyframes whirl {
+  0% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    
+  }
+}
+@keyframes whirl {
+  0% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+*/
 .side {
   background: url("%%blue-overlay-bg%%");
   margin-right: 10px;
@@ -1180,6 +1218,24 @@ body label {
 .md pre {
   background-color: transparent !important; }
 
+.nextprev, .next-suggestions {
+  color: #77839d;
+  font-size: 14px; }
+
+.nextprev a, .next-suggestions a {
+  font-weight: bold;
+  padding: 0;
+  background: transparent;
+  border: none; }
+
+.nextprev .separator, .next-suggestions .separator {
+  margin: 0 10px 0 10px;
+  border-left: 2px solid #0f1a24; }
+
+.nextprev a:hover, .next-suggestions a:hover {
+  background: transparent;
+  border: none; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 
@@ -1836,6 +1892,7 @@ a.author[href$="reddit.com/user/blizz_rogerhughston"]:before,
 a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:before,
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:before,
 a.author[href$="reddit.com/user/Blizz_KevinMartens"]:before,
+a.author[href$="reddit.com/user/Blizz_Kauza"]:before,
 a.author[href$="reddit.com/user/bdbrode"]:before,
 a.author[href$="reddit.com/user/BlizzDaxxarri"]:before,
 a.author[href$="reddit.com/user/CM_Zeriyah"]:before,
@@ -1883,7 +1940,8 @@ a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Zarhym"]:after,
 a.author[href$="reddit.com/user/Tyvalir"]:after,
 a.author[href$="reddit.com/user/Nidrorian"]:after,
-a.author[href$="reddit.com/user/Ulvareth"]:after {
+a.author[href$="reddit.com/user/Ulvareth"]:after,
+a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
   content: "Community Manager";
   color: #00B4FF !important;
   padding: 4px;
@@ -1967,6 +2025,7 @@ a.author[href$="reddit.com/user/blizz_rogerhughston"],
 a.author[href$="reddit.com/user/Blizz_BrianKindregan"],
 a.author[href$="reddit.com/user/BlizzRichieMarella"],
 a.author[href$="reddit.com/user/Blizz_KevinMartens"],
+a.author[href$="reddit.com/user/Blizz_Kauza"],
 a.author[href$="reddit.com/user/bdbrode"],
 a.author[href$="reddit.com/user/BlizzDaxxarri"],
 a.author[href$="reddit.com/user/CM_Zeriyah"],
