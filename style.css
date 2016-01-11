@@ -913,8 +913,8 @@ textarea:focus {
   border: 1px solid #1c5589;
   box-shadow: 0px 0px 10px #1c5589; }
 
-#siteTable .entry.RES-keyNav-activeElement {
-  background: transparent !important; }
+#siteTable .entry.RES-keyNav-activeElement .md-container {
+  background: #233847 !important; }
 
 #siteTable .entry.RES-keyNav-activeElement:before {
   display: inline-block;
@@ -1123,6 +1123,9 @@ span.score {
   outline: none !important;
   background: url("%%entry-selected%%") top left no-repeat !important; }
 
+.comment .RES-keyNav-activeElement .md-container {
+  background: transparent !important; }
+
 .comment .entry .md a:visited {
   color: #336699; }
 
@@ -1184,6 +1187,10 @@ body .NERPageMarker {
 .res #RESShortcutsTrash,
 .res #RESShortcutsLeft {
   background: transparent !important; }
+
+.RES-keyNav-activeElement,
+.RES-keyNav-activeElement .md-container {
+  background-color: #233847 !important; }
 
 #sr-more-link {
   display: none; }
