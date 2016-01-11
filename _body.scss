@@ -580,6 +580,10 @@ body .NERPageMarker {
 	background:transparent !important;
 }
 
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+	background-color: $blue-button-fill;
+}
+
 #sr-more-link {
 	display: none;
 }

@@ -1185,6 +1185,9 @@ body .NERPageMarker {
 .res #RESShortcutsLeft {
   background: transparent !important; }
 
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+  background-color: #233847; }
+
 #sr-more-link {
   display: none; }
 
