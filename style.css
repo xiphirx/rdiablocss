@@ -1150,7 +1150,8 @@ h2, label {
 
 .new-comment .usertext-body {
   background-color: #0e2c42;
-  border: none; }
+  border: none;
+  margin: 0px; }
 
 .entry .buttons li.reported-stamp {
   background-color: transparent; }
