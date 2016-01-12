@@ -108,6 +108,7 @@ button {
 	font-weight: normal !important;
 	font-size: 14px !important;
 	border-radius: 2px !important;
+	text-align: center;
 }
 
 .side .subscribe-button .remove, 
@@ -305,3 +306,21 @@ a[href="/smallText"] {
 .side #search #searchexpando a {
 	color: $header-link-selected;
 }
+
+.side .md a[href*="#game"]{
+	content:"";
+	display:inline-block;
+	height:50px;
+	width:50px;
+	background:url("%%blizz-icons%%") no-repeat;
+	margin-right:5px
+}
+
+.side .md a[href*="#game"]:hover{opacity:.8}
+
+.side .md a[href*="#official"]:last-of-type{margin-right:0}
+.side .md a[href*="#overwatch"]{background-position:0px 0px}
+.side .md a[href*="#hots"]{background-position:0px -50px}
+.side .md a[href*="#starcraft"]{background-position:0px -100px}
+.side .md a[href*="#warcraft"]{background-position:0px -150px}
+.side .md a[href*="#hearthstone"]{background-position:0px -200px}

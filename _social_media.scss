@@ -35,7 +35,7 @@
 	margin-right: 10px;
 }	
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"] {
+.side a[href*="#discord"] {
 	text-indent: -9999px;
 	display: inline-block;
 	width: 300px;
@@ -44,7 +44,7 @@
 	margin-bottom:1em;
 }	
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"]:hover {
+.side a[href*="#discord"]:hover {
 	text-indent: -9999px;
 	display: inline-block;
 	width: 300px;

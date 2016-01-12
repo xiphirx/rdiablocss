@@ -500,7 +500,8 @@ button {
   background-repeat: repeat-x;
   font-weight: normal !important;
   font-size: 14px !important;
-  border-radius: 2px !important; }
+  border-radius: 2px !important;
+  text-align: center; }
 
 .side .subscribe-button .remove,
 .RESDashboardToggle.remove {
@@ -694,6 +695,35 @@ a[href="/smallText"] {
 
 .side #search #searchexpando a {
   color: #2ba5dc; }
+
+.side .md a[href*="#game"] {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: url("%%blizz-icons%%") no-repeat;
+  margin-right: 5px; }
+
+.side .md a[href*="#game"]:hover {
+  opacity: .8; }
+
+.side .md a[href*="#official"]:last-of-type {
+  margin-right: 0; }
+
+.side .md a[href*="#overwatch"] {
+  background-position: 0px 0px; }
+
+.side .md a[href*="#hots"] {
+  background-position: 0px -50px; }
+
+.side .md a[href*="#starcraft"] {
+  background-position: 0px -100px; }
+
+.side .md a[href*="#warcraft"] {
+  background-position: 0px -150px; }
+
+.side .md a[href*="#hearthstone"] {
+  background-position: 0px -200px; }
 
 ::selection {
   background: #3e7399; }
@@ -2182,7 +2212,7 @@ a[href="#s"]:active::after,
   background: url(%%ros-baked%%) -201px -14px no-repeat;
   margin-right: 10px; }
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"] {
+.side a[href*="#discord"] {
   text-indent: -9999px;
   display: inline-block;
   width: 300px;
@@ -2190,7 +2220,7 @@ a[href="#s"]:active::after,
   background: url(%%discordcss%%) 0px 0px no-repeat;
   margin-bottom: 1em; }
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"]:hover {
+.side a[href*="#discord"]:hover {
   text-indent: -9999px;
   display: inline-block;
   width: 300px;
