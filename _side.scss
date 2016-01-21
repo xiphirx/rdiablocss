@@ -324,3 +324,24 @@ a[href="/smallText"] {
 .side .md a[href*="#starcraft"]{background-position:0px -100px}
 .side .md a[href*="#warcraft"]{background-position:0px -150px}
 .side .md a[href*="#hearthstone"]{background-position:0px -200px}
+
+.side a[href*="#rules"] {
+	text-indent: -9999px;
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	background: url(%%rules%%) 0px 0px no-repeat;
+	margin-bottom:5px;
+}	
+
+.side a[href*="#rules"]:hover {
+	text-indent: -9999px;
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	background: url(%%rules%%) 0px -50px no-repeat;
+}
+
+.side a[href*="#important"]:link {color: #a038c7;}
+.side a[href*="#important"]:visited {color: #336699;}
+.side a[href*="#important"]:hover {color: white;}
