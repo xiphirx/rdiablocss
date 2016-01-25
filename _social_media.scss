@@ -5,6 +5,7 @@
 	width: 17px;
 	height: 16px;
 	background: url(%%ros-baked%%) -142px -14px no-repeat;
+	margin-left: 10px;
 	margin-right: 10px;
 }
 
@@ -35,16 +36,16 @@
 	margin-right: 10px;
 }	
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"] {
+.side a[href*="#discord"] {
 	text-indent: -9999px;
 	display: inline-block;
 	width: 300px;
 	height: 50px;
 	background: url(%%discordcss%%) 0px 0px no-repeat;
-	margin-bottom:1em;
+
 }	
 
-.side a[href="https://discord.gg/0dIgU3FsQhCdXw3q"]:hover {
+.side a[href*="#discord"]:hover {
 	text-indent: -9999px;
 	display: inline-block;
 	width: 300px;

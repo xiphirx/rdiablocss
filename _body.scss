@@ -274,8 +274,8 @@ textarea:focus {
     box-shadow: 0px 0px 10px #1c5589;
 }
 
-#siteTable .entry.RES-keyNav-activeElement {
-	background: transparent !important;
+#siteTable .entry.RES-keyNav-activeElement .md-container {
+	background: $blue-button-fill !important;
 }
 
 #siteTable .entry.RES-keyNav-activeElement:before {
@@ -501,6 +501,10 @@ span.score {
 	background: url($entry-selected) top left no-repeat !important;
 }
 
+.comment .RES-keyNav-activeElement .md-container {
+	background: transparent !important;
+}
+
 
 .comment .entry .md a:visited {
 	color: $header-link-visited;
@@ -535,6 +539,7 @@ h2, label {
 .new-comment .usertext-body {
 	background-color:#0e2c42 ;
 	border: none;
+	margin: 0px;
 }
 
 .entry .buttons li.reported-stamp {
@@ -578,6 +583,11 @@ body .NERPageMarker {
 .res #RESShortcutsTrash,
 .res #RESShortcutsLeft {
 	background:transparent !important;
+}
+
+.RES-keyNav-activeElement, 
+.RES-keyNav-activeElement .md-container {
+	background-color: $blue-button-fill !important;
 }
 
 #sr-more-link {
@@ -642,4 +652,8 @@ body label {
 .nextprev a:hover, .next-suggestions a:hover {
 	background: transparent;
     border: none;
+}
+
+.linefield.mobile {
+	background-color: #0c1619;
 }
