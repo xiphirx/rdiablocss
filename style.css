@@ -713,7 +713,7 @@ a[href="/smallText"] {
 .side .md a[href*="#overwatch"] {
   background-position: 0px 0px; }
 
-.side .md a[href*="#hots"] {
+.side .md a[href*="#heroes"] {
   background-position: 0px -50px; }
 
 .side .md a[href*="#starcraft"] {
@@ -1297,6 +1297,9 @@ body label {
 .nextprev a:hover, .next-suggestions a:hover {
   background: transparent;
   border: none; }
+
+.linefield.mobile {
+  background-color: #0c1619; }
 
 .side .md h5:before {
   content: "Announcement - "; }

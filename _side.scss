@@ -307,7 +307,7 @@ a[href="/smallText"] {
 	color: $header-link-selected;
 }
 
-.side .md a[href*="#game"]{
+.side .md a[href*="#game"] {
 	content:"";
 	display:inline-block;
 	height:50px;
@@ -316,14 +316,19 @@ a[href="/smallText"] {
 	margin-right:5px
 }
 
-.side .md a[href*="#game"]:hover{opacity:.8}
+.side .md a[href*="#game"]:hover {
+	opacity:.8;
+}
 
-.side .md a[href*="#official"]:last-of-type{margin-right:0}
-.side .md a[href*="#overwatch"]{background-position:0px 0px}
-.side .md a[href*="#hots"]{background-position:0px -50px}
-.side .md a[href*="#starcraft"]{background-position:0px -100px}
-.side .md a[href*="#warcraft"]{background-position:0px -150px}
-.side .md a[href*="#hearthstone"]{background-position:0px -200px}
+.side .md a[href*="#official"]:last-of-type {
+	margin-right:0;
+}
+
+.side .md a[href*="#overwatch"] {background-position:0px 0px;}
+.side .md a[href*="#heroes"] {background-position:0px -50px;}
+.side .md a[href*="#starcraft"] {background-position:0px -100px;}
+.side .md a[href*="#warcraft"] {background-position:0px -150px;}
+.side .md a[href*="#hearthstone"] {background-position:0px -200px;}
 
 .side a[href*="#rules"] {
 	text-indent: -9999px;
@@ -342,6 +347,14 @@ a[href="/smallText"] {
 	background: url(%%rules%%) 0px -50px no-repeat;
 }
 
-.side a[href*="#important"]:link {color: #a038c7;}
-.side a[href*="#important"]:visited {color: #336699;}
-.side a[href*="#important"]:hover {color: white;}
+.side a[href*="#important"]:link {
+	color: #a038c7;
+}
+
+.side a[href*="#important"]:visited {
+	color: #336699;
+}
+
+.side a[href*="#important"]:hover {
+	color: white;
+}
