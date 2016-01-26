@@ -1301,6 +1301,20 @@ body label {
 .linefield.mobile {
   background-color: #0c1619; }
 
+.subreddit-report-form {
+  background-color: #172127;
+  color: #badcf1;
+  border: 1px solid #2c5c7e; }
+
+.subreddit-rules-page {
+  margin-top: 40px; }
+
+.subreddit-rule-item:hover {
+  background: #233847; }
+
+.subreddit-rules-page .md-container .md .subreddit-rule-description {
+  color: #ffffff; }
+
 .side .md h5:before {
   content: "Announcement - "; }
 

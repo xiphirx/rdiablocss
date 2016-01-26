@@ -633,7 +633,7 @@ body label {
 }
 
 .nextprev, .next-suggestions {
-	color: #77839d; 
+	color: $submission-buttons; 
 	font-size: 14px;
 }
 
@@ -646,7 +646,7 @@ body label {
 
 .nextprev .separator, .next-suggestions .separator {
 	margin: 0 10px 0 10px;
-	border-left: 2px solid #0f1a24; 
+	border-left: 2px solid $submission-border; 
 }
 
 .nextprev a:hover, .next-suggestions a:hover {
@@ -655,5 +655,23 @@ body label {
 }
 
 .linefield.mobile {
-	background-color: #0c1619;
+	background-color: $dark-blue;
+}
+
+.subreddit-report-form {
+	background-color: $body-bg-blue;
+	color: $text;
+	border: 1px solid $blue-button-light-border;
+}
+
+.subreddit-rules-page {
+    margin-top: 40px;
+}
+
+.subreddit-rule-item:hover {
+	background: $blue-button-fill;
+}
+
+.subreddit-rules-page .md-container .md .subreddit-rule-description {
+	color: $white;
 }
