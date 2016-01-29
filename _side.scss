@@ -93,6 +93,14 @@ button {
 	border-radius: 0px;
 }
 
+.hover-bubble {
+	background: $blue-button-dark-fill;
+}
+
+.hover-bubble.multi-selector strong {
+	color: $white;
+}
+
 .RESshortcut {
 	height: 29px;
 	line-height: 29px;
@@ -171,7 +179,7 @@ button:hover {
 }
 
 .side .users-online {
-	display: inline;
+	display: inline-block;
 	margin: 0;
 	font-size: 14px;
 	margin-left: 5px;
@@ -345,16 +353,4 @@ a[href="/smallText"] {
 	width: 300px;
 	height: 50px;
 	background: url(%%rules%%) 0px -50px no-repeat;
-}
-
-.side a[href*="#important"]:link {
-	color: #a038c7;
-}
-
-.side a[href*="#important"]:visited {
-	color: #336699;
-}
-
-.side a[href*="#important"]:hover {
-	color: white;
 }

@@ -487,6 +487,12 @@ button {
   margin: 0;
   border-radius: 0px; }
 
+.hover-bubble {
+  background: #112533; }
+
+.hover-bubble.multi-selector strong {
+  color: #ffffff; }
+
 .RESshortcut {
   height: 29px;
   line-height: 29px; }
@@ -563,14 +569,14 @@ button:hover {
   font-size: 14px; }
 
 .side .subscribers .number:after {
-  content: " heroes trying to get onto the PTR "; }
+  content: " playing Monk last season"; }
 
 .side .subscribers .word,
 .side .users-online .word {
   display: none; }
 
 .side .users-online {
-  display: inline;
+  display: inline-block;
   margin: 0;
   font-size: 14px;
   margin-left: 5px; }
@@ -581,7 +587,7 @@ button:hover {
   margin: 0; }
 
 .side .users-online .number:after {
-  content: " servers available"; }
+  content: " playing Monk this season"; }
 
 .side .usertext-body .md {
   padding-top: 18px;
@@ -740,15 +746,6 @@ a[href="/smallText"] {
   height: 50px;
   background: url(%%rules%%) 0px -50px no-repeat; }
 
-.side a[href*="#important"]:link {
-  color: #a038c7; }
-
-.side a[href*="#important"]:visited {
-  color: #336699; }
-
-.side a[href*="#important"]:hover {
-  color: white; }
-
 ::selection {
   background: #3e7399; }
 
@@ -775,6 +772,15 @@ a:visited {
   color: #336699; }
 
 a:hover {
+  color: #ffffff; }
+
+a[href*="#important"]:link {
+  color: #a038c7; }
+
+a[href*="#important"]:visited {
+  color: #336699; }
+
+a[href*="#important"]:hover {
   color: #ffffff; }
 
 html:not([lang="xx"]) .RES-keyNav-activeElement,
@@ -1511,12 +1517,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 
 .comments-page .flat-list.buttons a.flairselectbtn {
   font-size: 0px;
-  background: #274723;
+  background: #c738bb;
   display: inline-block;
   padding: 5px;
   border-radius: 3px;
   color: #d9f3ff !important;
-  border: 1px solid #347e2c; }
+  border: 1px solid #a038c7; }
 
 .comments-page .flat-list.buttons a.flairselectbtn::before {
   content: "Add flair to this post";
@@ -2317,6 +2323,13 @@ a[href="#s"]:active::after,
 .content.submit .info-notice,
 .linefield {
   background-color: #0c1619; }
+
+.submit_text.roundfield {
+  position: absolute;
+  top: 140px; }
+
+.formtabs-content .infobar {
+  margin-bottom: 230px; }
 
 .wiki-page .wiki-page-content .md.wiki h1,
 .wiki-page .wiki-page-content .md.wiki h2,

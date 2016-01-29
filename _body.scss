@@ -37,6 +37,18 @@ a:hover {
 	color: $header-link-hover;
 }
 
+a[href*="#important"]:link {
+	color: $pink-button-border;
+}
+
+a[href*="#important"]:visited {
+	color: $header-link-visited;
+}
+
+a[href*="#important"]:hover {
+	color: $white;
+}
+
 html:not([lang="xx"]) .RES-keyNav-activeElement, 
 html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement .md, 
 html:not([lang="xx"]) .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
