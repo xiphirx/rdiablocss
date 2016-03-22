@@ -1,0 +1,44 @@
+* {
+font-family: "Comic Sans MS", cursive, sans-serif !important;
+    background: linear-gradient(13deg, #ff0000, #eeff00, #45ff00, #00ffdf, #005fff, #af00ff, #ff00d4);
+    background-size: 1400% 1400%;
+    animation: moo 14s ease infinite;
+    
+}
+
+a{transition: all .2s ease-in-out !important;}
+a:hover { transform: scale(1.337) !important; }
+
+body {
+    background: linear-gradient(13deg, #ff0000, #eeff00, #45ff00, #00ffdf, #005fff, #af00ff, #ff00d4);
+    background-size: 1400% 1400%;
+    animation: moo 14s ease infinite;
+}
+
+html {
+    animation: memes 15s ease infinite;
+}
+
+@keyframes memes {
+    0% { transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    100% { transform: rotate(-2deg);}
+}
+
+@keyframes moo { 
+    0%{background-position:0% 83%}
+    50%{background-position:100% 18%}
+    100%{background-position:0% 83%}
+}
+
+#header .hover.pagename.redditname a {
+    background: none !important;
+}
+
+a.author:before {
+    content: "Brother_";
+}
+
+a.choice:after {
+    content: " memes";
+}
