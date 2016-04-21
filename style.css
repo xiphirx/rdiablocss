@@ -2029,7 +2029,6 @@ a.author[href$="reddit.com/user/Rygarius"]:before,
 a.author[href$="reddit.com/user/Zarhym"]:before,
 a.author[href$="reddit.com/user/Araxom"]:before,
 a.author[href$="reddit.com/user/Glaxigrav"]:before,
-a.author[href$="reddit.com/user/Natryndon"]:before,
 a.author[href$="reddit.com/user/Nidrorian"]:before {
   content: url(%%blizz%%);
   margin-left: 3px;
