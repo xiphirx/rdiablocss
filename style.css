@@ -569,7 +569,7 @@ button:hover {
   font-size: 14px; }
 
 .side .subscribers .number:after {
-  content: " playing Season 6"; }
+  content: " waiting for Season 7"; }
 
 .side .subscribers .word,
 .side .users-online .word {
@@ -587,7 +587,7 @@ button:hover {
   margin: 0; }
 
 .side .users-online .number:after {
-  content: " sitting out this Season"; }
+  content: " still playing Season 6"; }
 
 .side .usertext-body .md {
   padding-top: 18px;
@@ -1235,6 +1235,9 @@ h2, label {
   border: 1px solid #dc5500;
   box-shadow: 0px 0px 24px #dc5500; }
 
+.user-gilded > .entry .gilded-icon:before {
+  width: 16px; }
+
 #progressIndicator.neverEndingReddit,
 body .NERPageMarker {
   background-color: #112533;
@@ -1758,6 +1761,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 .linkflair-question a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -1400px; }
 
+.linkflair-clan .linkflairlabel {
+  border-color: #0600ff; }
+
+.linkflair-clan a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -1470px; }
+
 .flair {
   padding: 0px;
   margin: 0;
@@ -2046,7 +2055,8 @@ a.author[href$="reddit.com/user/Rygarius"]:before,
 a.author[href$="reddit.com/user/Zarhym"]:before,
 a.author[href$="reddit.com/user/Araxom"]:before,
 a.author[href$="reddit.com/user/Glaxigrav"]:before,
-a.author[href$="reddit.com/user/Nidrorian"]:before {
+a.author[href$="reddit.com/user/Nidrorian"]:before,
+a.author[href$="reddit.com/user/Kalviery"]:before {
   content: url(%%blizz%%);
   margin-left: 3px;
   margin-right: 3px;
@@ -2083,7 +2093,8 @@ a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
 /* Customer support */
 a.author[href$="reddit.com/user/Araxom"]:after,
 a.author[href$="reddit.com/user/Glaxigrav"]:after,
-a.author[href$="reddit.com/user/Natryndon"]:after {
+a.author[href$="reddit.com/user/Natryndon"]:after,
+a.author[href$="reddit.com/user/Kalviery"]:after {
   content: "Customer Support";
   color: #00B4FF !important;
   padding: 4px;
@@ -2179,7 +2190,8 @@ a.author[href$="reddit.com/user/Zarhym"],
 a.author[href$="reddit.com/user/Araxom"],
 a.author[href$="reddit.com/user/Glaxigrav"],
 a.author[href$="reddit.com/user/Natryndon"],
-a.author[href$="reddit.com/user/Nidrorian"] {
+a.author[href$="reddit.com/user/Nidrorian"],
+a.author[href$="reddit.com/user/Kalviery"] {
   color: #00B4FF !important; }
 
 a[href="/spoiler"] {
@@ -2357,5 +2369,8 @@ a[href="#s"]:active::after,
 
 .wiki-page .wiki-page-content {
   margin: 15px 15px 15px 15px !important; }
+
+.modtools-page > div.content {
+  margin-right: 360px; }
 
 /*# sourceMappingURL=style.css.map */
