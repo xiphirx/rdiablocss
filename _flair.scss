@@ -162,6 +162,9 @@
 .linkflair-question .linkflairlabel {border-color: #572a0f;}
 .linkflair-question a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1400px;}
 
+.linkflair-clan .linkflairlabel {border-color: #0600ff;}
+.linkflair-clan a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1470px;}
+
 
 .flair {
 	padding: 0px;
@@ -348,7 +351,8 @@ a.author[href$="reddit.com/user/Zarhym"]:before,
 /*Other*/
 a.author[href$="reddit.com/user/Araxom"]:before, 
 a.author[href$="reddit.com/user/Glaxigrav"]:before,  
-a.author[href$="reddit.com/user/Nidrorian"]:before
+a.author[href$="reddit.com/user/Nidrorian"]:before,
+a.author[href$="reddit.com/user/Kalviery"]:before
 
  
  {
@@ -391,7 +395,8 @@ a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
 /* Customer support */
 a.author[href$="reddit.com/user/Araxom"]:after, 
 a.author[href$="reddit.com/user/Glaxigrav"]:after, 
-a.author[href$="reddit.com/user/Natryndon"]:after {
+a.author[href$="reddit.com/user/Natryndon"]:after,
+a.author[href$="reddit.com/user/Kalviery"]:after {
  	content: "Customer Support";
 	color: #00B4FF !important;
 	padding: 4px;
@@ -505,6 +510,7 @@ a.author[href$="reddit.com/user/Zarhym"],
 a.author[href$="reddit.com/user/Araxom"], 
 a.author[href$="reddit.com/user/Glaxigrav"], 
 a.author[href$="reddit.com/user/Natryndon"], 
-a.author[href$="reddit.com/user/Nidrorian"] {
+a.author[href$="reddit.com/user/Nidrorian"],
+a.author[href$="reddit.com/user/Kalviery"]{
 	color: #00B4FF !important;
 }
