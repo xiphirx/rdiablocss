@@ -2413,7 +2413,7 @@ a[href="#s"]:active::after,
 .formtabs-content .infobar {
   margin-bottom: 230px; }
 
-.content .spacer {
+ul.tabmenu.formtab {
   margin-bottom: 230px; }
 
 .wiki-page .wiki-page-content .md.wiki h1,
