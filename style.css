@@ -569,11 +569,7 @@ button:hover {
   font-size: 14px; }
 
 .side .subscribers .number:after {
-<<<<<<< HEAD
   content: " hyped for the Necromancer"; }
-=======
-  content: " waiting for Season 7"; }
->>>>>>> refs/remotes/xiphirx/master
 
 .side .subscribers .word,
 .side .users-online .word {
@@ -591,11 +587,7 @@ button:hover {
   margin: 0; }
 
 .side .users-online .number:after {
-<<<<<<< HEAD
   content: " waiting for the Druid"; }
-=======
-  content: " still playing Season 6"; }
->>>>>>> refs/remotes/xiphirx/master
 
 .side .usertext-body .md {
   padding-top: 18px;
@@ -1823,15 +1815,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 .linkflair-clan a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -1470px; }
 
-<<<<<<< HEAD
 .linkflair-speculation .linkflairlabel {
   border-color: #000; }
 
 .linkflair-speculation a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -1540px; }
 
-=======
->>>>>>> refs/remotes/xiphirx/master
 .flair {
   padding: 0px;
   margin: 0;
