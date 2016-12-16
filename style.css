@@ -569,7 +569,7 @@ button:hover {
   font-size: 14px; }
 
 .side .subscribers .number:after {
-  content: " waiting for Season 7"; }
+  content: " hyped for the Necromancer"; }
 
 .side .subscribers .word,
 .side .users-online .word {
@@ -587,7 +587,7 @@ button:hover {
   margin: 0; }
 
 .side .users-online .number:after {
-  content: " still playing Season 6"; }
+  content: " waiting for the Druid"; }
 
 .side .usertext-body .md {
   padding-top: 18px;
@@ -1815,6 +1815,12 @@ input[name="uh"][value$="moo"] ~ a:after {
 .linkflair-clan a.thumbnail {
   background: url(%%linkflairthumbs%%) 0px -1470px; }
 
+.linkflair-speculation .linkflairlabel {
+  border-color: #000; }
+
+.linkflair-speculation a.thumbnail {
+  background: url(%%linkflairthumbs%%) 0px -1540px; }
+
 .flair {
   padding: 0px;
   margin: 0;
@@ -2402,9 +2408,12 @@ a[href="#s"]:active::after,
 
 .submit_text.roundfield {
   position: absolute;
-  top: 140px; }
+  top: 80px; }
 
 .formtabs-content .infobar {
+  margin-bottom: 230px; }
+
+ul.tabmenu.formtab {
   margin-bottom: 230px; }
 
 .wiki-page .wiki-page-content .md.wiki h1,
