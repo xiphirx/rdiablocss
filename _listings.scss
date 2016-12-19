@@ -2,12 +2,11 @@
 @import 'images';
 
 #header ~ div.content {
-	margin: 0;
+	margin: 16px 332px 16px 16px;
 }
 
 #siteTable {
 	display: block;
-	margin: 16px 316px 16px 16px;
 	background: $red4;
 	border: 1px solid $red3;
 	border-radius: 2px;
@@ -163,6 +162,10 @@
 
 		a.title:visited {
 			color: $red1;
+		}
+
+		&.stickied a.title:visited {
+			color: $link-sticky-title-visited-color;
 		}
 
 		.stamp {

@@ -32,6 +32,10 @@
 		}
 	}
 
+	a.title:visited {
+		color: $blizz-link-title-visited-color;
+	}
+
 	.media-embed, .usertext-body .md {
 		border-color: $blizz-link-tagline-color;
 	}
@@ -141,7 +145,7 @@
 	&.linkflair-art .linkflairlabel {
 		border-color: #37586f;
 	}
-	
+
 	&.linkflair-season .linkflairlabel {
 		border-color: #9af054;
 	}
