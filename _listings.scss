@@ -1,0 +1,218 @@
+@import 'colors';
+@import 'images';
+
+#header ~ div.content {
+	margin: 0;
+}
+
+#siteTable {
+	display: block;
+	margin: 16px 316px 16px 16px;
+	background: $red4;
+	border: 1px solid $red3;
+	border-radius: 2px;
+
+	.thing.link {
+		border-bottom: 2px solid $red5;
+		padding: 16px;
+		margin: 0px;
+		position: relative;
+
+		&.stickied {
+			background: url($sticky-link-glow) bottom left no-repeat;
+		}
+
+		&.last-clicked {
+			border: none;
+			border-bottom: 2px solid $red5;
+		}
+
+		.entry p.title {
+			border-bottom: 1px dashed $link-title-border-color;
+			padding-bottom: 4px;
+		}
+
+		&.stickied a.title, 
+		.tagline .stickied-tagline {
+			color: $link-sticky-title-color;
+		}
+
+		.rank {
+			display: none;
+		}
+
+		a.title {
+      letter-spacing: 1px;
+		}
+
+		.tagline, 
+		.buttons li a, 
+		.domain, 
+		.domain a {
+			font-variant: small-caps;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		.tagline {
+			color: $link-tagline-color;
+			margin-top: 2px;
+
+			a.author {
+				color: $user-color;
+
+				&.moderator {
+					color: $moderator-color;
+				}
+
+				&.friend {
+					color: $friend-color;
+				}
+			}
+		}
+
+		.buttons li a {
+			color: $link-buttons-color;
+		}
+
+		.domain {
+			color: $red4;
+
+			&:before {
+				color: $link-domain-color;
+				content: "/";
+			}
+
+			a {
+				color: $link-domain-color;
+			}
+		}
+
+		.expando-button {
+			margin: 2px 8px 0px 0px;
+			background: $spritebg;
+
+			&.collapsed {
+				$image: 'expando-normal';
+				@include sprite-dimensions($sprites, $image);
+				background-position: sprite-position($sprites, $image);
+			}
+
+			&.expanded {
+				$image: 'expando-activated';
+				@include sprite-dimensions($sprites, $image);
+				background-position: sprite-position($sprites, $image);
+			}
+		}
+
+		&.linkflair a.thumbnail {
+			margin: 12px 8px 0px 0px;
+		}
+
+		a.thumbnail {
+			@include sprite-dimensions($sprites, 'thumb-frame');
+			@include vendor-prefix(background-clip, content-box !important);
+			position: relative;
+			margin: 3px 8px 0px 0px;
+
+			img {
+				@include sprite-dimensions($sprites, 'thumb-frame');
+			}
+
+			&:after {
+				@include sprite-dimensions($sprites, 'thumb-frame');
+				content: " ";
+				display: block;
+				background: $spritebg;
+				background-position: sprite-position($sprites, 'thumb-frame');
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&.linkflair .entry {
+			padding-top: 8px;
+		}
+
+		.entry {
+			overflow: initial;
+			position: relative;
+		}
+
+		.linkflairlabel {
+			position: absolute;
+			top: -15px;
+			left: 33px;
+			width: 62px;
+			border-radius: 0px 0px 2px 2px;
+			margin: 0px;
+			text-align: center;
+			font-weight: bold;
+			color: #FFF;
+			background: #222;
+			border-color: #666;
+			border-top: none;
+			padding: 3px;
+		}
+
+		a.title {
+			color: #FFF;
+		}
+
+		a.title:visited {
+			color: $red1;
+		}
+
+		.stamp {
+			border-radius: 2px;
+			padding: 2px;
+			padding-right: 4px;
+		}
+
+		&.linkflair .midcol {
+			margin-top: 15px;
+		}
+
+		.midcol {
+			z-index: 2;
+			position: relative;
+			margin: 5px 16px 0px 0px;
+
+			.arrow {
+				@include sprite-dimensions($sprites, 'upvote-normal');
+				background: $spritebg;
+
+				&.up {
+					background-position: sprite-position($sprites, 'upvote-normal');
+				}
+
+				&.upmod {
+					background-position: sprite-position($sprites, 'upvote-activated');
+				}
+
+				&.down {
+					background-position: sprite-position($sprites, 'downvote-normal');
+				}
+
+				&.downmod {
+					background-position: sprite-position($sprites, 'downvote-activated');
+				}
+			}
+		}
+
+		.usertext-body .md {
+			background-color: transparent;
+			border: none;
+			border-radius: 0px;
+			color: $post-text-color;
+		}
+
+		.media-embed, .usertext-body .md {
+			margin-left: 99px;
+			border-left: 2px solid $red2;
+			padding-left: 8px;
+		}
+	}
+}

@@ -1,2 +1,5 @@
 .sass*
 *.map
+/*.png
+work/
+stylesheets/

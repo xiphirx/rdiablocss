@@ -1,0 +1,8 @@
+
+@import "compass/utilities/sprites";
+
+$sprites-layout: smart;
+@import "sprites/*.png";
+
+$link-flair-layout: smart;
+@import "link-flair/*.png";
