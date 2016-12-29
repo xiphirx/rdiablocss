@@ -16,3 +16,26 @@ $button-fill: '%%button-fill%%';
 
 $spritebg: url('%%sprites%%');
 $linkflairbg: url('%%link-flair%%');
+
+
+.pentagram-small {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: $spritebg;
+	@include vendor-prefix(transform, translatez(0));
+}
+
+@for $i from 1 through 5 {
+	@include keyframes(pentagram-small-#{$i}) {
+		100% {
+			background-position: sprite-position($sprites, 'pentagram-small-#{$i}', 160px, 0px);
+		}
+	}
+
+	.pentagram-small-#{$i} {
+		@extend .pentagram-small;
+		@include vendor-prefix(animation, pentagram-small-#{$i} 0.5s steps(8) infinite);
+		background-position: sprite-position($sprites, 'pentagram-small-#{$i}');
+	}
+}

@@ -1,25 +1,41 @@
 @import 'colors';
 @import 'images';
+@import 'text';
+
+.embossed-button {
+	border: 6px solid transparent;
+	@include vendor-prefix(border-image, url($button-border) 6 6 round);
+	background: url($button-fill);
+	padding: 8px;
+}
+
+.embossed-button-text {
+	color: #fff;
+	text-shadow: 0px 2px 1px #000, 0px 1px 0px #000;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.thin-border {
+	border: 2px solid transparent;
+	@include vendor-prefix(border-image, url($thin-border) 2 2 round);
+}
 
 .side {
 	background: transparent;
 	margin: 16px 16px 0px 16px;
 	position: relative;
 	width: 300px;
+	color: $post-text-color;
 
 	.morelink {
-		border: 6px solid transparent;
-		@include vendor-prefix(border-image, url($button-border) 6 6 round);
-		background: url($button-fill);
+		@extend .embossed-button;
 		padding: 4px;
 
 		a {
-			color: #fff;
-			text-shadow: 0px 2px 1px #000, 0px 1px 0px #000;
-			text-transform: uppercase;
-			font-size: 12px;
-			font-weight: normal;
-			letter-spacing: 1px;
+			@extend .embossed-button-text;
 		}
 
 		.nub {
@@ -46,9 +62,8 @@
 	}
 
 	#search {
+		@extend .thin-border;
 		margin-top: 60px;
-		border: 2px solid transparent;
-		@include vendor-prefix(border-image, url($thin-border) 2 2 round);
 		background: #000;
 
 		input[type=text] {
@@ -60,9 +75,11 @@
 		.infobar {
 			background-color: #332a18;
 			border-radius: 0px;
-			border: none;
+			@extend .thin-border;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
 			border-top: 2px solid transparent;
-			@include vendor-prefix(border-image, url($thin-border) 2 2 round);
 			color: #b28938;
 		}
 	}
@@ -75,5 +92,114 @@
 		border: 8px solid transparent;
 		@include vendor-prefix(border-image, url($thick-border) 8 8 round);
 		background: #000;
+		position: relative;
+	}
+
+	h1.redditname {
+		display: none;
+	}
+
+	.subscribe-button {
+		position: absolute;
+		top: 73px;
+		left: 50%;
+		margin-left: -60px;
+		width: 120px;
+
+		.option {
+			@extend .embossed-button;
+			@extend .embossed-button-text;
+		}
+	} 
+
+	.subscribers {
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		font-variant: small-caps;
+		margin-top: 16px;
+
+		.word {
+			display: none;
+		}
+
+		.number:after {
+			content: $subscriber-text;
+		}
+	}
+
+	.users-online {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		font-variant: small-caps;
+		margin-bottom: 64px;
+
+		.word {
+			display: none;
+		}
+
+		.number:after {
+			content: $online-now-text;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	form.toggle, .leavemoderator {
+		background: transparent;
+		@extend .thin-border;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		padding: 8px;
+		font-size: 12px;
+	}
+
+	.titlebox .tagline {
+		font-size: 12px;
+		margin: 0px 8px 8px 8px;
+		a {
+			color: $link-color;
+		}
+	}
+
+	.usertext-body {
+		@extend .thin-border;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+
+		hr {
+			@extend .thin-border;
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+			height: 0px;
+			margin: 4px 0px;
+		}
+
+		p {
+			padding: 8px;
+		}
+
+		a {
+			color: $link-color;
+		}
+
+		a[href="/smallText"], a[href="/s"] {
+			display: none;
+		}
+	}
+
+	.titlebox .bottom {
+		display: none;
+	}
+
+	/* Fuck da police */
+	.spacer:nth-last-child(2) {
+		display: none;
 	}
 }

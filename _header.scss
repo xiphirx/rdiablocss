@@ -106,11 +106,27 @@
           color: $link-color2;
           letter-spacing: 2px;
           font-weight: normal;
+          position: relative;
           @include vendor-prefix(transition, background 0.5s);
 
           &:hover {
             background: rgba(255, 255, 255, 0.05);
             @include vendor-prefix(transition, background 0.5s);
+
+            &:before, &:after {
+              @extend .pentagram-small-1;
+              content: "";
+              position: absolute;
+              top: 11px;
+            }
+
+            &:before {
+              left: -11px;
+            } 
+
+            &:after {
+              right: -10px;
+            }
           }
         }
       }

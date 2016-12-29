@@ -135,25 +135,9 @@
 			padding-top: 8px;
 		}
 
-		.entry {
+		.entry, &.last-clicked {
 			overflow: initial;
 			position: relative;
-		}
-
-		.linkflairlabel {
-			position: absolute;
-			top: -15px;
-			left: 33px;
-			width: 62px;
-			border-radius: 0px 0px 2px 2px;
-			margin: 0px;
-			text-align: center;
-			font-weight: bold;
-			color: #FFF;
-			background: #222;
-			border-color: #666;
-			border-top: none;
-			padding: 3px;
 		}
 
 		a.title {
