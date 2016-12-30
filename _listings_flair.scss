@@ -13,7 +13,7 @@
 	background-color: $blizz-link-background-color;
 
 	.tagline {
-		color: $blizz-link-tagline-color;
+		color: $blizz-link-buttons-color;
 	}
 
 	.buttons li a {
@@ -37,7 +37,7 @@
 	}
 
 	.media-embed, .usertext-body .md {
-		border-color: $blizz-link-tagline-color;
+		border-color: $blizz-link-buttons-color;
 	}
 }
 

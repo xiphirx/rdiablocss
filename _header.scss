@@ -5,6 +5,8 @@
   background: url($diablo) center bottom no-repeat $header-background-color;
   border-bottom: 1px solid $red3;
   height: 263px;
+  position: relative;
+  z-index: 1;
 
   #header-img {
     margin-left: 16px;
@@ -89,7 +91,7 @@
         }
 
         &:first-child {
-          margin-left: 16px;
+          margin-left: 110px;
 
           a {
             border-left: 1px solid #111;

@@ -54,7 +54,7 @@
 		}
 
 		.tagline {
-			color: $link-tagline-color;
+			color: $link-buttons-color;
 			margin-top: 2px;
 
 			a.author {
@@ -159,13 +159,13 @@
 		}
 
 		&.linkflair .midcol {
-			margin-top: 15px;
+			margin-top: 13px;
 		}
 
 		.midcol {
 			z-index: 2;
 			position: relative;
-			margin: 5px 16px 0px 0px;
+			margin: 3px 16px 0px 0px;
 
 			.arrow {
 				@include sprite-dimensions($sprites, 'upvote-normal');

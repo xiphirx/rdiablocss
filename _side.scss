@@ -2,31 +2,9 @@
 @import 'images';
 @import 'text';
 
-.embossed-button {
-	border: 6px solid transparent;
-	@include vendor-prefix(border-image, url($button-border) 6 6 round);
-	background: url($button-fill);
-	padding: 8px;
-}
-
-.embossed-button-text {
-	color: #fff;
-	text-shadow: 0px 2px 1px #000, 0px 1px 0px #000;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: normal;
-	letter-spacing: 1px;
-}
-
-.thin-border {
-	border: 2px solid transparent;
-	@include vendor-prefix(border-image, url($thin-border) 2 2 round);
-}
-
 .side {
 	background: transparent;
-	margin: 16px 16px 0px 16px;
-	position: relative;
+	margin: 108px 16px 0px 16px;
 	width: 300px;
 	color: $post-text-color;
 
@@ -45,15 +23,10 @@
 
 	.sidebox.submit {
 		position: absolute;
-
-		&.submit-link {
-			top: 0px;
-			left: 0px;
-		}
+		top: 281px;
 
 		&.submit-text {
-			top: 0px;
-			right: 0px;
+			margin-left: 158px;
 		}
 
 		.morelink {
@@ -63,7 +36,9 @@
 
 	#search {
 		@extend .thin-border;
-		margin-top: 60px;
+		position: absolute;
+		top: 341px;
+		right: 16px;
 		background: #000;
 
 		input[type=text] {
@@ -92,7 +67,14 @@
 		border: 8px solid transparent;
 		@include vendor-prefix(border-image, url($thick-border) 8 8 round);
 		background: #000;
-		position: relative;
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+
+		&>* {
+			order: 2;
+			width: 100%;
+		}
 	}
 
 	h1.redditname {
@@ -100,11 +82,14 @@
 	}
 
 	.subscribe-button {
-		position: absolute;
-		top: 73px;
-		left: 50%;
-		margin-left: -60px;
-		width: 120px;
+		width: auto;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 16px;
+
+		a.active {
+			display: block;
+		}
 
 		.option {
 			@extend .embossed-button;
@@ -118,6 +103,7 @@
 		font-size: 18px;
 		font-variant: small-caps;
 		margin-top: 16px;
+		order: -1;
 
 		.word {
 			display: none;
@@ -133,7 +119,8 @@
 		text-align: center;
 		font-size: 14px;
 		font-variant: small-caps;
-		margin-bottom: 64px;
+		margin-bottom: 16px;
+		order: -1;
 
 		.word {
 			display: none;
@@ -181,16 +168,223 @@
 			margin: 4px 0px;
 		}
 
-		p {
-			padding: 8px;
-		}
-
 		a {
 			color: $link-color;
 		}
 
+		h1 {
+			padding: 0px 8px;
+			font-variant: small-caps;
+			font-weight: normal;
+			font-size: 14px;
+
+		}
+
 		a[href="/smallText"], a[href="/s"] {
 			display: none;
+		}
+
+		.rules-discord {
+			@extend .embossed-button-text;
+			vertical-align: bottom;
+			text-align: center;
+			padding-top: 49px;
+			height: 22px;
+			margin: 16px;
+		}
+
+		a[href$="#rules"] {
+			@extend .rules-button;
+			@extend .rules-discord;
+		}
+
+		a[href$="#discord"] {
+			@extend .discord-button;
+			@extend .rules-discord;
+			float: right;
+		}
+
+		.game-button {
+			width: 50px;
+			height: 50px;
+			text-indent: -999999px;
+			display: inline-block;
+			background: $spritebg;
+		}
+
+		a[href$="#hearthstone"] {
+			@extend .game-button;
+			background-position: sprite-position($sprites, 'hs');
+			margin-left: 8px;
+
+			&:hover {
+				background-position: sprite-position($sprites, 'hs-hover');
+			}
+		}
+
+		a[href$="#heroes"] {
+			@extend .game-button;
+			background-position: sprite-position($sprites, 'hots');
+
+			&:hover {
+				background-position: sprite-position($sprites, 'hots-hover');
+			}
+		}
+
+		a[href$="#overwatch"] {
+			@extend .game-button;
+			background-position: sprite-position($sprites, 'ow');
+
+			&:hover {
+				background-position: sprite-position($sprites, 'ow-hover');
+			}
+		}
+
+		a[href$="#starcraft"] {
+			@extend .game-button;
+			background-position: sprite-position($sprites, 'sc2');
+
+			&:hover {
+				background-position: sprite-position($sprites, 'sc2-hover');
+			}
+		}
+
+		a[href$="#warcraft"] {
+			@extend .game-button;
+			background-position: sprite-position($sprites, 'wow');
+
+			&:hover {
+				background-position: sprite-position($sprites, 'wow-hover');
+			}
+		}
+
+		.social-media-button {
+			display: inline-block;
+			text-indent: -999999px;
+			background: $spritebg;
+			margin-left: 16px;
+		}
+
+		a[href="http://www.twitter.com/redditdiablo"] {
+			@extend .social-media-button;
+			background-position: sprite-position($sprites, 'twitter');
+			width: 17px;
+			height: 14px;
+		}
+
+		a[href="http://www.twitch.tv/rdiablo"] {
+			@extend .social-media-button;
+			background-position: sprite-position($sprites, 'twitch');
+			width: 16px;
+			height: 17px;
+		}
+
+		a[href="http://www.youtube.com/redditdiablo"] {
+			@extend .social-media-button;
+			background-position: sprite-position($sprites, 'youtube');
+			width: 23px;
+			height: 16px;
+		}
+
+		.md {
+			color: $sidebar-text-color;
+		}
+
+		ul {
+			margin-bottom: 16px;
+
+			li a:hover {
+				position: relative;
+
+	      &:before, &:after {
+	        @extend .pentagram-small-1;
+	        content: "";
+	        position: absolute;
+	        top: -3px;
+	      }
+
+	      &:before {
+	        left: -23px;
+	      } 
+
+	      &:after {
+	        right: -24px;
+	      }
+			}
+		}
+
+		// Weekly thread drop-down
+		h4 {
+			position: absolute;
+			display: block;
+			z-index: 3;
+			top: 215px;
+			left: 16px;
+			border-left: 1px solid #111;
+      border-right: 1px solid #111;
+      padding: 16px;
+      margin: 0;
+      text-transform: uppercase;
+      color: $link-color2;
+      letter-spacing: 2px;
+      font-weight: normal;
+      background: transparent;
+      font-size: 12px;
+			@include vendor-prefix(transition, background 0.5s);
+
+			&:hover {
+        background: rgba(255, 255, 255, 0.05);
+        @include vendor-prefix(transition, background 0.5s);
+
+        &:before, &:after {
+          @extend .pentagram-small-1;
+          content: "";
+          position: absolute;
+          top: 11px;
+        }
+
+        &:before {
+          left: -11px;
+        } 
+
+        &:after {
+          right: -10px;
+        }
+      }
+
+      &:hover del em {
+				display: block;
+			}
+
+			del {
+				color: $link-color2;
+				position: relative;
+				text-decoration: none;
+				display: inline-block;
+
+				em {
+					@extend .thin-border;
+					display: none;
+					width: 200px;
+					position: absolute;
+					font-style: normal;
+					background: #000;
+					padding: 8px;
+					left: -16px;
+					top: 23px;
+
+					a {
+						display: block;
+						line-height: 2;
+						@include vendor-prefix(transition, background 0.5s);
+
+						&:hover {
+							background: rgba(255, 255, 255, 0.05);
+							@include vendor-prefix(transition, background 0.5s);
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -202,4 +396,34 @@
 	.spacer:nth-last-child(2) {
 		display: none;
 	}
+
+	.sidecontentbox {
+		.title {
+			@extend .thin-border;
+			background: #000;
+			padding: 8px;
+
+			h1 {
+				text-transform: capitalize;
+				color: $sidebar-text-color;
+				font-weight: bold;
+			}
+		}
+
+		a.helplink {
+			margin-right: 10px;
+			margin-top: 11px;
+		}
+
+		.content {
+			border: 8px solid transparent;
+			@include vendor-prefix(border-image, url($thick-border) 8 8 round);
+			background: #000;
+		}
+	}
+
+	.icon-menu a {
+		background: transparent;
+	}
 }
+
