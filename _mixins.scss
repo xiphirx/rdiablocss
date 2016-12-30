@@ -1,29 +1,29 @@
 @mixin vendor-prefix($name, $arg) {
-	-webkit-#{$name}: #{$arg};
-	-moz-#{$name}: #{$arg};
-	-ms-#{$name}: #{$arg};
-	-o-#{$name}: #{$arg};
-	#{$name}: #{$arg};
+  -webkit-#{$name}: #{$arg};
+  -moz-#{$name}: #{$arg};
+  -ms-#{$name}: #{$arg};
+  -o-#{$name}: #{$arg};
+  #{$name}: #{$arg};
 }
 
 @mixin keyframes($name) {
-	@-webkit-keyframes #{$name} {
-		@content;
-	}
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
 
-	@-moz-keyframes #{$name} {
-		@content;
-	}
+  @-moz-keyframes #{$name} {
+    @content;
+  }
 
-	@-ms-keyframes #{$name} {
-		@content;
-	}
+  @-ms-keyframes #{$name} {
+    @content;
+  }
 
-	@-o-keyframes #{$name} {
-		@content;
-	}
+  @-o-keyframes #{$name} {
+    @content;
+  }
 
-	@keyframes #{$name} {
-		@content;
-	}
+  @keyframes #{$name} {
+    @content;
+  }
 }

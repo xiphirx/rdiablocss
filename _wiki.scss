@@ -7,21 +7,21 @@
 .wiki-page .wiki-page-content .md.wiki h4, 
 .wiki-page .wiki-page-content .md.wiki h5, 
 .wiki-page .wiki-page-content .md.wiki h6 {
-	color: $post-text-color;
+  color: $post-text-color;
 }
 
 .wiki-page .wiki-page-content {
   margin: 15px 15px 15px 15px !important;
 
   .md {
-  	color: $post-text-color;
+    color: $post-text-color;
   }
 }
 
 .modtools-page>div.content {
-	margin-right: 360px;
+  margin-right: 360px;
 }
 
 .wiki-page .wiki-page-content .wiki>.toc>ul, .wiki-page .pageactions {
-	@extend .thin-border;
+  @extend .thin-border;
 }

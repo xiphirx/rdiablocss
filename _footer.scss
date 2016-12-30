@@ -2,13 +2,13 @@
 @import 'images';
 
 .footer {
-	border: none;
+  border: none;
 }
 
 .footer-parent {
-	background: url($footer-background) bottom center no-repeat;
+  background: url($footer-background) bottom center no-repeat;
 }
 
 .hsts_pixel, .debuginfo {
-	display: none;
+  display: none;
 }
