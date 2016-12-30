@@ -3,6 +3,7 @@
 body {
 	background: $red5;
 	font-family: Arial, Helvetica, sans-serif;
+	color: $post-text-color;
 }
 
 a {
@@ -13,7 +14,7 @@ h2 {
 	color: $link-color;
 }
 
-button {
+button, .usertable>.toggle {
 	margin: 4px !important;
 	padding: 8px !important;
 	text-transform: capitalize;
@@ -41,6 +42,12 @@ input {
 	background-color: $red5;
 	border: 1px solid $red2;
 	border-radius: 2px;
+	padding: 8px;
+	line-height: 2;
+
+	a.choice:hover {
+		background: #000;
+	}
 }
 
 .flairselector {

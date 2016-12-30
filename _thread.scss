@@ -1,0 +1,212 @@
+@import 'colors';
+@import 'images';
+
+.gold-accent, .gold-accent.comment-visits-box {
+	background-color: $gold-accent-background-color;
+	color: $gold-accent-text-color;
+	@extend .thick-border;
+
+	.title {
+		font-weight: normal;
+	}
+}
+
+.md blockquote {
+	color: $post-quoted-text-color;
+}
+
+.content {
+	.reddit-infobar {
+		@extend .thick-border;
+		background: #000;
+		font-variant: small-caps;
+
+		.md {
+			color: $post-text-color;
+
+			p {
+				@extend .surround-pentagram;
+				position: relative;
+				padding: 4px 16px;
+				margin: 0px;
+				margin-left: 16px;
+				float: left;
+
+				&:before, &:after {
+	        top: 0px;
+	      }
+			}
+		}
+
+		&:before {
+			@extend .thick-border;
+			border-left: none;
+			border-top: none;
+			border-bottom: none;
+		}
+	}
+
+	.panestack-title, .menuarea {
+		margin: 0px;
+		padding: 8px;
+		color: $post-text-color;
+		font-variant: small-caps;
+		font-size: 14px;
+		border: none;
+	}
+
+	.panestack-title {
+		margin-top: 16px;
+		padding-bottom: 0px;
+
+		.title {
+			font-size: 14px;
+		}
+	}
+
+	.menuarea {
+		font-size: 12px;
+		margin-bottom: 16px;
+
+		.toggle a {
+			font-size: 12px;
+			color: $link-color;
+			text-decoration: underline;
+		}
+	}
+
+	.commentarea {
+		.md {
+			color: $post-text-color;
+			margin: 8px 0px;
+		}
+
+		.comment .child {
+			border-left: none;
+			margin: 0px;
+		}
+
+		.thing {
+			padding: 8px;
+			border-radius: 2px;
+			margin: 8px;
+
+			.midcol {
+				z-index: 2;
+				position: relative;
+				width: auto;
+				margin: 8px 16px 0px 8px;
+
+				.arrow {
+					@include sprite-dimensions($sprites, 'upvote-normal');
+					background: $spritebg;
+					margin-bottom: 4px;
+
+					&.up {
+						background-position: sprite-position($sprites, 'upvote-normal');
+					}
+
+					&.upmod {
+						background-position: sprite-position($sprites, 'upvote-activated');
+					}
+
+					&.down {
+						background-position: sprite-position($sprites, 'downvote-normal');
+					}
+
+					&.downmod {
+						background-position: sprite-position($sprites, 'downvote-activated');
+					}
+				}
+			}
+
+			.tagline {
+				color: $link-buttons-color;
+				margin-top: 2px;
+				font-variant: small-caps;
+				font-size: 12px;
+				font-weight: bold;
+
+				a.author {
+					color: $user-color;
+
+					&.moderator {
+						color: $moderator-color;
+					}
+
+					&.friend {
+						color: $friend-color;
+					}
+				}
+			}
+
+			.buttons li a {
+				font-variant: small-caps;
+				font-size: 12px;
+			}
+		}
+	}
+
+	$rule: '.commentarea';
+	@for $i from 1 through 10 {
+	    $rule: $rule + ' .comment';
+	    #{$rule} {
+	        @if $i % 2 == 0 {
+	            background-color: $comment-background-color;
+	        } @else {
+	            background-color: $comment-background-color-alt;
+	        }
+	    }
+	}
+}
+
+.linkinfo {
+	@extend .thin-border;
+	background: #000;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 14px;
+	padding: 0;
+
+	.date {
+		@extend .thin-border;
+		padding: 16px 8px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: $gold-accent-text-color;
+
+		span {
+			display: none;
+		}
+
+		time:before {
+			content: "post submitted on ";
+		}
+	}
+
+	.score {
+		padding: 24px 8px 8px 8px;
+
+		.word {
+			display: none;
+		}
+
+		.number {
+			font-size: 14px;
+
+			&:before {
+				content: "increases karma by ";
+			}
+		}
+	}
+
+	.shortlink {
+		padding: 8px 8px 24px 8px;
+		font-size: 12px;
+
+		input {
+			font-size: 12px;
+		}
+	}
+}

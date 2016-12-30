@@ -27,6 +27,7 @@
     margin-left: 16px;
     display: inline-block;
     background: url($diablo-logo);
+    color: #000;
 
     @include vendor-prefix(animation, diablo-flames 1s steps(15) infinite);
     @include vendor-prefix(transform, translatez(0));
@@ -114,21 +115,7 @@
           &:hover {
             background: rgba(255, 255, 255, 0.05);
             @include vendor-prefix(transition, background 0.5s);
-
-            &:before, &:after {
-              @extend .pentagram-small-1;
-              content: "";
-              position: absolute;
-              top: 11px;
-            }
-
-            &:before {
-              left: -11px;
-            } 
-
-            &:after {
-              right: -10px;
-            }
+            @extend .surround-pentagram;
           }
         }
       }

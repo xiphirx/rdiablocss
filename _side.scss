@@ -64,8 +64,7 @@
 	}
 
 	.titlebox {
-		border: 8px solid transparent;
-		@include vendor-prefix(border-image, url($thick-border) 8 8 round);
+		@extend .thick-border;
 		background: #000;
 		display: flex;
 		flex-flow: row;
@@ -296,19 +295,10 @@
 			li a:hover {
 				position: relative;
 
+				@extend .surround-pentagram;
+
 	      &:before, &:after {
-	        @extend .pentagram-small-1;
-	        content: "";
-	        position: absolute;
 	        top: -3px;
-	      }
-
-	      &:before {
-	        left: -23px;
-	      } 
-
-	      &:after {
-	        right: -24px;
 	      }
 			}
 		}
@@ -335,21 +325,7 @@
 			&:hover {
         background: rgba(255, 255, 255, 0.05);
         @include vendor-prefix(transition, background 0.5s);
-
-        &:before, &:after {
-          @extend .pentagram-small-1;
-          content: "";
-          position: absolute;
-          top: 11px;
-        }
-
-        &:before {
-          left: -11px;
-        } 
-
-        &:after {
-          right: -10px;
-        }
+      	@extend .surround-pentagram;
       }
 
       &:hover del em {

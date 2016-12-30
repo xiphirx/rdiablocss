@@ -1,6 +1,7 @@
 @import "compass/utilities/sprites";
 $sprites: sprite-map("sprites/*.png", $layout: smart);
 $link-flair: sprite-map("link-flair/*.png", $layout: smart);
+$user-flair: sprite-map("user-flair/*.png", $layout: smart);
 
 $diablo: '%%diablo%%';
 $diablo-blur: '%%diablo-blur%%';
@@ -18,6 +19,7 @@ $button-fill-pressed: '%%button-fill-pressed%%';
 
 $spritebg: url('%%sprites%%');
 $linkflairbg: url('%%link-flair%%');
+$userflairbg: url('%%user-flair%%');
 
 
 .pentagram-small {
@@ -91,4 +93,26 @@ $linkflairbg: url('%%link-flair%%');
 .thin-border {
 	border: 2px solid transparent;
 	@include vendor-prefix(border-image, url($thin-border) 2 2 round);
+}
+
+.thick-border {
+	border: 8px solid transparent;
+	@include vendor-prefix(border-image, url($thick-border) 8 8 round);
+}
+
+.surround-pentagram {
+	&:before, &:after {
+    @extend .pentagram-small-1;
+    content: "";
+    position: absolute;
+    top: 11px;
+  }
+
+  &:before {
+    left: -11px;
+  } 
+
+  &:after {
+    right: -10px;
+  }
 }
