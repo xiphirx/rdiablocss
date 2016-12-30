@@ -87,16 +87,4 @@ body {
   .res-voteEnhancements-highlightScores span.score {
     color: $red2;
   }
-
-  // $rule: '.res-commentBoxes';
-  // @for $i from 1 through 10 {
-  //     $rule: $rule + ' .comment';
-  //     #{$rule} {
-  //         @if $i % 2 == 0 {
-  //             background-color: $comment-background-color;
-  //         } @else {
-  //             background-color: $comment-background-color-alt;
-  //         }
-  //     }
-  // }
 }
