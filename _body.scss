@@ -14,6 +14,15 @@ h2 {
   color: $link-color;
 }
 
+hr, .md hr {
+  @extend .thin-border;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  height: 0px;
+  margin: 4px 0px;
+}
+
 button, .usertable>.toggle {
   margin: 4px !important;
   padding: 8px !important;
@@ -53,6 +62,7 @@ input {
 .flairselector {
   box-shadow: 0px 0px 10px 3px #000;
   padding: 0 !important;
+  font-size: inherit;
 
   &.drop-choices.active {
     @extend .drop-choices;
@@ -74,7 +84,7 @@ input {
     }
 
     .flairselection {
-      margin: 14px 0px 0px 0px;
+      margin: 9px 0px 0px 0px;
       float: right;
       display: inline;
       width: 100%;
@@ -91,7 +101,9 @@ input {
     & > div {
       margin: 0px;
 
-      .linkflair {
+      .linkflair,
+      .flair,
+      .userattrs {
         float: left;
         margin: 0px 16px;
       }
@@ -113,12 +125,22 @@ input {
     display: none;
   }
 
-  li:hover {
-    background: transparent;
+  li {
+    border: none;
 
-    .linkflairlabel {
-      border-color: $red-highlight;
-      background-color: $red2;
+    a {
+      color: $post-text-color !important;
+    }
+
+    &:hover {
+      background: transparent;
+      border: none;
+
+      .linkflairlabel,
+      .flair {
+        border-color: $red-highlight;
+        background-color: $red2;
+      }
     }
   }
 
@@ -131,5 +153,22 @@ input {
 
   .flairsample-left {
     text-align: center !important;
+  }
+}
+
+.nav-buttons {
+  padding: 16px;
+
+  .nextprev {
+    color: $post-text-color;
+    font-variant: small-caps;
+    font-size: 14px;
+
+    a {
+      background: $red5;
+      border: 1px solid $red3;
+      padding: 8px;
+      font-variant: small-caps;
+    }
   }
 }

@@ -1,0 +1,102 @@
+@import 'colors';
+@import 'images';
+
+body {
+  .RES-keyNav-activeElement, 
+  .RES-keyNav-activeElement .md-container,
+  .commentarea .RES-keyNav-activeElement .md, 
+  .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    outline: none !important;
+    background-color: transparent !important;
+  }
+
+  #siteTable .thing.RES-keyNav-activeThing {
+    &:before {
+      display: inline-block;
+      width: 643px;
+      height: 68px;
+      content: url($selected-link-glow);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .comment.RES-keyNav-activeThing {
+    outline: none !important;
+    background: url($selected-link-glow) top left no-repeat !important;
+
+    .md-container {
+      background: transparent !important;
+    }
+  }
+
+  .res-flairSearch.linkflairlabel {
+    @extend .linkflairlabel;
+  }
+
+  #userbarToggle {
+    display: none;
+  }
+}
+
+.res {
+  #header #header-bottom-right {
+    border-radius: none;
+    padding-bottom: 5px;
+    padding-top: 4px;
+  }
+
+  .side .subButtons {
+    order: 0;
+    text-align: center;
+  }
+
+  .side .subButtons .subscribe-button,
+  .res-fancy-toggle-button {
+    @extend .subscribe-button;
+  }
+
+  .res-fancy-toggle-button {
+    width: 152px;
+    @extend .embossed-button;
+    @extend .embossed-button-text;
+  }
+
+  .res-userHighlight .author {
+    border-radius: 2px !important;
+    padding: 3px !important;
+
+    &.moderator {
+      background-color: $moderator-color;
+    }
+
+    &.friend {
+      background-color: $friend-color;
+    }
+  }
+
+  .res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 2px !important;
+  }
+
+  .res-commentBoxes .comment {
+    border: none !important;
+  }
+
+  .res-voteEnhancements-highlightScores span.score {
+    color: $red2;
+  }
+
+  // $rule: '.res-commentBoxes';
+  // @for $i from 1 through 10 {
+  //     $rule: $rule + ' .comment';
+  //     #{$rule} {
+  //         @if $i % 2 == 0 {
+  //             background-color: $comment-background-color;
+  //         } @else {
+  //             background-color: $comment-background-color-alt;
+  //         }
+  //     }
+  // }
+}

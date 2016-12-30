@@ -1,19 +1,19 @@
 all: compile
 
 compile-dev:
-  compass compile -s expanded
+	compass compile -s expanded
 
 compile:
-  compass compile -e production --force
+	compass compile -e production --force
 
 clip-dev: compile-dev
-  cat stylesheets/rdiablo.css > /dev/clipboard
+	cat stylesheets/rdiablo.css > /dev/clipboard
 
 clip: compile
-  cat stylesheets/rdiablo.css > /dev/clipboard
+	cat stylesheets/rdiablo.css > /dev/clipboard
 
 release: clean clip
 
 clean:
-  rm -f style.css
-  rm -rf stylesheets/
+	rm -f style.css
+	rm -rf stylesheets/

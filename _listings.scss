@@ -5,13 +5,19 @@
   margin: 16px 332px 16px 16px;
 }
 
-#siteTable {
+#siteTable,
+#siteTable_organic {
   display: block;
   background: $red4;
   border: 1px solid $red3;
   border-radius: 2px;
 
-  .thing.link {
+  .link.promotedlink.promoted {
+    background-color: $red4;
+  }
+
+  .thing.link,
+  .thing.link.promoted.promotedlink {
     border-bottom: 2px solid $red5;
     padding: 16px;
     margin: 0px;
@@ -94,12 +100,14 @@
       &.collapsed {
         $image: 'expando-normal';
         @include sprite-dimensions($sprites, $image);
+        @include sprite-max-dimensions($sprites, $image);
         background-position: sprite-position($sprites, $image);
       }
 
       &.expanded {
         $image: 'expando-activated';
         @include sprite-dimensions($sprites, $image);
+        @include sprite-max-dimensions($sprites, $image);
         background-position: sprite-position($sprites, $image);
       }
     }

@@ -87,9 +87,9 @@
     }
 
     .thing {
-      padding: 8px;
-      border-radius: 2px;
-      margin: 8px;
+      padding: 8px !important;
+      border-radius: 2px !important;
+      margin: 8px !important;
 
       .midcol {
         z-index: 2;
@@ -152,9 +152,9 @@
       $rule: $rule + ' .comment';
       #{$rule} {
           @if $i % 2 == 0 {
-              background-color: $comment-background-color;
+              background-color: $comment-background-color !important;
           } @else {
-              background-color: $comment-background-color-alt;
+              background-color: $comment-background-color-alt !important;
           }
       }
   }

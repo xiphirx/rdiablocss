@@ -21,19 +21,6 @@
     }
   }
 
-  .sidebox.submit {
-    position: absolute;
-    top: 281px;
-
-    &.submit-text {
-      margin-left: 158px;
-    }
-
-    .morelink {
-      width: 122px;
-    }
-  }
-
   #search {
     @extend .thin-border;
     position: absolute;
@@ -59,8 +46,27 @@
     }
   }
 
-  .sidebox.create {
-    display: none;
+  .sidebox  {
+    &.submit {
+      position: absolute;
+      top: 281px;
+
+      &.submit-text {
+        margin-left: 158px;
+      }
+
+      .morelink {
+        width: 122px;
+      }
+    }
+
+    &.create {
+      display: none;
+    }
+
+    .spacer {
+      background-color: transparent;
+    }
   }
 
   .titlebox {
@@ -81,10 +87,11 @@
   }
 
   .subscribe-button {
-    width: auto;
+    width: 180px;
     margin: 0 auto;
     display: block;
     margin-bottom: 16px;
+    text-align: center;
 
     a.active {
       display: block;
@@ -368,8 +375,7 @@
     display: none;
   }
 
-  /* Fuck da police */
-  .spacer:nth-last-child(2) {
+  .gadget .midcol {
     display: none;
   }
 
@@ -400,6 +406,17 @@
 
   .icon-menu a {
     background: transparent;
+  }
+
+  .login-form-side {
+    @extend .thin-border;
+    background: #000;
+
+    input[type=text],
+    input[type=password] {
+      @extend .thin-border;
+      background: #000;
+    }
   }
 }
 

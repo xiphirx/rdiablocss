@@ -27,3 +27,8 @@
     @content;
   }
 }
+
+@mixin sprite-max-dimensions($map, $sprite) {
+  max-height: image-height(sprite-file($map, $sprite));
+  max-width: image-width(sprite-file($map, $sprite));
+}
