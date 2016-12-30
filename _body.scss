@@ -59,6 +59,11 @@ input {
   }
 }
 
+.comments-page .flat-list.buttons a.flairselectbtn+.flairselector h2, 
+.comments-page .flat-list.buttons a.flairselectbtn+.flairselector .customizer {
+  display: inline-block;
+}
+
 .flairselector {
   box-shadow: 0px 0px 10px 3px #000;
   padding: 0 !important;
