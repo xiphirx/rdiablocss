@@ -59,9 +59,12 @@ input {
   }
 }
 
-.comments-page .flat-list.buttons a.flairselectbtn+.flairselector h2, 
+.comments-page .flat-list.buttons a.flairselectbtn+.flairselector h2 {
+  display: block !important;
+}
+
 .comments-page .flat-list.buttons a.flairselectbtn+.flairselector .customizer {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .flairselector {
