@@ -8,7 +8,8 @@
   width: 300px;
   color: $post-text-color;
 
-  .morelink {
+  .morelink,
+  .disabled .morelink {
     @extend .embossed-button;
     padding: 4px;
 
@@ -301,11 +302,18 @@
 
       li a:hover {
         position: relative;
-
         @extend .surround-pentagram;
 
         &:before, &:after {
           top: -3px;
+        }
+
+        &:before {
+          left: -21px;
+        }
+
+        &:after {
+          right: -21px;
         }
       }
     }
