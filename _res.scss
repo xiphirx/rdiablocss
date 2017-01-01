@@ -85,6 +85,14 @@ body {
   }
 
   .res-voteEnhancements-highlightScores span.score {
-    color: $red2;
+    color: $link-buttons-color;
+  }
+
+  .NERPageMarker, #progressIndicator {
+    background-color: transparent;
+    border: 1px solid $red-highlight;
+    padding: 4px;
+    border-radius: 2px;
+    color: $post-text-color;
   }
 }
