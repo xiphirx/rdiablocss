@@ -16,7 +16,8 @@
 }
 
 .content {
-  .reddit-infobar {
+  .reddit-infobar,
+  .infobar {
     @extend .thick-border;
     background: #000;
     font-variant: small-caps;
@@ -91,7 +92,8 @@
       border-radius: 2px !important;
       margin: 8px !important;
 
-      &.new-comment .usertext-body {
+      &.new-comment .usertext-body,
+      .usertext.border .usertext-body {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 4px;
         border-radius: 2px;
