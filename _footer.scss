@@ -1,0 +1,14 @@
+@import 'colors';
+@import 'images';
+
+.footer {
+  border: none;
+}
+
+.footer-parent {
+  background: url($footer-background) bottom center no-repeat;
+}
+
+.hsts_pixel, .debuginfo {
+  display: none;
+}

@@ -1,0 +1,108 @@
+@import 'colors';
+@import 'images';
+
+.submit-page .content > h1 {
+  display: none;
+}
+
+.formtabs-content {
+  margin: 0 auto;
+  width: 536px;
+  border: none;
+  padding-top: 0px;
+}
+
+form .spacer {
+  margin: 16px 0px;
+}
+
+.create-reddit .pretty-form, #items-required {
+  margin: 0 auto;
+  width: 536px;
+}
+
+.tabpane-content {
+  @extend .thin-border;
+
+  .tagline a {
+    color: $post-text-color;
+  }
+}
+
+ul.tabmenu {
+  li, li.selected {
+    a {
+      background: transparent;
+      font-variant: small-caps;
+      font-size: 14px;
+      padding: 8px;
+      font-weight: normal;
+      display: inline-block;
+    }
+  }
+
+  li.selected {
+    a {
+      @extend .thin-border;
+    }
+  }
+}
+
+ul.tabmenu.formtab {
+  margin: 0 auto;
+  width: 536px;
+  text-align: center;
+
+  a {
+    font-size: 14px;
+    font-variant: small-caps;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    margin: 0 8px;
+    display: inline-block;
+  }
+
+  .selected a {
+    background-color: #000;
+    font-size: 14px;
+    @extend .thin-border;
+  }
+}
+
+.roundfield, .linefield, .linefield.mobile {
+  @extend .thick-border;
+  background-color: $roundfield-background-color;
+  color: $post-text-color;
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  input, input[type=url], input[type=text], textarea {
+    @extend .thin-border;
+    color: $post-text-color;
+    background-color: $roundfield-input-background-color;
+  }
+}
+
+.linefield {
+  .title {
+    color: $post-text-color;
+  }
+}
+
+.content #newlink-with-image-upload .image-upload-drop-target {
+  background-color: transparent;
+}
+
+.content.submit {
+  .btn {
+    display: block;
+    margin: 0 auto !important;
+  }
+
+  .info-notice {
+    @extend .thin-border;
+    background: #000;
+    margin: 0 auto;
+  }
+}

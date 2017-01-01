@@ -1,282 +1,143 @@
 @import 'colors';
 @import 'images';
 
-
 #header {
-	height: 181px;
-	background: url($header-bg) left bottom repeat-x;
-	z-index: 4;
-	border-bottom: none;
-}
+  background: url($diablo) center bottom no-repeat $header-background-color;
+  border-bottom: 1px solid $red3;
+  height: 263px;
+  position: relative;
+  z-index: 1;
 
-#header-bottom-left {
-	background: url($blue-overlay-bg);
-	height: 151px;
-	border-bottom: 1px solid $dark-gray;
-}
+  #header-img {
+    margin-left: 16px;
+  }
 
-#header #header-img-a {
-	padding-left: 22px;
-	padding-right: 22px;
-}
+  @include keyframes(diablo-flames) {
+    100% { 
+      background-position: 0px -2310px;
+    }
+  }
 
-#header #header-img {
-	position: relative;
-	z-index: 13;
-}
-
-#header .hover.pagename.redditname {
-	background: url($logo);
-	display: inline-block;
-	width: 519px;
-	height: 125px;
-	margin-left: -110px;
-	position: relative;
-	z-index: 12;
-}
-
-#header .hover.pagename.redditname:hover {
-	background-position: 0px -125px;
-}
-
-#header .hover.pagename.redditname a {
-	display: block;
-	text-indent: -9999px;
-	width: 250px;
-	height: 100px;
-	margin-left: 134px;
-	margin-top: 10px;
-}
-
-#header ul.tabmenu {
-	display: block;
-	border-top: 1px solid $dark-gray;
-	padding-left: 37px;
-	padding-right: 22px;
-	margin: 0 0;
-	height: 25px;
-	line-height: 25px;
-}
-
-#header ul.tabmenu li a {
-	text-transform: capitalize;
-	background: none;
-	font-size: 14px;
-	color: $header-link;
-	font-weight: normal;
-	text-shadow: 0px 1px 0px #000000;
-}
-
-#header ul.tabmenu li.selected a {
-	color: $header-link-selected;
-	border: none;
-}
-
-#header ul.tabmenu li a:hover {
-	color: $header-link-hover;
-	@include vendor-prefix(transition, all 0.3s);
-}
-
-#header-bottom-right {
-	background: none;
-	position: absolute;
-	right: 28px;
-	bottom: 20px;
-	top: 75px !important;
-	text-shadow: 0px 1px 0px #000000;
-	line-height: 20px;
-}
-
-#header-bottom-right #userbarToggle,
-#header-bottom-right #RESAccountSwitcherIcon,
-#header-bottom-right .separator {
-	display: none;
-}
-
-#header-bottom-right #openRESPrefs {
-    height: 15px;
-    margin-right: 10px;
-}
-
-body #RESMainGearOverlay.RESGearOverlay {
-    top: 115px !important;
-}
-
-body #RESPrefsDropdown.RESDropdownList {
-    top: 142px !important;
-}
-
-#header-bottom-right .user {
-	line-height: 17px;
-	text-align: right;
-	display: block;
-}
-
-#header-bottom-right .user > a {
-	font-size: 14px;
-	color: $header-link;
-	display: block;
-}
-
-#header-bottom-right .user .userkarma {
-	border: 0;
-	display: inline-block;
-}
-
-#header-bottom-right .user .userkarma a {
-	font-size: 12px;
-	font-weight: normal;
-	color: $header-link;
-}
-
-#header-bottom-right #mail, 
-#header-bottom-right #modmail, 
-#header-bottom-right ul.flat-list {
-	margin-right: 15px;
-}
-
-#header-bottom-right #mail {
-	background: url($mail-icon) no-repeat;
-	width: 16px;
-	height: 16px;
-	border-radius: 10px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#header-bottom-right #mail.havemail {
-	background-position: 0px 0px;
-	@include vendor-prefix(animation, haveMailPulse 3s ease-in-out infinite);
-}
-
-#header-bottom-right #mail.nohavemail {
-	background-position: 0px -16px;
-}
-
-@include keyframes(haveMailPulse) {
-	from {
-		@include vendor-prefix(box-shadow, 0 0 9px $mail-pulse); 
-	}
-
-	50% { 
-		@include vendor-prefix(box-shadow, 0 0 18px $mail-pulse);
-	}
-
-	to { 
-		@include vendor-prefix(box-shadow, 0 0 9px $mail-pulse);
-	}
-}
-
-#header-bottom-right a {
-	color: $header-link-selected;
-	font-size: 12px;
-	font-weight: normal;
-}
-
-#header-bottom-left:after {
-	background: transparent url($header-parallax-smoke) repeat;
-	content: "";
-	z-index: -200;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	width: 100%;
-	height: 181px;
-	@include vendor-prefix(animation, sidescroll 30s linear infinite);
-    @include vendor-prefix(transform, translatez(0));
-}
-
-@include keyframes(sidescroll) {
-	from {
-		@include vendor-prefix(background-position, 1600px 0);
-	}
-
-	to {
-		@include vendor-prefix(background-position, 0 0);
-	}
-}
-
-#sr-header-area, .drop-choices {
-	background: $dark-blue;
-	border: 1px solid $black;
-	padding: 5px;
-	opacity: 0.5;
-	@include vendor-prefix(transition, all 0.3s);
-}
-
-.drop-choices {
-	opacity: 1.0;
-	z-index: 100;
-}
-
-#sr-header-area:hover {
-	opacity: 1.0;
-	@include vendor-prefix(transition, all 0.3s);
-}
-
-#sr-header-area a {
-	color: $header-link;
-}
-
-#sr-header-area a:hover {
-	color: $header-link-hover;
-	text-decoration: none;
-}
-
-#sr-header-area .dropdown.srdrop .selected {
-	color: $header-link;
-}
-
-#sr-header-area .dropdown.srdrop .selected:hover {
-	color: $header-link-hover;
-	text-decoration: none;
-}
-
-#header .tabmenu a.choice, #viewImagesButton {
-	display: inline-block;
-}
-
-.message-count {
-	background-color: $blue-button-fill;
-	border: 1px solid $blue-button-light-border;
-	margin-right: 5px;
-}
-
-/* FOR BARBARIAN SPINNING
-#header-img-a img{
-    background:url('%%reddit-barb%%');
+  $frameWidth: 390px;
+  $frameHeight: 154px;
+  .hover.pagename.redditname {
+    width: $frameWidth;
+    height: $frameHeight;
+    margin-top: 0px;
+    margin-left: 16px;
     display: inline-block;
-    transform:rotateY(180deg);
-    background-size:100% auto;
-}
+    background: url($diablo-logo);
+    color: #000;
 
-#header-img-a img:hover{
-    content:" ";
-    background:url('%%whirl%%');
-    -webkit-animation: whirl 0.6s infinite linear;
-    animation: whirl 0.6s infinite linear;
-}
+    @include vendor-prefix(animation, diablo-flames 1s steps(15) infinite);
+    @include vendor-prefix(transform, translatez(0));
 
+    a {
+      display: block;
+      text-indent: -99999px;
+      width: $frameWidth;
+      height: $frameHeight;
+    }
+  }
 
-@-webkit-keyframes whirl {
-  0% {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  #sr-header-area {
+    background: $red5;
+    padding: 4px 0px 4px 0px;
+    border-bottom: 1px solid $red3;
+    margin-right: 450px;
+
+    .width-clip {
+      margin-right: 316px;
+    }
+
+    .dropdown.srdrop .selected,
+    .sr-bar a,
+    .sr-bar .separator,
+    .separator,
+    #sr-more-link {
+      color: $red2;
+    }
+
+    .dropdown.srdrop .selected {
+      background: transparent;
+      padding-right: 0px;
+    }
+
+    #sr-more-link {
+      background-color: $red5;
+    }
   }
-  100% {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    
+
+  #header-bottom-left {
+    .tabmenu {
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      right: 0px;
+      display: block;
+      background: url($diablo-blur) center bottom no-repeat $header-background-color;
+      margin-top: 0px;
+      padding: 0px;
+      border-top: 1px solid #111;
+
+      li {
+        display: inline-block;
+        margin: 0px;
+
+        &.selected a {
+          border: none;
+          border-top: none;
+          color: $red1;
+          border-bottom: 2px solid $red1;
+        }
+
+        &:first-child {
+          margin-left: 110px;
+
+          a {
+            border-left: 1px solid #111;
+            border-right: 1px solid #111;
+          }
+        }
+
+        a {
+          background: transparent;
+          display: block;
+          padding: 16px;
+          border-right: 1px solid #111;
+          text-transform: uppercase;
+          color: $link-color2;
+          letter-spacing: 2px;
+          font-weight: normal;
+          position: relative;
+          @include vendor-prefix(transition, background 0.5s);
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.05);
+            @include vendor-prefix(transition, background 0.5s);
+            @extend .surround-pentagram;
+          }
+        }
+      }
+    }
+  }
+
+  #header-bottom-right {
+    background: $red5;
+    top: 0px;
+    bottom: auto;
+    width: 450px;
+    display: block;
+    padding: 7px 16px 6px 0px;
+    border-bottom: 1px solid $red3;
+    text-align: right;
+
+    .user {
+      padding-left: 16px;
+    }
+
+    #modmail {
+      color: transparent;
+    }
   }
 }
-@keyframes whirl {
-  0% {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-  }
-}
-*/
