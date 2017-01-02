@@ -31,7 +31,8 @@ body {
     }
   }
 
-  .res-flairSearch.linkflairlabel {
+  .res-flairSearch.linkflairlabel,
+  .comments-page .res-flairSearch.linkflairlabel {
     @extend .linkflairlabel;
   }
 

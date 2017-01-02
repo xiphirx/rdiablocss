@@ -180,3 +180,15 @@ input {
     }
   }
 }
+
+ul.report-reasons {
+  background-color: transparent;
+  color: $post-text-color;
+  border: none;
+  border-radius: 0px;
+  border-left: 1px solid $red2;
+}
+
+.md {
+  color: $post-text-color;
+}
