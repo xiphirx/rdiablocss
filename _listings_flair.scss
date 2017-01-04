@@ -1,0 +1,194 @@
+@import 'colors';
+@import 'images';
+
+#siteTable .thing.link.linkflair-blizzard {
+  .linkflairlabel {
+    background: #032030;
+    border-color: #1e81ba;
+  }
+
+  border-color: $blizz-link-border-color;
+  $image: 'blizz-glow';
+  background: url($blizz-link-glow) top left no-repeat;
+  background-color: $blizz-link-background-color;
+
+  .tagline {
+    color: $blizz-link-buttons-color;
+  }
+
+  .buttons li a {
+    color: $blizz-link-buttons-color;
+  }
+
+  .domain {
+    color: $blizz-link-background-color;
+
+    &:before {
+      color: $blizz-link-domain-color;
+    }
+
+    a {
+      color: $blizz-link-domain-color;
+    }
+  }
+
+  a.title:visited {
+    color: $blizz-link-title-visited-color;
+  }
+
+  .media-embed, .usertext-body .md {
+    border-color: $blizz-link-buttons-color;
+  }
+}
+
+#siteTable .thing.link a.thumbnail {
+  &.default, &.self {
+    background: $spritebg;
+    background-position: sprite-position($sprites, 'thumb-self');
+  }
+
+  &.nsfw {
+    background: $spritebg;
+    background-position: sprite-position($sprites, 'thumb-nsfw');
+  }
+}
+
+@each $i in sprite_names($link-flair) {
+    #siteTable .thing.link.linkflair-#{$i} a.thumbnail {
+      background: $linkflairbg;
+      background-position: sprite-position($link-flair, $i);
+    }
+}
+
+.linkflairlabel {
+  position: absolute;
+  top: -15px;
+  left: 47px;
+  width: 62px;
+  border-radius: 0px 0px 2px 2px;
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  background: #222;
+  border-color: #666;
+  border-top: none;
+  padding: 3px;
+}
+
+.linkflair-barb .linkflairlabel {
+  border-color: #700;
+}
+
+.linkflair-wizz .linkflairlabel {
+  border-color: #077;
+}
+
+.linkflair-dh .linkflairlabel {
+  border-color: #7F41A3;
+}
+
+.linkflair-wd .linkflairlabel {
+  border-color: #070;
+}
+
+.linkflair-monk .linkflairlabel {
+  border-color: #770;
+}
+
+.linkflair-crus .linkflairlabel {
+  border-color: #FFFF00;
+}
+
+.linkflair-americas .linkflairlabel {
+  border-color: #e1342d;
+}
+
+.linkflair-europe .linkflairlabel {
+  border-color: #5fcd26;
+}
+
+.linkflair-asia .linkflairlabel {
+  border-color: #b527d0;
+}
+
+.linkflair-idea .linkflairlabel {
+  border-color: #E0A148;
+}
+
+.linkflair-craftpost .linkflairlabel {
+  border-color: #C95216;
+}
+
+.linkflair-secrettome .linkflairlabel {
+  border-color: #e5e5e5;
+}
+
+.linkflair-diablotwo .linkflairlabel {
+  background: $red3;
+  border-color: #FF0000;
+}
+
+.linkflair-hardcore .linkflairlabel {
+  border-color: #350700;
+}
+
+.linkflair-diabloone .linkflairlabel {
+  border-color: #CC0000;
+}
+
+.linkflair-glorious .linkflairlabel {
+  border-color: #fff8a8;
+}
+
+.linkflair-challenge .linkflairlabel {
+  border-color: #1f355d;
+}
+
+.linkflair-console .linkflairlabel {
+  border-color: #000000;
+}
+
+.linkflair-rosbeta .linkflairlabel {
+  border-color: #251b48;
+}
+
+.linkflair-fluff .linkflairlabel {
+  border-color: #ff8ffb;
+}
+
+.linkflair-art .linkflairlabel {
+  border-color: #37586f;
+}
+
+.linkflair-season .linkflairlabel {
+  border-color: #9af054;
+}
+
+.linkflair-ptr .linkflairlabel {
+  border-color: #54a8f0;
+}
+
+.linkflair-theorycraft .linkflairlabel {
+  border-color: #f25301;
+}
+
+.linkflair-guide .linkflairlabel {
+  border-color: #096c42;
+}
+
+.linkflair-blizzard .linkflairlabel {
+  border-color: #00a7e1;
+}
+
+.linkflair-question .linkflairlabel {
+  border-color: #572a0f;
+}
+
+.linkflair-clan .linkflairlabel {
+  border-color: #0600ff;
+}
+
+.linkflair-speculation .linkflairlabel {
+  border-color: #000;
+}

@@ -1,16 +1,118 @@
-$header-bg: '%%header-blur-bg11%%';
-$blue-overlay-bg: '%%blue-overlay-bg%%';
-$logo: '%%logo-states%%';
-$mail-icon: '%%mail-states%%';
-$white-18: '%%white-18%%';
-$main-bg: '%%main-bg2%%';
-$thumb-frame: '%%thumb-frame%%';
-$baked: '%%ros-baked%%';
-$quote-bg: '%%quote-bg%%';
-$header-parallax-smoke: '%%header-parallax-smoke%%';
-$entry-selected: '%%entry-selected%%';
-$entry-liked: '%%entry-liked%%';
-$entry-disliked: '%%entry-disliked%%';
-$entry-stickied: '%%entry-stickied%%';
-$expando: '%%expando%%';
-$countdown: '%%release-progress-bar%%';
+@import "compass/utilities/sprites";
+$sprites: sprite-map("sprites/*.png", $layout: smart);
+$link-flair: sprite-map("link-flair/*.png", $layout: smart);
+$user-flair: sprite-map("user-flair/*.png", $layout: smart);
+
+$diablo: '%%diablo%%';
+$diablo-blur: '%%diablo-blur%%';
+$diablo-logo: '%%diablo-logo%%';
+$blizz-link-glow: '%%blizz-glow%%';
+$selected-link-glow: '%%selected-glow%%';
+$sticky-link-glow: '%%sticky-glow%%';
+$footer-background: '%%footer-background%%';
+$thin-border: '%%thin-border%%';
+$thick-border: '%%thick-border%%';
+$button-border: '%%button-border%%';
+$button-fill: '%%button-fill%%';
+$button-border-pressed: '%%button-border-pressed%%';
+$button-fill-pressed: '%%button-fill-pressed%%';
+
+$spritebg: url('%%sprites%%');
+$linkflairbg: url('%%link-flair%%');
+$userflairbg: url('%%user-flair%%');
+
+
+.pentagram-small {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: $spritebg;
+  @include vendor-prefix(transform, translatez(0));
+}
+
+@for $i from 1 through 5 {
+  @include keyframes(pentagram-small-#{$i}) {
+    100% {
+      background-position: sprite-position($sprites, 'pentagram-small-#{$i}', 160px, 0px);
+    }
+  }
+
+  .pentagram-small-#{$i} {
+    @extend .pentagram-small;
+    @include vendor-prefix(animation, pentagram-small-#{$i} 0.5s steps(8) infinite);
+    background-position: sprite-position($sprites, 'pentagram-small-#{$i}');
+  }
+}
+
+.rules-button {
+  width: 85px;
+  height: 71px;
+  background: $spritebg;
+  background-position: sprite-position($sprites, 'rules-button');
+  display: inline-block;
+
+  &:active {
+    background-position: sprite-position($sprites, 'rules-button', 0px, -71px);
+  }
+}
+
+.discord-button {
+  width: 85px;
+  height: 71px;
+  max-height: 71px;
+  background: $spritebg;
+  background-position: sprite-position($sprites, 'discord-button');
+  display: inline-block;
+
+  &:active {
+    background-position: sprite-position($sprites, 'discord-button', 0px, -71px);
+  }
+}
+
+.embossed-button {
+  border: 6px solid transparent;
+  @include vendor-prefix(border-image, url($button-border) 6 6 round);
+  background: url($button-fill);
+  padding: 8px;
+
+  &:active {
+    @include vendor-prefix(border-image, url($button-border-pressed) 6 6 round);
+    background: url($button-fill-pressed);
+  }
+}
+
+.embossed-button-text {
+  color: #fff;
+  text-shadow: 0px 2px 1px #000, 0px 1px 0px #000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.thin-border {
+  border: 2px solid transparent;
+  @include vendor-prefix(border-image, url($thin-border) 2 2 round);
+}
+
+.thick-border {
+  border: 8px solid transparent;
+  @include vendor-prefix(border-image, url($thick-border) 8 8 round);
+}
+
+.surround-pentagram {
+  &:before, &:after {
+    @extend .pentagram-small-1;
+    content: "";
+    position: absolute;
+    top: 11px;
+  }
+
+  &:before {
+    left: -11px;
+  } 
+
+  &:after {
+    right: -10px;
+  }
+}

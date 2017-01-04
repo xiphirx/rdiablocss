@@ -1,284 +1,135 @@
 @import 'colors';
 @import 'text';
 
-.comments-page .flat-list.buttons a.flairselectbtn {
-	font-size: 0px;
-	background: $pink-button-fill;
-	display: inline-block;
-	padding: 5px;
-	border-radius: 3px;
-	color: $header-link !important;
-	border: 1px solid $pink-button-border;
-}
+.comments-page {
+  .flat-list.buttons a.flairselectbtn {
+    font-size: 0px;
+    background: $red3;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    color: $post-text-color !important;
+    border: 1px solid $red1;
 
-.comments-page .flat-list.buttons a.flairselectbtn::before {
-	content: $add-flair-text;
-	font-size: 12px;
-}
+    & + .flairselector form {
+      border-top: 0;
+    }
 
-.flat-list.buttons a.flairselectbtn + .flairselector form {
-	border-top: 0;
-}
+    & + .flairselector h2,
+    & + .flairselector .customizer { 
+      display:none; 
+    }
 
-.flat-list.buttons a.flairselectbtn + .flairselector h2,
-.flat-list.buttons a.flairselectbtn + .flairselector .customizer { 
-	display:none; 
-}
-
-.flat-list.buttons a.flairselectbtn + .flairselector .customizer::before { 
-	content:""; 
-}
-
-.linkflairlabel, 
-.click-gadget .linkflair {
-	background: #111;
-	border: 1px solid #c00;
-	border-radius: 3px;
-	color: #ddd;
-	padding: 5px;
-	font-weight: bold;
+    & + .flairselector .customizer::before { 
+      content:""; 
+    }
+  }
 }
 
 .click-gadget .linkflair {
-	font-size: x-small;
-	white-space: nowrap;
-	display: inline-block;
-	margin-right: 3px;
+  background: #111;
+  border: 1px solid #c00;
+  border-radius: 3px;
+  color: #ddd;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.click-gadget .linkflair {
+  font-size: x-small;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 3px;
 }
 
 .linkflair .linkflairlabel {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .linkflair-spoiler .linkflairlabel ~ a.title, 
 .click-gadget .linkflair ~ a.reddit-link-title {
-	opacity: 0.0;
-	-moz-opacity:.0; 
+  opacity: 0.0;
+  -moz-opacity:.0; 
 }
 
 .linkflair-spoiler .linkflairlabel ~ a.title:hover, 
 .click-gadget .linkflair ~ a.reddit-link-title:hover {
-	opacity: 1.0;
-	-moz-opacity:1; 
+  opacity: 1.0;
+  -moz-opacity:1; 
 }
 
 .linkflair-spoiler a.thumbnail {
-	background: url(%%ros-baked%%) -70px 0px !important;
+  background: url(%%ros-baked%%) -70px 0px !important;
 }
 
 .linkflair-spoiler a.thumbnail img,
 .linkflair-spoiler a.thumbnail {
-	display: none !important;
+  display: none !important;
 }
 
 .linkflair-spoiler .entry { 
-	margin-left: 152px; 
+  margin-left: 152px; 
 }
 
 .thing .title {
-	color: #fff; 
+  color: #fff; 
 }
-
-.linkflair-barb .linkflairlabel {border-color: #700;}
-.linkflair-barb a.thumbnail {background: url(%%class-portraits1%%) 0px 0px;}
-
-.linkflair-wizz .linkflairlabel {border-color: #077;}
-.linkflair-wizz a.thumbnail {background: url(%%class-portraits1%%) 0px -240px;}
-
-.linkflair-dh .linkflairlabel {border-color: #7F41A3;}
-.linkflair-dh a.thumbnail {background: url(%%class-portraits1%%) 0px -120px;}
-
-.linkflair-wd .linkflairlabel {border-color: #070;}
-.linkflair-wd a.thumbnail {background: url(%%class-portraits1%%) 0px -180px;}
-
-.linkflair-monk .linkflairlabel {border-color: #770;}
-.linkflair-monk a.thumbnail {background: url(%%class-portraits1%%) 0px -60px;}
-
-.linkflair-crus .linkflairlabel {border-color: #FFFF00;}
-.linkflair-crus a.thumbnail {background: url(%%class-portraits1%%) 0px -300px;}
-
-
-
-.linkflair-americas .linkflairlabel {border-color: #e1342d;}
-.linkflair-americas a.thumbnail {background: url(%%linkflairthumbs%%) 0px 0px;}
-
-.linkflair-europe .linkflairlabel {border-color: #5fcd26;}
-.linkflair-europe a.thumbnail {background: url(%%linkflairthumbs%%) 0px -70px;}
-
-.linkflair-asia .linkflairlabel {border-color: #b527d0;}
-.linkflair-asia a.thumbnail {background: url(%%linkflairthumbs%%) 0px -140px;}
-
-.linkflair-idea .linkflairlabel {border-color: #E0A148;}
-.linkflair-idea a.thumbnail {background: url(%%linkflairthumbs%%) 0px -210px;}
-
-.linkflair-craftpost .linkflairlabel {border-color: #C95216;}
-.linkflair-craftpost a.thumbnail {background: url(%%linkflairthumbs%%) 0px -280px;}
-
-.linkflair-secrettome .linkflairlabel {border-color: #e5e5e5;}
-.linkflair-secrettome a.thumbnail {background: url(%%linkflairthumbs%%) 0px -350px;}
-
-.linkflair-diablotwo .linkflairlabel {border-color: #CC0000;}
-.linkflair-diablotwo a.thumbnail {background: url(%%linkflairthumbs%%) 0px -420px;}
-
-.linkflair-hardcore .linkflairlabel {border-color: #350700;}
-.linkflair-hardcore a.thumbnail {background: url(%%linkflairthumbs%%) 0px -490px;}
-
-.linkflair-diabloone .linkflairlabel {border-color: #CC0000;}
-.linkflair-diabloone a.thumbnail {background: url(%%linkflairthumbs%%) 0px -560px;}
-
-.linkflair-glorious .linkflairlabel {border-color: #fff8a8;}
-.linkflair-glorious a.thumbnail {background: url(%%linkflairthumbs%%) 0px -630px;}
-
-.linkflair-challenge .linkflairlabel {border-color: #1f355d;}
-.linkflair-challenge a.thumbnail {background: url(%%linkflairthumbs%%) 0px -700px;}
-
-.linkflair-console .linkflairlabel {border-color: #000000;}
-.linkflair-console a.thumbnail {background: url(%%linkflairthumbs%%) 0px -770px;}
-
-.linkflair-rosbeta .linkflairlabel {border-color: #251b48;}
-.linkflair-rosbeta a.thumbnail {background: url(%%linkflairthumbs%%) 0px -840px;}
-
-.linkflair-fluff .linkflairlabel {border-color: #ff8ffb;}
-.linkflair-fluff a.thumbnail {background: url(%%linkflairthumbs%%) 0px -910px;}
-
-.linkflair-art .linkflairlabel {border-color: #37586f; }
-.linkflair-art a.thumbnail {background: url(%%linkflairthumbs%%) 0px -980px; }
-
-.linkflair-season .linkflairlabel {border-color: #9af054;}
-.linkflair-season a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1050px;}
-
-.linkflair-ptr .linkflairlabel {border-color: #54a8f0;}
-.linkflair-ptr a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1120px;}
-
-.linkflair-theorycraft .linkflairlabel {border-color: #f25301;}
-.linkflair-theorycraft a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1190px;}
-
-.linkflair-guide .linkflairlabel {border-color: #096c42;}
-.linkflair-guide a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1260px;}
-
-.linkflair-blizzard .linkflairlabel {border-color: #00a7e1;}
-.linkflair-blizzard a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1330px;}
-
-.linkflair-question .linkflairlabel {border-color: #572a0f;}
-.linkflair-question a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1400px;}
-
-.linkflair-clan .linkflairlabel {border-color: #0600ff;}
-.linkflair-clan a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1470px;}
-
-.linkflair-speculation .linkflairlabel {border-color: #000;}
-.linkflair-speculation a.thumbnail {background: url(%%linkflairthumbs%%) 0px -1540px;}
-
 
 .flair {
-	padding: 0px;
-	margin: 0;
-	line-height: 20px;
-	vertical-align: middle;
-	text-align: right; 
-	color: #eee;
-	background: url(%%class-baked-column%%) top left no-repeat #000;
-	min-width: 40px;
-	padding-right: 10px;
-	width: 40px;
-	height:20px;
-	position: relative;
-	z-index: 10;
-	opacity: 0.5;
-	overflow: hidden;
-	margin-right: 3px;
-	text-indent: 60px;
-	border: 1px solid #000;
-	border-radius: 2px;
-	@include vendor-prefix(transition, all 0.3s);
+  padding: 0px;
+  margin: 0;
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: right; 
+  color: #eee;
+  background: $userflairbg top left no-repeat #000;
+  min-width: 40px;
+  padding-right: 10px;
+  width: 40px;
+  height:20px;
+  position: relative;
+  z-index: 10;
+  opacity: 0.5;
+  overflow: hidden;
+  margin-right: 3px;
+  text-indent: 60px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  @include vendor-prefix(transition, all 0.3s);
+
+  &:hover { 
+    opacity: 1.0; 
+    width: auto;
+    @include vendor-prefix(transition, all 0.3s);
+  }
 }
 
-.flair:hover { 
-	opacity: 1.0; 
-	width: auto;
-	@include vendor-prefix(transition, all 0.3s);
+@each $i in sprite_names($user-flair) {
+    .flair-#{$i} {
+      background-position: sprite-position($user-flair, $i) !important;
+    }
 }
-
-.flair-monk {background-position: 0px 0px !important;}
-.flair-wizard {background-position: 0px -20px !important;}
-.flair-barb {background-position: 0px -40px !important;}
-.flair-witchdoc {background-position: 0px -60px !important;}
-.flair-demonhunt {background-position: 0px -80px !important;}
-
-.flair-monk-reddit {background-position: 0px -100px !important;}
-.flair-wizard-reddit {background-position: 0px -120px !important;}
-.flair-barb-reddit {background-position: 0px -140px !important;}
-.flair-witchdoc-reddit {background-position: 0px -160px !important;}
-.flair-demonhunt-reddit {background-position: 0px -180px !important;}
-
-.flair-monk-americas {background-position: 0px -200px !important;}
-.flair-wizard-americas {background-position: 0px -220px !important;}
-.flair-barb-americas {background-position: 0px -240px !important;}
-.flair-witchdoc-americas {background-position: 0px -260px !important;}
-.flair-demonhunt-americas {background-position: 0px -280px !important;}
-
-.flair-monk-asia {background-position: 0px -400px !important;}
-.flair-wizard-asia {background-position: 0px -420px !important;}
-.flair-barb-asia {background-position: 0px -440px !important;}
-.flair-witchdoc-asia {background-position: 0px -460px !important;}
-.flair-demonhunt-asia {background-position: 0px -480px !important;}
-
-.flair-monk-europe {background-position: 0px -300px !important;}
-.flair-wizard-europe {background-position: 0px -320px !important;}
-.flair-barb-europe {background-position: 0px -340px !important;}
-.flair-witchdoc-europe {background-position: 0px -360px !important;}
-.flair-demonhunt-europe {background-position: 0px -380px !important;}
-
-/* Trophy flair */
-.flair-tyrael-alt {background-position: 0px -500px !important;}
-.flair-tyrael {background-position: 0px -520px !important;}
-.flair-azmodan {background-position: 0px -540px !important;}
-.flair-diablo {background-position: 0px -560px !important;}
-.flair-tyrael-alt-reddit {background-position: 0px -580px !important;}
-.flair-tyrael-reddit {background-position: 0px -600px !important;}
-.flair-azmodan-reddit {background-position: 0px -620px !important;}
-.flair-diablo-reddit {background-position: 0px -640px !important;}
-
-.flair-tyrael-alt-americas {background-position: 0px -660px !important;}
-.flair-tyrael-americas {background-position: 0px -680px !important;}
-.flair-azmodan-americas {background-position: 0px -700px !important;}
-.flair-diablo-americas {background-position: 0px -720px !important;}
-
-.flair-tyrael-alt-europe {background-position: 0px -740px !important;}
-.flair-tyrael-europe {background-position: 0px -760px !important;}
-.flair-azmodan-europe {background-position: 0px -780px !important;}
-.flair-diablo-europe {background-position: 0px -800px !important;}
-
-.flair-tyrael-alt-asia {background-position: 0px -820px !important;}
-.flair-tyrael-asia {background-position: 0px -840px !important;}
-.flair-azmodan-asia {background-position: 0px -860px !important;}
-.flair-diablo-asia {background-position: 0px -880px !important;}
-
-.flair-crusader-reddit {background-position: 0px -900px !important;}
-.flair-crusader-americas {background-position: 0px -920px !important;}
-.flair-crusader-europe {background-position: 0px -940px !important;}
-.flair-crusader-asia {background-position: 0px -960px !important;}
-
-.flair-bender {
-	background: url(%%class-baked-column%%) 0px -980px no-repeat !important; }
 
 .flair-idscroll + .userattrs {
-	background-image: url(%%ros-baked%%);
-	background-position: 0px -137px;
-	background-repeat: no-repeat;
-	display: inline-block;
-	padding-left: 18px;
-	height: 18px;
-	vertical-align: middle;
+  background-image: url(%%ros-baked%%);
+  background-position: 0px -137px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 18px;
+  height: 18px;
+  vertical-align: middle;
 }
+
 .flair-challenge + .userattrs:after {
-	content: " ";
-	background-image: url(%%challengeflair%%);
-	background-repeat: no-repeat;
-	display: inline-block;
-	padding-left: 24px;
-	height: 22px;
-	vertical-align: middle;
+  content: " ";
+  background-image: url(%%challengeflair%%);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 24px;
+  height: 22px;
+  vertical-align: middle;
 }
+
 .flair-one + .userattrs:after {background-position: 0px -2px;}
 .flair-two + .userattrs:after {background-position: -26px -2px;}
 .flair-three + .userattrs:after {background-position: -55px -2px;}
@@ -287,21 +138,21 @@
 .flair-2L2 + .userattrs:after {background-position: -26px -32px;}
 .flair-3L2 + .userattrs:after {background-position: -55px -32px;}
 .flair-4L2 + .userattrs:after {background-position: -86px -32px;}
-.flair-1L3 + .userattrs:after {background-position: 0px -62px;}		
-.flair-2L3 + .userattrs:after {background-position: -26px -62px;}		
-.flair-3L3 + .userattrs:after {background-position: -55px -62px;}		
+.flair-1L3 + .userattrs:after {background-position: 0px -62px;}   
+.flair-2L3 + .userattrs:after {background-position: -26px -62px;}   
+.flair-3L3 + .userattrs:after {background-position: -55px -62px;}   
 .flair-4L3 + .userattrs:after {background-position: -86px -62px;}
 
 
 .flair-rainbowsmotherfucker + .userattrs:before {
-	content: " ";
-	background-image: url(%%ros-baked%%);
-	background-position: 0px -160px;
-	background-repeat: no-repeat;
-	display: inline-block;
-	padding-left: 20px;
-	height: 20px;
-	vertical-align: middle;
+  content: " ";
+  background-image: url(%%ros-baked%%);
+  background-position: 0px -160px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 /**** Blizzard flair for employees ****/
@@ -355,15 +206,12 @@ a.author[href$="reddit.com/user/Zarhym"]:before,
 a.author[href$="reddit.com/user/Araxom"]:before, 
 a.author[href$="reddit.com/user/Glaxigrav"]:before,  
 a.author[href$="reddit.com/user/Nidrorian"]:before,
-a.author[href$="reddit.com/user/Kalviery"]:before
-
- 
- {
-	content: url(%%blizz%%);
-	margin-left: 3px;
-	margin-right: 3px;
-	display: inline-block;
-	vertical-align: middle;
+a.author[href$="reddit.com/user/Kalviery"]:before {
+  content: url(%%blizz%%);
+  margin-left: 3px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /** Job descriptions */
@@ -387,12 +235,12 @@ a.author[href$="reddit.com/user/Tyvalir"]:after,
 a.author[href$="reddit.com/user/Nidrorian"]:after, 
 a.author[href$="reddit.com/user/Ulvareth"]:after,
 a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
-	content: "Community Manager";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Community Manager";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Customer support */
@@ -400,22 +248,22 @@ a.author[href$="reddit.com/user/Araxom"]:after,
 a.author[href$="reddit.com/user/Glaxigrav"]:after, 
 a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Kalviery"]:after {
- 	content: "Customer Support";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Customer Support";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Jay Wilson */
 a.author[href$="reddit.com/user/JayPWilson"]:after {
- 	content: "Former Game Director";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Former Game Director";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Game Designers */
@@ -425,42 +273,42 @@ a.author[href$="reddit.com/user/_JohnYang"]:after,
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after, 
 a.author[href$="reddit.com/user/Blizz_KevinMartens"]:after, 
 a.author[href$="reddit.com/user/TravisDay"]:after {
-	content: "Game Designer";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Game Designer";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Software Engineers */
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:after {
- 	content: "Software Engineer";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Software Engineer";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Artists */
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:after {
- 	content: "Artist";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Artist";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /* Writers */
 a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:after {
- 	content: "Writer";
-	color: #00B4FF !important;
-	padding: 4px;
-	margin-left: 5px;
-	border: 1px solid #222;
-	background: #111;
+  content: "Writer";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
 }
 
 /*Diablo*/
@@ -514,6 +362,6 @@ a.author[href$="reddit.com/user/Araxom"],
 a.author[href$="reddit.com/user/Glaxigrav"], 
 a.author[href$="reddit.com/user/Natryndon"], 
 a.author[href$="reddit.com/user/Nidrorian"],
-a.author[href$="reddit.com/user/Kalviery"]{
-	color: #00B4FF !important;
+a.author[href$="reddit.com/user/Kalviery"] {
+  color: #00B4FF !important;
 }
