@@ -1,13 +1,14 @@
-$red5: #120303;
-$red4: #220606;
-$red3: #2c0606;
-$red2: #740a0a;
-$red1: #b05555;
-
-$red-highlight: #ff0000;
+$primary5: #120303;
+$primary4: #220606;
+$primary3: #2c0606;
+$primary2: #740a0a;
+$primary1: #b05555;
+$primary0: #ff0000;
 
 $link-color2: #aaaaaa;
 $link-color: #fafafa;
+
+$body-background-color: $primary5;
 
 $header-background-color: #000000;
 
@@ -15,7 +16,7 @@ $link-domain-color: #979797;
 $link-buttons-color: #877e54;
 $link-sticky-title-color: #6ac300;
 $link-sticky-title-visited-color: #81a210;
-$link-title-border-color: $red5;
+$link-title-border-color: $primary5;
 
 $blizz-link-domain-color: #0a324e;
 $blizz-link-buttons-color: #4b95c0;
@@ -38,8 +39,8 @@ $info-bar-border-color: #fcce3c;
 $gold-accent-background-color: #000;
 $gold-accent-text-color: #ccaf55;
 
-$comment-background-color: $red5;
-$comment-background-color-alt: $red3;
+$comment-background-color: $primary5;
+$comment-background-color-alt: $primary3;
 
 $roundfield-background-color: #000;
 $roundfield-input-background-color: #000;
