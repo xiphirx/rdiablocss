@@ -163,9 +163,9 @@
       $rule: $rule + ' .comment';
       #{$rule} {
           @if $i % 2 == 0 {
-              background-color: $comment-background-color !important;
+              background-color: $bluebg !important;
           } @else {
-              background-color: $comment-background-color-alt !important;
+              background-color: $blueentry !important;
           }
       }
   }

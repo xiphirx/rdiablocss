@@ -1,7 +1,7 @@
 @import 'colors';
 
 body {
-  background: $red5;
+  background: $bluebg;
   font-family: Arial, Helvetica, sans-serif;
   color: $post-text-color;
 }
@@ -28,7 +28,7 @@ button, .usertable>.toggle {
   padding: 8px !important;
   text-transform: capitalize;
   background: $red2;
-  border: 1px solid $red-highlight;
+  border: 1px solid $bluebborder;
   border-radius: 2px;
   color: $link-color;
   @include vendor-prefix(transition, background 0.5s);
@@ -40,16 +40,16 @@ button, .usertable>.toggle {
 }
 
 input {
-  border: 1px solid $red-highlight;
-  background: $red5;
+  border: 1px solid $bluebborder;
+  background: $bluebg;
   color: $post-text-color;
   padding: 8px;
   border-radius: 2px;
 }
 
 .drop-choices { 
-  background-color: $red5;
-  border: 1px solid $red2;
+  background-color: $bluebg;
+  border: 1px solid $bluebborder;
   border-radius: 2px;
   padding: 8px;
   line-height: 2;
@@ -84,7 +84,7 @@ input {
 
   form {
     background: $red2;
-    border-top: 1px solid $red2;
+    border-top: 1px solid $bluebborder;
     padding: 8px;
 
     input {
@@ -146,8 +146,8 @@ input {
 
       .linkflairlabel,
       .flair {
-        border-color: $red-highlight;
-        background-color: $red2;
+        border-color: $bluebborder;
+        background-color: $bluebg;
       }
     }
   }
@@ -173,8 +173,8 @@ input {
     font-size: 14px;
 
     a {
-      background: $red5;
-      border: 1px solid $red3;
+      background: $bluebg;
+      border: 1px solid bluebborder;
       padding: 8px;
       font-variant: small-caps;
     }
@@ -186,7 +186,7 @@ ul.report-reasons {
   color: $post-text-color;
   border: none;
   border-radius: 0px;
-  border-left: 1px solid $red2;
+  border-left: 1px solid $bluebborder;
 }
 
 .md {
