@@ -8,17 +8,17 @@
 #siteTable,
 #siteTable_organic {
   display: block;
-  background: $red4;
-  border: 1px solid $red3;
+  background: $blue3;
+  border: 1px solid $blue4;
   border-radius: 2px;
 
   .link.promotedlink.promoted {
-    background-color: $red4;
+    background-color: $blue3;
   }
 
   .thing.link,
   .thing.link.promoted.promotedlink {
-    border-bottom: 2px solid $red5;
+    border-bottom: 2px solid $blue4;
     padding: 16px;
     margin: 0px;
     position: relative;
@@ -29,7 +29,7 @@
 
     &.last-clicked {
       border: none;
-      border-bottom: 2px solid $red5;
+      border-bottom: 2px solid $blue4;
     }
 
     .entry p.title {
@@ -81,7 +81,7 @@
     }
 
     .domain {
-      color: $red4;
+      color: $blue3;
 
       &:before {
         color: $link-domain-color;
@@ -153,7 +153,7 @@
     }
 
     a.title:visited {
-      color: $red1;
+      color: $blue2;
     }
 
     &.stickied a.title:visited {
@@ -168,7 +168,7 @@
 
     .buttons li.reported-stamp {
       background-color: transparent;
-      border-color: $red-highlight !important;
+      border-color: $blue4 !important;
     }
 
     &.linkflair .midcol {
@@ -212,7 +212,7 @@
 
     .media-embed, .usertext-body .md {
       margin-left: 99px;
-      border-left: 2px solid $red2;
+      border-left: 2px solid $blue4;
       padding-left: 8px;
     }
   }

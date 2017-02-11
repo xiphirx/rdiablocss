@@ -3,7 +3,7 @@
 
 #header {
   background: url($diablo) center bottom no-repeat $header-background-color;
-  border-bottom: 1px solid $red3;
+  border-bottom: 1px solid $blue5;
   height: 263px;
   position: relative;
   z-index: 4;
@@ -41,9 +41,9 @@
   }
 
   #sr-header-area {
-    background: $red5;
+    background: $blue;
     padding: 4px 0px 4px 0px;
-    border-bottom: 1px solid $red3;
+    border-bottom: 1px solid $blue4;
     margin-right: 450px;
 
     .width-clip {
@@ -55,7 +55,7 @@
     .sr-bar .separator,
     .separator,
     #sr-more-link {
-      color: $red1;
+      color: $blue2;
     }
 
     .dropdown.srdrop .selected {
@@ -64,7 +64,7 @@
     }
 
     #sr-more-link {
-      background-color: $red5;
+      background-color: $blue5;
     }
 
     .drop-choices {
@@ -91,8 +91,8 @@
         &.selected a {
           border: none;
           border-top: none;
-          color: $red1;
-          border-bottom: 2px solid $red1;
+          color: $blue1;
+          border-bottom: 2px solid $blue1;
         }
 
         &:first-child {
@@ -127,13 +127,13 @@
   }
 
   #header-bottom-right {
-    background: $red5;
+    background: $blue5;
     top: 0px;
     bottom: auto;
     width: 450px;
     display: block;
     padding: 7px 16px 6px 0px;
-    border-bottom: 1px solid $red3;
+    border-bottom: 1px solid $blue4;
     text-align: right;
 
     .user {
