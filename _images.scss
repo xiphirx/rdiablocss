@@ -3,8 +3,8 @@ $sprites: sprite-map("sprites/*.png", $layout: smart);
 $link-flair: sprite-map("link-flair/*.png", $layout: smart);
 $user-flair: sprite-map("user-flair/*.png", $layout: smart);
 
-$diablo: '%%diablo%%';
-$diablo-blur: '%%diablo-blur%%';
+$header-img: '%%necro%%';
+$header-img-blur: '%%necro-blur%%';
 $diablo-logo: '%%diablo-logo%%';
 $blizz-link-glow: '%%blizz-glow%%';
 $selected-link-glow: '%%selected-glow%%';
@@ -70,14 +70,19 @@ $userflairbg: url('%%user-flair%%');
 }
 
 .embossed-button {
-  border: 6px solid transparent;
-  @include vendor-prefix(border-image, url($button-border) 6 6 round);
+  border-width: 13px 22px 13px 22px;
+  border-style: solid;
+  border-color: transparent;
+  @include vendor-prefix(border-image, url($button-border) 13 22 13 22 round);
   background: url($button-fill);
+  background-clip: padding-box;
   padding: 8px;
 
   &:active {
-    @include vendor-prefix(border-image, url($button-border-pressed) 6 6 round);
+    @include vendor-prefix(border-image, url($button-border-pressed) 13 22 13 22 round);
     background: url($button-fill-pressed);
+    background-clip: padding-box;
+    line-height: 37px;
   }
 }
 

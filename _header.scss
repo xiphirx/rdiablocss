@@ -2,7 +2,7 @@
 @import 'images';
 
 #header {
-  background: url($diablo) center bottom no-repeat $header-background-color;
+  background: url($header-img) center bottom no-repeat $header-background-color;
   border-bottom: 1px solid $primary3;
   height: 263px;
   position: relative;
@@ -79,7 +79,7 @@
       left: 0px;
       right: 0px;
       display: block;
-      background: url($diablo-blur) center bottom no-repeat $header-background-color;
+      background: url($header-img-blur) center bottom no-repeat $header-background-color;
       margin-top: 0px;
       padding: 0px;
       border-top: 1px solid #111;
