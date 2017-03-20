@@ -4,7 +4,7 @@
 
 .side {
   background: transparent;
-  margin: 108px 16px 0px 16px;
+  margin: 113px 16px 0px 16px;
   width: 300px;
   color: $post-text-color;
 
@@ -25,7 +25,7 @@
   #search {
     @extend .thin-border;
     position: absolute;
-    top: 341px;
+    top: 348px;
     right: 16px;
     background: #000;
 
@@ -53,15 +53,15 @@
       top: 281px;
 
       &.submit-text {
-        margin-left: 148px;
+        margin-left: 151px;
       }
 
       &.submit-link {
-        margin-left: -22px;
+        margin-left: -3px;
       }
 
       .morelink {
-        width: 122px;
+        width: 113px;
       }
     }
 
@@ -76,7 +76,6 @@
 
   .titlebox {
     @extend .thick-border;
-    background: #000;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -199,7 +198,8 @@
       @extend .embossed-button-text;
       vertical-align: bottom;
       text-align: center;
-      padding-top: 49px;
+      padding-top: 29px;
+      padding-bottom: 20px;
       height: 22px;
       margin: 16px;
     }
@@ -306,7 +306,6 @@
 
       li a:hover {
         position: relative;
-        @extend .surround-pentagram;
 
         &:before, &:after {
           top: -3px;
@@ -344,7 +343,6 @@
       &:hover {
         background: rgba(255, 255, 255, 0.05);
         @include vendor-prefix(transition, background 0.5s);
-        @extend .surround-pentagram;
       }
 
       &:hover del em {
@@ -394,7 +392,7 @@
   .sidecontentbox {
     .title {
       @extend .thin-border;
-      background: #000;
+      background: $site-table-background-color;
       padding: 8px;
 
       h1 {
@@ -412,7 +410,7 @@
     .content {
       border: 8px solid transparent;
       @include vendor-prefix(border-image, url($thick-border) 8 8 round);
-      background: #000;
+      background: $site-table-background-color;
     }
   }
 

@@ -19,14 +19,12 @@
   .reddit-infobar,
   .infobar {
     @extend .thick-border;
-    background: #000;
     font-variant: small-caps;
 
     .md {
       color: $post-text-color;
 
       p {
-        @extend .surround-pentagram;
         position: relative;
         padding: 4px 16px;
         margin: 0px;
@@ -173,7 +171,7 @@
 
 .linkinfo {
   @extend .thin-border;
-  background: #000;
+  background: $site-table-background-color;
   text-align: center;
   font-variant: small-caps;
   font-size: 14px;

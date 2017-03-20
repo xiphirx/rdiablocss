@@ -72,7 +72,6 @@ ul.tabmenu.formtab {
 
 .roundfield, .linefield, .linefield.mobile {
   @extend .thick-border;
-  background-color: $roundfield-background-color;
   color: $post-text-color;
   text-transform: lowercase;
   font-variant: small-caps;
