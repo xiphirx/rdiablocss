@@ -38,6 +38,11 @@
 
   .media-embed, .usertext-body .md {
     border-color: $blizz-link-buttons-color;
+    color: $blizz-post-text-color;
+
+    a {
+      color: $blizz-post-link-color;
+    }
   }
 }
 
