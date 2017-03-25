@@ -100,4 +100,16 @@ body {
   #srList {
     background-color: $primary5;
   }
+
+  #BigEditor #BigPreview.md {
+    color: #000;
+
+    a {
+      color: $primary3;
+    }
+  }
+
+  .res-searchHelper-searchPageTabs ul.res-search-tabs li {
+    background: transparent !important;
+  }
 }

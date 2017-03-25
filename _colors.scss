@@ -1,9 +1,13 @@
-$primary5: #120303;
-$primary4: #220606;
-$primary3: #2c0606;
-$primary2: #740a0a;
-$primary1: #b05555;
-$primary0: #ff0000;
+$primary5: #030e12;
+$primary4: #061822;
+$primary3: #06232c;
+$primary2: #0a5c74;
+$primary1: #55a2b0;
+$primary0: #00d8ff;
+
+$accent4: #12110f;
+$accent1: #a99877;
+$accent0: #ffe3a4;
 
 $link-color2: #aaaaaa;
 $link-color: #fafafa;
@@ -12,35 +16,38 @@ $body-background-color: $primary5;
 
 $header-background-color: #000000;
 
+$site-table-background-color: $accent4;
+
 $link-domain-color: #979797;
-$link-buttons-color: #877e54;
+$link-buttons-color: #a99877;
 $link-sticky-title-color: #6ac300;
 $link-sticky-title-visited-color: #81a210;
 $link-title-border-color: $primary5;
 
-$blizz-link-domain-color: #0a324e;
-$blizz-link-buttons-color: #4b95c0;
-$blizz-link-title-visited-color: #7b61b4;
+$blizz-link-domain-color: $link-domain-color;
+$blizz-link-buttons-color: #66b6e4;
+$blizz-link-title-visited-color: #66b6e4;
 $blizz-link-title-border-color: #005b7f;
-$blizz-link-background-color: #0d150c;
+$blizz-link-background-color: #09161b;
 $blizz-link-border-color: #070b06;
+$blizz-post-text-color: #00b4ff;
+$blizz-post-link-color: #ff6f0b;
 
 $moderator-color: #00910a;
 $friend-color: #ff4500;
 $user-color: #979797;
 
-$post-text-color: #fff;
+$post-text-color: $accent1;
 $post-quoted-text-color: #aaa;
-$sidebar-text-color: #ffe3a4;
+$sidebar-text-color: $accent0;
 
 $info-bar-background-color: #83723d;
 $info-bar-border-color: #fcce3c;
 
-$gold-accent-background-color: #000;
+$gold-accent-background-color: $site-table-background-color;
 $gold-accent-text-color: #ccaf55;
 
-$comment-background-color: $primary5;
-$comment-background-color-alt: $primary3;
+$comment-background-color: #1d1912;
+$comment-background-color-alt: $accent4;
 
-$roundfield-background-color: #000;
 $roundfield-input-background-color: #000;

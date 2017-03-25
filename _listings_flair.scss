@@ -38,6 +38,11 @@
 
   .media-embed, .usertext-body .md {
     border-color: $blizz-link-buttons-color;
+    color: $blizz-post-text-color;
+
+    a {
+      color: $blizz-post-link-color;
+    }
   }
 }
 
@@ -78,26 +83,32 @@
 
 .linkflair-barb .linkflairlabel {
   border-color: #700;
+  background: #2f0000;
 }
 
 .linkflair-wizz .linkflairlabel {
   border-color: #077;
+  background: #002f2f;
 }
 
 .linkflair-dh .linkflairlabel {
   border-color: #7F41A3;
+  background: #2d143c;
 }
 
 .linkflair-wd .linkflairlabel {
   border-color: #070;
+  background: #002f00;
 }
 
 .linkflair-monk .linkflairlabel {
   border-color: #770;
+  background: #2f2f01;
 }
 
 .linkflair-crus .linkflairlabel {
   border-color: #FFFF00;
+  background: #2f2f00;
 }
 
 .linkflair-americas .linkflairlabel {

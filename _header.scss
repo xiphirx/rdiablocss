@@ -2,7 +2,7 @@
 @import 'images';
 
 #header {
-  background: url($diablo) center bottom no-repeat $header-background-color;
+  background: url($header-img) left bottom no-repeat $header-background-color;
   border-bottom: 1px solid $primary3;
   height: 263px;
   position: relative;
@@ -12,14 +12,8 @@
     margin-left: 16px;
   }
 
-  @include keyframes(diablo-flames) {
-    100% { 
-      background-position: 0px -2310px;
-    }
-  }
-
-  $frameWidth: 390px;
-  $frameHeight: 154px;
+  $frameWidth: 445px;
+  $frameHeight: 180px;
   .hover.pagename.redditname {
     width: $frameWidth;
     height: $frameHeight;
@@ -29,14 +23,15 @@
     background: url($diablo-logo);
     color: #000;
 
-    @include vendor-prefix(animation, diablo-flames 1s steps(15) infinite);
-    @include vendor-prefix(transform, translatez(0));
-
     a {
       display: block;
       text-indent: -99999px;
       width: $frameWidth;
       height: $frameHeight;
+    }
+
+    &:hover {
+      background-position-y: -$frameHeight;
     }
   }
 
@@ -79,7 +74,7 @@
       left: 0px;
       right: 0px;
       display: block;
-      background: url($diablo-blur) center bottom no-repeat $header-background-color;
+      background: url($header-img-blur) left bottom no-repeat $header-background-color;
       margin-top: 0px;
       padding: 0px;
       border-top: 1px solid #111;
@@ -119,7 +114,6 @@
           &:hover {
             background: rgba(255, 255, 255, 0.05);
             @include vendor-prefix(transition, background 0.5s);
-            @extend .surround-pentagram;
           }
         }
       }
