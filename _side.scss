@@ -36,21 +36,25 @@
     }
 
     .infobar {
-      background-color: #332a18;
+      background-color: $accent4;
       border-radius: 0px;
       @extend .thin-border;
       border-left: none;
       border-right: none;
       border-bottom: none;
       border-top: 2px solid transparent;
-      color: #b28938;
+      color: $accent1;
+
+      p {
+        margin-top: 8px;
+      }
     }
   }
 
   .sidebox  {
     &.submit {
       position: absolute;
-      top: 281px;
+      top: 278px;
 
       &.submit-text {
         margin-left: 151px;
