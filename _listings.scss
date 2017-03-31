@@ -8,17 +8,17 @@
 #siteTable,
 #siteTable_organic {
   display: block;
-  background: $blue3;
-  border: 1px solid $blue4;
+  background: $site-table-background-color;
+  @extend .thin-border;
   border-radius: 2px;
 
   .link.promotedlink.promoted {
-    background-color: $blue3;
+    background-color: $primary4;
   }
 
   .thing.link,
   .thing.link.promoted.promotedlink {
-    border-bottom: 2px solid $blue4;
+    border-bottom: 2px solid #000;
     padding: 16px;
     margin: 0px;
     position: relative;
@@ -29,11 +29,10 @@
 
     &.last-clicked {
       border: none;
-      border-bottom: 2px solid $blue4;
+      border-bottom: 2px solid $primary5;
     }
 
     .entry p.title {
-      border-bottom: 1px dashed $link-title-border-color;
       padding-bottom: 4px;
     }
 
@@ -81,7 +80,7 @@
     }
 
     .domain {
-      color: $blue3;
+      color: $primary4;
 
       &:before {
         color: $link-domain-color;
@@ -113,17 +112,20 @@
     }
 
     &.linkflair a.thumbnail {
-      margin: 12px 8px 0px 0px;
+      margin: 12px 20px 0px 0px;
     }
 
     a.thumbnail {
-      @include sprite-dimensions($sprites, 'thumb-frame');
+      width: 55px;
+      height: 55px;
       @include vendor-prefix(background-clip, content-box !important);
       position: relative;
-      margin: 3px 8px 0px 0px;
+      margin: 3px 20px 0px 0px;
+      overflow: visible;
 
       img {
-        @include sprite-dimensions($sprites, 'thumb-frame');
+        width: 55px;
+        height: 55px;
       }
 
       &:after {
@@ -134,8 +136,8 @@
         background-position: sprite-position($sprites, 'thumb-frame');
         position: absolute;
         z-index: 2;
-        top: 0;
-        left: 0;
+        top: -7px;
+        left: -7px;
       }
     }
 
@@ -153,7 +155,7 @@
     }
 
     a.title:visited {
-      color: $blue2;
+      color: $primary1;
     }
 
     &.stickied a.title:visited {
@@ -168,7 +170,7 @@
 
     .buttons li.reported-stamp {
       background-color: transparent;
-      border-color: $blue4 !important;
+      border-color: $primary0 !important;
     }
 
     &.linkflair .midcol {
@@ -212,7 +214,7 @@
 
     .media-embed, .usertext-body .md {
       margin-left: 99px;
-      border-left: 2px solid $blue4;
+      border-left: 2px solid $post-text-color;
       padding-left: 8px;
     }
   }

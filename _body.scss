@@ -1,7 +1,7 @@
 @import 'colors';
 
 body {
-  background: $blue5;
+  background: $body-background-color;
   font-family: Arial, Helvetica, sans-serif;
   color: $post-text-color;
 }
@@ -27,29 +27,29 @@ button, .usertable>.toggle {
   margin: 4px !important;
   padding: 8px !important;
   text-transform: capitalize;
-  background: $red2;
-  border: 1px solid $blue4;
+  background: $primary2;
+  border: 1px solid $primary0;
   border-radius: 2px;
   color: $link-color;
   @include vendor-prefix(transition, background 0.5s);
 
   &:hover {
-    background: $red-highlight;
+    background: $primary0;
     @include vendor-prefix(transition, background 0.5s);
   }
 }
 
 input {
-  border: 1px solid $blue4;
-  background: $blue5;
+  border: 1px solid $primary0;
+  background: $primary5;
   color: $post-text-color;
   padding: 8px;
   border-radius: 2px;
 }
 
 .drop-choices { 
-  background-color: $blue5;
-  border: 1px solid $blue4;
+  background-color: $primary5;
+  border: 1px solid $primary2;
   border-radius: 2px;
   padding: 8px;
   line-height: 2;
@@ -77,14 +77,14 @@ input {
   }
 
   h2 {
-    background: $red2;
+    background: $primary2;
     padding: 8px;
     text-transform: capitalize;
   }
 
   form {
-    background: $red2;
-    border-top: 1px solid $blue4;
+    background: $primary2;
+    border-top: 1px solid $primary2;
     padding: 8px;
 
     input {
@@ -117,7 +117,7 @@ input {
       }
 
       .flairremove {
-        color: $red2;
+        color: $primary2;
         float: right;
 
         a {
@@ -146,8 +146,8 @@ input {
 
       .linkflairlabel,
       .flair {
-        border-color: $blue4;
-        background-color: $blue5;
+        border-color: $primary0;
+        background-color: $primary2;
       }
     }
   }
@@ -173,8 +173,8 @@ input {
     font-size: 14px;
 
     a {
-      background: $blue5;
-      border: 1px solid blue4;
+      background: $primary5;
+      border: 1px solid $primary3;
       padding: 8px;
       font-variant: small-caps;
     }
@@ -186,7 +186,7 @@ ul.report-reasons {
   color: $post-text-color;
   border: none;
   border-radius: 0px;
-  border-left: 1px solid $blue4;
+  border-left: 1px solid $primary2;
 }
 
 .md {

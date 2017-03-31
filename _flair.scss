@@ -4,12 +4,12 @@
 .comments-page {
   .flat-list.buttons a.flairselectbtn {
     font-size: 0px;
-    background: $red3;
+    background: $primary3;
     display: inline-block;
     padding: 5px;
     border-radius: 3px;
     color: $post-text-color !important;
-    border: 1px solid $red1;
+    border: 1px solid $primary1;
 
     & + .flairselector form {
       border-top: 0;

@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'images';
+
+.search-page #header ~ div.content {
+  background: $site-table-background-color;
+  @extend .thin-border;
+  border-radius: 2px;
+  padding: 16px;
+
+  .search-result-group {
+    margin-bottom: 16px;
+  }
+
+  #previoussearch form input {
+    color: inherit !important;
+  }
+
+  .search-expando.collapsed:before {
+    display: none;
+  }
+}

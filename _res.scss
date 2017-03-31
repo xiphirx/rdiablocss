@@ -91,12 +91,25 @@ body {
 
   .NERPageMarker, #progressIndicator {
     background-color: transparent;
-    border: 1px solid $red-highlight;
+    border: 1px solid $primary0;
     padding: 4px;
     border-radius: 2px;
     color: $post-text-color;
   }
+  
   #srList {
-    background-color: $blue5;
+    background-color: $primary5;
+  }
+
+  #BigEditor #BigPreview.md {
+    color: #000;
+
+    a {
+      color: $primary3;
+    }
+  }
+
+  .res-searchHelper-searchPageTabs ul.res-search-tabs li {
+    background: transparent !important;
   }
 }
