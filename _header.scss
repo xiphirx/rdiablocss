@@ -139,3 +139,31 @@
     }
   }
 }
+
+// Announcements
+
+.side .usertext-body h5 {
+  $paddingAmount: 8px;
+  @extend .thin-border;
+  position: absolute;
+  top: 141px;
+  left: 591px;
+  padding-right: $paddingAmount;
+  z-index: 10;
+  font-weight: normal;
+  background-color: $header-announcement-background-color;
+  
+
+  &:before {
+    @extend .thin-border;
+    content: "Announcement";
+    background-color: $accent4;
+    display: inline-block;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    padding: $paddingAmount;
+    margin-right: $paddingAmount;
+    font-weight: bold;
+  }
+}
