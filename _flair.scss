@@ -207,6 +207,7 @@ a.author[href$="reddit.com/user/Araxom"]:before,
 a.author[href$="reddit.com/user/Glaxigrav"]:before,  
 a.author[href$="reddit.com/user/Nidrorian"]:before,
 a.author[href$="reddit.com/user/Dromogaz"]:before,
+a.author[href$="reddit.com/user/Dalthrox"]:before,
 a.author[href$="reddit.com/user/Kalviery"]:before {
   content: url(%%blizz%%);
   margin-left: 3px;
@@ -249,6 +250,7 @@ a.author[href$="reddit.com/user/Araxom"]:after,
 a.author[href$="reddit.com/user/Glaxigrav"]:after, 
 a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Dromogaz"]:after,
+a.author[href$="reddit.com/user/Dalthrox"]:after,
 a.author[href$="reddit.com/user/Kalviery"]:after {
   content: "Customer Support";
   color: #00B4FF !important;
@@ -365,6 +367,7 @@ a.author[href$="reddit.com/user/Glaxigrav"],
 a.author[href$="reddit.com/user/Natryndon"], 
 a.author[href$="reddit.com/user/Nidrorian"],
 a.author[href$="reddit.com/user/Dromogaz"],
+a.author[href$="reddit.com/user/Dalthrox"],
 a.author[href$="reddit.com/user/Kalviery"] {
   color: #00B4FF !important;
 }
