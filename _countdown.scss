@@ -1,0 +1,55 @@
+@import 'images';
+
+.side a[href="#10p"] {
+  background-image: url($countdown);
+  background-position: -18px -84px;
+  width: 18px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.side a[href="#ep"] {
+  background-image: url($countdown);
+  background-position: 0px -84px;
+  width: 18px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.side a[href="#10h"] {
+  background-image: url($countdown);
+  background-position: -36px -84px;
+  width: 18px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.side a[href="#openProg"] {
+  background-image: url($countdown);
+  background-position: 0px 0px;
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.side a[href="#closeProg"] {
+  background-image: url($countdown);
+  background-position: 0px -56px;
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.side a[href="#closeFull"] {
+  background-image: url($countdown);
+  background-position: 0px -28px;
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  text-indent: -9999px;
+}
