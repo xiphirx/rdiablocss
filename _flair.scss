@@ -158,54 +158,21 @@
 /**** Blizzard flair for employees ****/
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"]:before, 
-a.author[href$="reddit.com/user/CM_Grimiku"]:before, 
-a.author[href$="reddit.com/user/JayPWilson"]:before,
 a.author[href$="reddit.com/user/_JohnYang"]:before,
 a.author[href$="reddit.com/user/Nevalistis"]:before, 
-a.author[href$="reddit.com/user/TravisDay"]:before,
-a.author[href$="reddit.com/user/Tyvalir"]:before, 
 a.author[href$="reddit.com/user/Ulvareth"]:before,
 a.author[href$="reddit.com/user/wyattcheng"]:before, 
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:before,
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:before, 
-a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:before,
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:before, 
 a.author[href$="reddit.com/user/Blizz_KevinMartens"]:before, 
 a.author[href$="reddit.com/user/Blizz_Kauza"]:before,
 
-/*Hearthstone*/
-a.author[href$="reddit.com/user/bdbrode"]:before,
-a.author[href$="reddit.com/user/BlizzDaxxarri"]:before, 
-a.author[href$="reddit.com/user/CM_Zeriyah"]:before, 
-
-/*Heroes of the Storm*/
-a.author[href$="reddit.com/user/Aldrexus"]:before, 
-a.author[href$="reddit.com/user/BlizzJohnzee"]:before,
-a.author[href$="reddit.com/user/Spyrian"]:before,
-a.author[href$="reddit.com/user/trikslyr"]:before, 
-a.author[href$="reddit.com/user/vaeflare"]:before, 
-
-/*Overwatch*/
-a.author[href$="reddit.com/user/lylirra"]:before,
-
-/*Starcraft*/
-a.author[href$="reddit.com/user/psione"]:before, 
-a.author[href$="reddit.com/user/Traysent"]:before, 
-a.author[href$="reddit.com/user/Xordiah"]:before, 
-a.author[href$="reddit.com/user/Zoevia"]:before, 
-
-/*Warcraft*/
-a.author[href$="reddit.com/user/bashiok_foreal"]:before, 
-a.author[href$="reddit.com/user/Crithto"]:before, 
-a.author[href$="reddit.com/user/Kaivax"]:before, 
-a.author[href$="reddit.com/user/Nethaera"]:before, 
-a.author[href$="reddit.com/user/Rygarius"]:before,
-a.author[href$="reddit.com/user/Zarhym"]:before, 
-
 /*Other*/
 a.author[href$="reddit.com/user/Araxom"]:before, 
 a.author[href$="reddit.com/user/Glaxigrav"]:before,  
-a.author[href$="reddit.com/user/Nidrorian"]:before,
+a.author[href$="reddit.com/user/Natryndon"]:before,
+a.author[href$="reddit.com/user/Orlyia"]:before,
 a.author[href$="reddit.com/user/Dromogaz"]:before,
 a.author[href$="reddit.com/user/Dalthrox"]:before,
 a.author[href$="reddit.com/user/Kalviery"]:before {
@@ -219,23 +186,7 @@ a.author[href$="reddit.com/user/Kalviery"]:before {
 /** Job descriptions */
 
 /* Community Managers */
-a.author[href$="reddit.com/user/bashiok_foreal"]:after, 
-a.author[href$="reddit.com/user/lylirra"]:after, 
-a.author[href$="reddit.com/user/CM_Grimiku"]:after, 
-a.author[href$="reddit.com/user/vaeflare"]:after, 
-a.author[href$="reddit.com/user/Traysent"]:after, 
-a.author[href$="reddit.com/user/Crithto"]:after, 
-a.author[href$="reddit.com/user/Kaivax"]:after, 
-a.author[href$="reddit.com/user/Rygarius"]:after, 
-a.author[href$="reddit.com/user/Nethaera"]:after, 
-a.author[href$="reddit.com/user/Nevalistis"]:after, 
-a.author[href$="reddit.com/user/Aldrexus"]:after, 
-a.author[href$="reddit.com/user/BlizzDaxxarri"]:after, 
-a.author[href$="reddit.com/user/Natryndon"]:after, 
-a.author[href$="reddit.com/user/Zarhym"]:after, 
-a.author[href$="reddit.com/user/Tyvalir"]:after, 
-a.author[href$="reddit.com/user/Nidrorian"]:after, 
-a.author[href$="reddit.com/user/Ulvareth"]:after,
+a.author[href$="reddit.com/user/Nevalistis"]:after,  
 a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
   content: "Community Manager";
   color: #00B4FF !important;
@@ -249,20 +200,11 @@ a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
 a.author[href$="reddit.com/user/Araxom"]:after, 
 a.author[href$="reddit.com/user/Glaxigrav"]:after, 
 a.author[href$="reddit.com/user/Natryndon"]:after,
+a.author[href$="reddit.com/user/Orlyia"]:after,
 a.author[href$="reddit.com/user/Dromogaz"]:after,
 a.author[href$="reddit.com/user/Dalthrox"]:after,
 a.author[href$="reddit.com/user/Kalviery"]:after {
   content: "Customer Support";
-  color: #00B4FF !important;
-  padding: 4px;
-  margin-left: 5px;
-  border: 1px solid #222;
-  background: #111;
-}
-
-/* Jay Wilson */
-a.author[href$="reddit.com/user/JayPWilson"]:after {
-  content: "Former Game Director";
   color: #00B4FF !important;
   padding: 4px;
   margin-left: 5px;
@@ -275,8 +217,7 @@ a.author[href$="reddit.com/user/wyattcheng"]:after,
 a.author[href$="reddit.com/user/andrewchambers"]:after,
 a.author[href$="reddit.com/user/_JohnYang"]:after, 
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after, 
-a.author[href$="reddit.com/user/Blizz_KevinMartens"]:after, 
-a.author[href$="reddit.com/user/TravisDay"]:after {
+a.author[href$="reddit.com/user/Blizz_KevinMartens"]:after {
   content: "Game Designer";
   color: #00B4FF !important;
   padding: 4px;
@@ -305,67 +246,22 @@ a.author[href$="reddit.com/user/BlizzRichieMarella"]:after {
   background: #111;
 }
 
-/* Writers */
-a.author[href$="reddit.com/user/Blizz_BrianKindregan"]:after {
-  content: "Writer";
-  color: #00B4FF !important;
-  padding: 4px;
-  margin-left: 5px;
-  border: 1px solid #222;
-  background: #111;
-}
-
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"], 
-a.author[href$="reddit.com/user/CM_Grimiku"], 
-a.author[href$="reddit.com/user/JayPWilson"],
 a.author[href$="reddit.com/user/_JohnYang"],
 a.author[href$="reddit.com/user/Nevalistis"], 
-a.author[href$="reddit.com/user/TravisDay"],
-a.author[href$="reddit.com/user/Tyvalir"], 
 a.author[href$="reddit.com/user/Ulvareth"],
 a.author[href$="reddit.com/user/wyattcheng"], 
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"],
 a.author[href$="reddit.com/user/blizz_rogerhughston"], 
-a.author[href$="reddit.com/user/Blizz_BrianKindregan"],
 a.author[href$="reddit.com/user/BlizzRichieMarella"], 
 a.author[href$="reddit.com/user/Blizz_KevinMartens"], 
 a.author[href$="reddit.com/user/Blizz_Kauza"],
-
-/*Hearthstone*/
-a.author[href$="reddit.com/user/bdbrode"],
-a.author[href$="reddit.com/user/BlizzDaxxarri"], 
-a.author[href$="reddit.com/user/CM_Zeriyah"], 
-
-/*Heroes of the Storm*/
-a.author[href$="reddit.com/user/Aldrexus"], 
-a.author[href$="reddit.com/user/BlizzJohnzee"],
-a.author[href$="reddit.com/user/Spyrian"],
-a.author[href$="reddit.com/user/trikslyr"], 
-a.author[href$="reddit.com/user/vaeflare"], 
-
-/*Overwatch*/
-a.author[href$="reddit.com/user/lylirra"],
-
-/*Starcraft*/
-a.author[href$="reddit.com/user/psione"], 
-a.author[href$="reddit.com/user/Traysent"], 
-a.author[href$="reddit.com/user/Xordiah"], 
-a.author[href$="reddit.com/user/Zoevia"], 
-
-/*Warcraft*/
-a.author[href$="reddit.com/user/bashiok_foreal"], 
-a.author[href$="reddit.com/user/Crithto"], 
-a.author[href$="reddit.com/user/Kaivax"], 
-a.author[href$="reddit.com/user/Nethaera"], 
-a.author[href$="reddit.com/user/Rygarius"],
-a.author[href$="reddit.com/user/Zarhym"], 
 
 /*Other*/
 a.author[href$="reddit.com/user/Araxom"], 
 a.author[href$="reddit.com/user/Glaxigrav"], 
 a.author[href$="reddit.com/user/Natryndon"], 
-a.author[href$="reddit.com/user/Nidrorian"],
 a.author[href$="reddit.com/user/Dromogaz"],
 a.author[href$="reddit.com/user/Dalthrox"],
 a.author[href$="reddit.com/user/Kalviery"] {
