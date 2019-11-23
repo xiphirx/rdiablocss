@@ -165,12 +165,11 @@ a.author[href$="reddit.com/user/wyattcheng"]:before,
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:before,
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:before, 
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:before, 
-a.author[href$="reddit.com/user/Blizz_KevinMartens"]:before, 
 a.author[href$="reddit.com/user/Blizz_Kauza"]:before,
 
 /*Other*/
-a.author[href$="reddit.com/user/Araxom"]:before, 
-a.author[href$="reddit.com/user/Glaxigrav"]:before,  
+a.author[href$="reddit.com/user/Harlsoco"]:before,
+a.author[href$="reddit.com/user/Glaxigrav"]:before,
 a.author[href$="reddit.com/user/Natryndon"]:before,
 a.author[href$="reddit.com/user/Orlyia"]:before,
 a.author[href$="reddit.com/user/Dromogaz"]:before,
@@ -197,7 +196,7 @@ a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
 }
 
 /* Customer support */
-a.author[href$="reddit.com/user/Araxom"]:after, 
+a.author[href$="reddit.com/user/Harlsoco"]:after,
 a.author[href$="reddit.com/user/Glaxigrav"]:after, 
 a.author[href$="reddit.com/user/Natryndon"]:after,
 a.author[href$="reddit.com/user/Orlyia"]:after,
@@ -212,33 +211,14 @@ a.author[href$="reddit.com/user/Kalviery"]:after {
   background: #111;
 }
 
-/* Game Designers */
+/* Game Developer */
 a.author[href$="reddit.com/user/wyattcheng"]:after, 
 a.author[href$="reddit.com/user/andrewchambers"]:after,
 a.author[href$="reddit.com/user/_JohnYang"]:after, 
-a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after, 
-a.author[href$="reddit.com/user/Blizz_KevinMartens"]:after {
-  content: "Game Designer";
-  color: #00B4FF !important;
-  padding: 4px;
-  margin-left: 5px;
-  border: 1px solid #222;
-  background: #111;
-}
-
-/* Software Engineers */
+a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after,
+a.author[href$="reddit.com/user/BlizzRichieMarella"]:after,
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:after {
-  content: "Software Engineer";
-  color: #00B4FF !important;
-  padding: 4px;
-  margin-left: 5px;
-  border: 1px solid #222;
-  background: #111;
-}
-
-/* Artists */
-a.author[href$="reddit.com/user/BlizzRichieMarella"]:after {
-  content: "Artist";
+  content: "Game Developer";
   color: #00B4FF !important;
   padding: 4px;
   margin-left: 5px;
@@ -255,11 +235,10 @@ a.author[href$="reddit.com/user/wyattcheng"],
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"],
 a.author[href$="reddit.com/user/blizz_rogerhughston"], 
 a.author[href$="reddit.com/user/BlizzRichieMarella"], 
-a.author[href$="reddit.com/user/Blizz_KevinMartens"], 
 a.author[href$="reddit.com/user/Blizz_Kauza"],
 
 /*Other*/
-a.author[href$="reddit.com/user/Araxom"], 
+a.author[href$="reddit.com/user/Harlsoco"]:,
 a.author[href$="reddit.com/user/Glaxigrav"], 
 a.author[href$="reddit.com/user/Natryndon"], 
 a.author[href$="reddit.com/user/Dromogaz"],
