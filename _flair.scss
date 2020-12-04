@@ -158,18 +158,17 @@
 /**** Blizzard flair for employees ****/
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"]:before, 
-a.author[href$="reddit.com/user/_JohnYang"]:before,
-a.author[href$="reddit.com/user/Nevalistis"]:before, 
+a.author[href$="reddit.com/user/PezRadar"]:before, 
 a.author[href$="reddit.com/user/Ulvareth"]:before,
 a.author[href$="reddit.com/user/wyattcheng"]:before, 
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:before,
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:before, 
 a.author[href$="reddit.com/user/BlizzRichieMarella"]:before, 
-a.author[href$="reddit.com/user/Blizz_Kauza"]:before,
+
+a.author[href$="reddit.com/user/Blizz_KevinMartens"]:before, 
 
 /*Other*/
-a.author[href$="reddit.com/user/Harlsoco"]:before,
-a.author[href$="reddit.com/user/Glaxigrav"]:before,
+a.author[href$="reddit.com/user/Glaxigrav"]:before,  
 a.author[href$="reddit.com/user/Natryndon"]:before,
 a.author[href$="reddit.com/user/Orlyia"]:before,
 a.author[href$="reddit.com/user/Dromogaz"]:before,
@@ -185,8 +184,7 @@ a.author[href$="reddit.com/user/Kalviery"]:before {
 /** Job descriptions */
 
 /* Community Managers */
-a.author[href$="reddit.com/user/Nevalistis"]:after,  
-a.author[href$="reddit.com/user/Blizz_Kauza"]:after {
+a.author[href$="reddit.com/user/PezRadar"]:after {
   content: "Community Manager";
   color: #00B4FF !important;
   padding: 4px;
@@ -211,14 +209,33 @@ a.author[href$="reddit.com/user/Kalviery"]:after {
   background: #111;
 }
 
-/* Game Developer */
+
+/* Game Designers */
 a.author[href$="reddit.com/user/wyattcheng"]:after, 
 a.author[href$="reddit.com/user/andrewchambers"]:after,
-a.author[href$="reddit.com/user/_JohnYang"]:after, 
-a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after,
-a.author[href$="reddit.com/user/BlizzRichieMarella"]:after,
+a.author[href$="reddit.com/user/Blizz_MatthewBerger"]:after, 
+a.author[href$="reddit.com/user/Blizz_KevinMartens"]:after {
+  content: "Game Designer";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
+}
+
+/* Software Engineers */
 a.author[href$="reddit.com/user/blizz_rogerhughston"]:after {
-  content: "Game Developer";
+  content: "Software Engineer";
+  color: #00B4FF !important;
+  padding: 4px;
+  margin-left: 5px;
+  border: 1px solid #222;
+  background: #111;
+}
+
+/* Artists */
+a.author[href$="reddit.com/user/BlizzRichieMarella"]:after {
+  content: "Artist";
   color: #00B4FF !important;
   padding: 4px;
   margin-left: 5px;
@@ -228,14 +245,13 @@ a.author[href$="reddit.com/user/blizz_rogerhughston"]:after {
 
 /*Diablo*/
 a.author[href$="reddit.com/user/andrewchambers"], 
-a.author[href$="reddit.com/user/_JohnYang"],
-a.author[href$="reddit.com/user/Nevalistis"], 
+a.author[href$="reddit.com/user/PezRadar"], 
 a.author[href$="reddit.com/user/Ulvareth"],
 a.author[href$="reddit.com/user/wyattcheng"], 
 a.author[href$="reddit.com/user/Blizz_MatthewBerger"],
 a.author[href$="reddit.com/user/blizz_rogerhughston"], 
 a.author[href$="reddit.com/user/BlizzRichieMarella"], 
-a.author[href$="reddit.com/user/Blizz_Kauza"],
+a.author[href$="reddit.com/user/Blizz_KevinMartens"], 
 
 /*Other*/
 a.author[href$="reddit.com/user/Harlsoco"],
